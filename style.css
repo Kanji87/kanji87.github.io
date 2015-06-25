@@ -46,6 +46,10 @@ body {
     height: 250px;
     overflow: hidden;
     text-align: center;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 .img img {
