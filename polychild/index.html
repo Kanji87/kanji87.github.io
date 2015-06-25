@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="js/main.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header class="page-header">
+        <div class="center-block page-header__inner">
+            <div class="menu-trigger"></div>
+            <div class="page-header__social">
+                <a class="page-header__social-item icon-fb pull-left" href="#"></a>
+                <a class="page-header__social-item icon-vk pull-left" href="#"></a>
+            </div>
+            <a class="page-header__logo" href="index.html"></a>
+            <div class="page-header__search pull-right">
+                <div class="page-header__search-robot"></div>
+                <form class="page-header__search-form" action="">
+                    <input class="page-header__search-input" name="search" type="text" placeholder="">
+                    <i class="page-header__search-icon page-header__search-icon--unfocused"></i>
+                    <i class="page-header__search-icon page-header__search-icon--focused"></i>
+                    <!--<input class="page-header__search-submit" value="" type="submit">-->
+                </form>
+                <script type="text/javascript">
+                    $(function(){
+                        $('.page-header__search-input').focusin(function(){
+                            $('.page-header__search').addClass('focused');
+                        });
+                        $('.page-header__search-input').focusout(function(){
+                            $('.page-header__search').removeClass('focused');
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </header>
+
+    <section class="main center-block">
+        
+        <nav class="slide-menu">
+            <ul class="slide-menu__container">
+                <li class="slide-menu__item slide-menu__item-home">
+                    <a class="slide-menu__item-link" href="index.html">Главная</a>
+                </li>
+                <li class="slide-menu__item slide-menu__item-qa">
+                    <a class="slide-menu__item-link" href="#">Вопрос &ndash;<br>Ответ</a>
+                </li>
+                <li class="slide-menu__item slide-menu__item-museum">
+                    <a class="slide-menu__item-link" href="#">Мой музей</a>
+                </li>
+                <li class="slide-menu__item slide-menu__item-video">
+                    <a class="slide-menu__item-link" href="video.html">Видео</a>
+                </li>
+                <li class="slide-menu__item slide-menu__item-experiments">
+                    <a class="slide-menu__item-link" href="#">Эксперименты</a>
+                </li>
+                <li class="slide-menu__item slide-menu__item-games">
+                    <a class="slide-menu__item-link" href="#">Игры/Тесты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="home-grid">
+                <div class="home-grid__row row">
+                    <div class="col-md-3 col-xs-3 col">
+                        <div class="home-grid__item home-grid__item-future">
+                            <a class="home-grid__item-link" href="#"></a>
+                            <div class="home-grid__item-flipper">
+                                <div class="home-grid__item-front">
+                                    <h3 class="home-grid__item-heading">будущее</h3>
+                                </div>
+                                <div class="home-grid__item-back">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, tenetur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 col">
+                        <div class="home-grid__item home-grid__item-video">
+                            <a class="home-grid__item-link" href="video.html"></a>
+                            <div class="home-grid__item-flipper">
+                                <div class="home-grid__item-front">
+                                    <h3 class="home-grid__item-heading">видео</h3>
+                                </div>
+                                <div class="home-grid__item-back">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, tenetur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 col">
+                        <div class="home-grid__item home-grid__item-games">
+                            <a class="home-grid__item-link" href="#"></a>
+                            <div class="home-grid__item-flipper">
+                                <div class="home-grid__item-front">
+                                    <h3 class="home-grid__item-heading">игры/тесты</h3>
+                                </div>
+                                <div class="home-grid__item-back">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, tenetur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 col">
+                        <div class="home-grid__item home-grid__item-promo">
+                            <a class="home-grid__item-link" href="#"></a>
+                            <div class="home-grid__item-flipper">
+                                <div class="home-grid__item-front">
+                                    <div class="vcenter">
+                                        <h3 class="home-grid__item-heading">примерное текстовое поле для блока промо</h3>
+                                    </div>
+                                    <div class="promo-figure promo-circle"></div>
+                                </div>
+                                <div class="home-grid__item-back">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, tenetur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-grid__row row">
+                    <div class="col-md-3 col-xs-3 col">
+                        <div class="home-grid__item home-grid__item-experiments">
+                            <a class="home-grid__item-link" href="#"></a>
+                            <div class="home-grid__item-flipper">
+                                <div class="home-grid__item-front">
+                                    <h3 class="home-grid__item-heading">эксперименты</h3>
+                                </div>
+                                <div class="home-grid__item-back">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, tenetur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 col">
+                        <div class="home-grid__item home-grid__item-dinosaurs">
+                            <a class="home-grid__item-link" href="#"></a>
+                            <div class="home-grid__item-flipper">
+                                <div class="home-grid__item-front">
+                                    <h3 class="home-grid__item-heading">динозавры</h3>
+                                </div>
+                                <div class="home-grid__item-back">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, tenetur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 col">
+                        <div class="home-grid__item home-grid__item-science">
+                            <a class="home-grid__item-link" href="#"></a>
+                            <div class="home-grid__item-flipper">
+                                <div class="home-grid__item-front">
+                                    <h3 class="home-grid__item-heading">наука</h3>
+                                </div>
+                                <div class="home-grid__item-back">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, tenetur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 col">
+                        <div class="home-grid__item home-grid__item-gadget">
+                            <a class="home-grid__item-link" href="#"></a>
+                            <div class="home-grid__item-flipper">
+                                <div class="home-grid__item-front">
+                                    <h3 class="home-grid__item-heading">техника<br>гаджеты</h3>
+                                </div>
+                                <div class="home-grid__item-back">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, tenetur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-grid__row row">
+                    <div class="col-md-3 col-xs-3 col">
+                        <div class="home-grid__item home-grid__item-museum">
+                            <a class="home-grid__item-link" href="#"></a>
+                            <div class="home-grid__item-flipper">
+                                <div class="home-grid__item-front">
+                                    <h3 class="home-grid__item-heading">мой музей</h3>
+                                </div>
+                                <div class="home-grid__item-back">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, tenetur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 col">
+                        <div class="home-grid__item home-grid__item-human">
+                            <a class="home-grid__item-link" href="#"></a>
+                            <div class="home-grid__item-flipper">
+                                <div class="home-grid__item-front">
+                                    <h3 class="home-grid__item-heading">человек</h3>
+                                </div>
+                                <div class="home-grid__item-back">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, tenetur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 col">
+                        <div class="home-grid__item home-grid__item-space">
+                            <a class="home-grid__item-link" href="#"></a>
+                            <div class="home-grid__item-flipper">
+                                <div class="home-grid__item-front">
+                                    <h3 class="home-grid__item-heading">космос</h3>
+                                </div>
+                                <div class="home-grid__item-back">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, tenetur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 col">
+                        <div class="home-grid__item home-grid__item-robot">
+                            <a class="home-grid__item-link" href="#"></a>
+                            <div class="home-grid__item-flipper">
+                                <div class="home-grid__item-front">
+                                    <h3 class="home-grid__item-heading">вопрос &ndash;<br>ответ</h3>
+                                </div>
+                                <div class="home-grid__item-back">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, tenetur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <div class="page-footer__inner center-block">
+            <div class="footer-block pull-left">
+                <div class="footer-block__copyright vcenter">
+                    <p>
+                        &copy; 2015 Политехнический музей <br />
+                        Использование материалов сайта <br />
+                        Соглашение с пользователем
+                    </p>
+                </div>
+            </div>
+            <div class="footer-block pull-left vcenter">
+                <div class="footer-block__full-version">
+                    <a href="#">Версия сайта<br>для взрослых</a>
+                </div>
+            </div>
+            <div class="footer-block pull-right vcenter">
+                <div class="footer-block__social">
+                    <a class="footer-block__social-item icon-fb pull-left" href="#">Facebook</a>
+                    <a class="footer-block__social-item icon-vk pull-left" href="#">Вконтакте</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(function() {
+            $('.menu-trigger').on('click', function(){
+                $('.main').toggleClass('menu-active');
+                $('.menu-trigger').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
