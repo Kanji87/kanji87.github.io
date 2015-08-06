@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- bjqs.css contains the *essential* css needed for the slider to work -->
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- some pretty fonts for this demo page - not required for the slider -->
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div id="container">
+    <div class="vegetable-test__title clearfix">
+      <p class="vegetable-test__title-item vegetable-test__title-name">знай наших в лицо</p>
+      <p class="vegetable-test__title-item vegetable-test__title-desc">попробуйте угадать, какому из обычных культурных растений приходится родственником дикий вид на картинке.</p>
+    </div>
+    <div class="vegetable-test__holder">
+      <p class="vegetable-desc vegetable-desc__parent">дикий родственник</p>
+      <p class="vegetable-desc vegetable-desc__culture">культурное растение</p>
+      <ul class="vegetable-test">
+        <li data-id="1" class="vegetable-test__item droppable not-cleared">
+          <img class="vegetable-test__image-parent vegetable-test__image" src="images/corn-parent.png" alt="" />
+          <img class="vegetable-test__image-cultural vegetable-test__image" src="images/corn.png" alt="" />
+          <img class="vegetable-test__image-q vegetable-test__image" src="images/corn-q.png" alt="" />
+        </li>
+        <li data-id="2" class="vegetable-test__item droppable not-cleared">
+          <img class="vegetable-test__image-parent vegetable-test__image" src="images/carrot-parent.png" alt="" />
+          <img class="vegetable-test__image-cultural vegetable-test__image" src="images/carrot.png" alt="" />
+          <img class="vegetable-test__image-q vegetable-test__image" src="images/carrot-q.png" alt="" />
+        </li>
+        <li data-id="3" class="vegetable-test__item droppable not-cleared">
+          <img class="vegetable-test__image-parent vegetable-test__image" src="images/wheat-parent.png" alt="" />
+          <img class="vegetable-test__image-cultural vegetable-test__image" src="images/wheat.png" alt="" />
+          <img class="vegetable-test__image-q vegetable-test__image" src="images/wheat-q.png" alt="" />
+        </li>
+        <li data-id="4" class="vegetable-test__item droppable not-cleared">
+          <img class="vegetable-test__image-parent vegetable-test__image" src="images/beet-parent.png" alt="" />
+          <img class="vegetable-test__image-cultural vegetable-test__image" src="images/beet.png" alt="" />
+          <img class="vegetable-test__image-q vegetable-test__image" src="images/beet-q.png" alt="" />
+        </li>
+        <li data-id="5" class="vegetable-test__item droppable not-cleared">
+          <img class="vegetable-test__image-parent vegetable-test__image" src="images/cabbage-parent.png" alt="" />
+          <img class="vegetable-test__image-cultural vegetable-test__image" src="images/cabbage.png" alt="" />
+          <img class="vegetable-test__image-q vegetable-test__image" src="images/cabbage-q.png" alt="" />
+        </li>
+        <li data-id="6" class="vegetable-test__item droppable not-cleared">
+          <img class="vegetable-test__image-parent vegetable-test__image" src="images/rye-parent.png" alt="" />
+          <img class="vegetable-test__image-cultural vegetable-test__image" src="images/rye.png" alt="" />
+          <img class="vegetable-test__image-q vegetable-test__image" src="images/rye-q.png" alt="" />
+        </li>
+        <li data-id="7" class="vegetable-test__item droppable not-cleared">
+          <img class="vegetable-test__image-parent vegetable-test__image" src="images/cucumber-parent.png" alt="" />
+          <img class="vegetable-test__image-cultural vegetable-test__image" src="images/cucumber.png" alt="" />
+          <img class="vegetable-test__image-q vegetable-test__image" src="images/cucumber-q.png" alt="" />
+        </li>
+        <li data-id="8" class="vegetable-test__item droppable not-cleared">
+          <img class="vegetable-test__image-parent vegetable-test__image" src="images/banana-parent.png" alt="" />
+          <img class="vegetable-test__image-cultural vegetable-test__image" src="images/banana.png" alt="" />
+          <img class="vegetable-test__image-q vegetable-test__image" src="images/banana-q.png" alt="" />
+        </li>
+        <li data-id="9" class="vegetable-test__item droppable not-cleared">
+          <img class="vegetable-test__image-parent vegetable-test__image" src="images/tomato-parent.png" alt="" />
+          <img class="vegetable-test__image-cultural vegetable-test__image" src="images/tomato.png" alt="" />
+          <img class="vegetable-test__image-q vegetable-test__image" src="images/tomato-q.png" alt="" />
+        </li>
+        <li data-id="10" class="vegetable-test__item droppable not-cleared">
+          <img class="vegetable-test__image-parent vegetable-test__image" src="images/rice-parent.png" alt="" />
+          <img class="vegetable-test__image-cultural vegetable-test__image" src="images/rice.png" alt="" />
+          <img class="vegetable-test__image-q vegetable-test__image" src="images/rice-q.png" alt="" />
+        </li>
+        <li data-id="11" class="vegetable-test__item"></li>
+      </ul>
+      <div class="slider-disabler"></div>
+      <div class="vegetable-test__item-hint-holder">
+        <p class="vegetable-test__item-hint1 vegetable-test__item-hint"></p>
+        <p class="vegetable-test__item-hint2 vegetable-test__item-hint"></p>
+      </div>
+    </div>
+
+    <div class="draggable-container">
+      <div class="draggable wheat" data-id="3"></div>
+      <div class="draggable cucumber" data-id="7"></div>
+      <div class="draggable rice" data-id="10"></div>
+      <div class="draggable carrot" data-id="2"></div>
+      <div class="draggable banana" data-id="8"></div>
+      <div class="draggable corn" data-id="1"></div>
+      <div class="draggable tomato" data-id="9"></div>
+      <div class="draggable beet" data-id="4"></div>
+      <div class="draggable rye" data-id="6"></div>
+      <div class="draggable cabbage" data-id="5"></div>
+    </div>
+
+
+    <div class="win-holder">
+      <div class="win">
+        <p class="win-text">
+          Замечательно, вы заслужили морковку!
+        </p>
+        <img src="images/all_veg.png" alt="" />
+        <button class="try-again-button" href="#">Пройти еще раз</button>
+      </div>
+    </div>
+</div>
+<div class="footer clearfix">
+  <div class="footer_social">
+    <a target="_blank" class="footer__social-icon" href="https://www.facebook.com/polytechnicum">
+      <img src="images/facebook.png" alt="" />
+    </a>
+    <a target="_blank" class="footer__social-icon" href="https://twitter.com/Polytechnicum">
+      <img src="images/twitter.png" alt="" />
+    </a>
+    <a target="_blank" class="footer__social-icon" href="https://vk.com/polytechnicum">
+      <img src="images/vk.png" alt="" />
+    </a>
+  </div>
+  <p class="footer__text">По данным Global Food Production and Consumption (Продовольственная и сельскохозяйственная организация ООН) <a target="_blank" href="http://faostat.fao.org/site/368/DesktopDefault.aspx">http://faostat.fao.org/site/368/DesktopDefault.aspx</a></p>
+  <div class="footer_logo">
+    <a target="_blank" href="http://polymus.ru/"><img src="images/logo-pink.png" alt="" /></a>
+  </div>
+</div>
+
+  <script>
+    $(function($) {
+
+      var startStopSlide = function() {
+        var nextBtn = $('.bx-next'),
+            sliderDisabler = $('.slider-disabler'),
+            activeSlide = $('.active-slide'),
+            hint = $('.vegetable-test__item-hint-holder');
+        if(activeSlide.hasClass('not-cleared')) {
+          sliderDisabler.show();
+          hint.hide();
+          nextBtn.addClass('bx-next--locked');
+        }
+        else if(activeSlide.data('id') == 11) {
+          $('.vegetable-test__holder').fadeOut();
+          $('.draggable-container').fadeOut();
+          $('.win-holder').fadeIn();
+        }
+        else {
+          sliderDisabler.hide();
+          hint.show();
+          nextBtn.removeClass('bx-next--locked');
+        }
+      };
+
+      var handleDropEvent = function(event, ui) {
+        var draggable = ui.draggable,
+            dragVegetable = draggable.data('id'),
+            questionVegetable = $(this).data('id'),
+            lastVegetable = $('.vegetable-test__item').last().data('id');
+        if(dragVegetable == questionVegetable) {
+          $('.bx-next').removeClass('bx-next--locked');
+          $(this).removeClass('not-cleared');
+          $('.vegetable-test__item-hint-holder').fadeIn();
+          $('.slider-disabler').hide();
+          $(this).find('.vegetable-test__image-q').fadeOut();
+          $(this).find('.vegetable-test__image-cultural').fadeIn(400);
+          $(this).find('.vegetable-test__image-cultural').animate({right: '115px'}, 600);
+          $(this).find('.vegetable-test__image-parent').animate({left: '115px'}, 600);
+          draggable.remove();
+        }
+      };
+
+      $('.try-again-button').click(function() {
+        location.reload();
+      });
+
+      var hints = [{
+                     hint1: '<i>Zea mays parviglumis</i>, один из предполагаемых прямых предков домашней кукурузы.',
+                     hint2: 'Кукуруза сахарная, маис (<i>Zea mays ssp.</i>), одомашнено около 5800 лет назад в Мезоамерике.'},
+                   {
+                     hint1: 'Морковь обыкновенная (<i>Daucus carota</i>).',
+                     hint2: 'Морковь посевная (<i>Daucus sativus</i>), одомашнена в Средиземноморье.'
+                   },
+                   {
+                     hint1: 'Пшеница польская (<i>Triticum polonicum</i>).',
+                     hint2: 'Пшеница (<i>Triticum sp.</i>), одомашнена между 6500 и 10000 лет назад на Ближнем Востоке или в Юго-Западной Азии.'
+                   },
+                   {
+                     hint1: '<i>Beta patula</i>, находится под угрозой исчезновения.',
+                     hint2: 'Свекла обыкновенная (<i>Beta vulgaris</i>), одомашнена в Средиземноморье в I-II тысячилетии до н.э.'
+                   },
+                   {
+                     hint1: 'Дикорастущая капуста (<i>Brassica oleracea</i>).',
+                     hint2: 'Капуста кочанная (<i>Brassica oleracea var. oleracea</i>), цветная (<i>B. oleracea var. gemmifera,</i>), кольраби (<i>B. oleracea var. gongylodes</i>), брокколи(<i>B. oleracea var. italica</i>) и т.д. Одомашнены в Средиземноморском регионе.'
+                   },
+                   {
+                     hint1: 'Рожь лесная (<i>Secale sylvestre</i>).',
+                     hint2: 'Рожь посевная (<i>Secale cereale</i>), одомашнена в Средней Азии.'
+                   },
+                   {
+                     hint1: '<i>Cucumis myriocarpus</i>, ядовит.',
+                     hint2: 'Огурец обыкновенный (<i>Cucumis sativus</i>), одомашнен в Индии не менее 6 тыс. лет назад. Род также включает дыню (<i>C. melo</i>), кивано (<i>C. metulifer</i>) и другие культурные виды.'
+                   },
+                   {
+                     hint1: '<i>Musa balbisiana</i>, плоды сегодня считаются несъедобными из-за массы косточек.',
+                     hint2: 'Банан (<i>Musa sp.</i>), одомашнены на Малайском архипелаге не менее 8 тыс. лет назад.'
+                   },
+                   {
+                     hint1: '<i>Solanum Sodomeum</i>, ядовит.',
+                     hint2: 'Томат (<i>Solanum lycopersicum</i>), одомашнен в Южной Америке. Род включает также картофель (<i>S. tuberosum</i>) и баклажан (<i>S. melongena</i>).'
+                   },
+                   {
+                     hint1: 'Африканский дикий рис, считается прямым предком возделываемого <i>Oryza sativa.</i>',
+                     hint2: 'Рис посевной (<i>Oryza sativa</i>), одомашнен 7-9 тыс. лет назад в Китае.'
+                   }];
+
+      var showHint = function() {
+        var activeId = $('.active-slide').data('id'),
+            hintText1 = $('.vegetable-test__item-hint1'),
+            hintText2 = $('.vegetable-test__item-hint2');
+
+        console.log(activeId);
+
+        switch (activeId){
+          case 1: hintText1.html(hints[0].hint1);
+            hintText2.html(hints[0].hint2);
+            break;
+          case 2: hintText1.html(hints[1].hint1);
+            hintText2.html(hints[1].hint2);
+            break;
+          case 3: hintText1.html(hints[2].hint1);
+            hintText2.html(hints[2].hint2);
+            break;
+          case 4: hintText1.html(hints[3].hint1);
+            hintText2.html(hints[3].hint2);
+            break;
+          case 5: hintText1.html(hints[4].hint1);
+            hintText2.html(hints[4].hint2);
+            break;
+          case 6: hintText1.html(hints[5].hint1);
+            hintText2.html(hints[5].hint2);
+            break;
+          case 7: hintText1.html(hints[6].hint1);
+            hintText2.html(hints[6].hint2);
+            break;
+          case 8: hintText1.html(hints[7].hint1);
+            hintText2.html(hints[7].hint2);
+            break;
+          case 9: hintText1.html(hints[8].hint1);
+            hintText2.html(hints[8].hint2);
+            break;
+          case 10: hintText1.html(hints[9].hint1);
+            hintText2.html(hints[9].hint2);
+            break;
+        }
+      };
+
+      $('.vegetable-test').bxSlider({
+        preloadImages: 'all',
+        controls: true,
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        pager: false,
+        onSliderLoad: function() {
+          $('.bx-controls').css({
+            "opacity": '1'
+          });
+          $('.vegetable-test__item').first().addClass('active-slide');
+          startStopSlide();
+          showHint();
+        },
+        onSlideBefore: function(currentSlide, totalSlides, currentSlideHtmlObject) {
+          $('.active-slide').removeClass('active-slide');
+          $(currentSlide).addClass('active-slide');
+          startStopSlide();
+          showHint();
+        }
+      });
+
+      $(dragInit);
+      function dragInit() {
+        $('.draggable').draggable({
+          containment: '#container',
+          stack: '.draggable-container',
+          revert: true
+        });
+
+        $('.droppable').droppable({
+          drop: handleDropEvent
+        });
+      }
+    });
+  </script>
+</body>
+</html>

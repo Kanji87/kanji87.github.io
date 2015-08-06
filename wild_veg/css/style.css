@@ -1,0 +1,404 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Open Sans", helvetica, arial;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#container {
+  width: 776px;
+  height: 730px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #8bbd50;
+}
+
+.bx-wrapper {
+  width: 100%;
+}
+
+.draggable-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -340px;
+  height: 230px;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  width: 680px;
+}
+
+.draggable {
+  width: 115px;
+  height: 65px;
+  display: block;
+  float: left;
+  background-size: 115px 65px;
+  background-repeat: no-repeat;
+  position: relative;
+  cursor: pointer;
+  margin-top: 37px;
+  margin-left: 15px;
+  -webkit-backface-visibility: hidden;
+}
+
+.wheat {
+  /*top: 20px;*/
+  /*left: 20px;*/
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  background-image: url('../images/wheat.png');
+}
+
+.cucumber {
+  /*top: 20px;*/
+  /*left: 145px;*/
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+  background-image: url('../images/cucumber.png');
+}
+
+.rice {
+  /*top: 30px;*/
+  /*left: 260px;*/
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+  margin-left: 5px;
+  background-image: url('../images/rice.png');
+}
+
+.carrot {
+  /*top: 35px;*/
+  /*left: 395px;*/
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  margin-left: 25px;
+  background-image: url('../images/carrot.png');
+}
+
+.banana {
+  /*top: 35px;*/
+  /*left: 515px;*/
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  background-image: url('../images/banana.png');
+}
+
+.corn {
+  /*top: 135px;*/
+  /*left: 15px;*/
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  transform: rotate(7deg);
+  background-image: url('../images/corn.png');
+}
+
+.tomato {
+  /*top: 140px;*/
+  /*left: 130px;*/
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+  background-image: url('../images/tomato.png');
+}
+
+.beet {
+  /*top: 135px;*/
+  /*left: 250px;*/
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  background-image: url('../images/beet.png');
+}
+
+.rye {
+  /*top: 135px;*/
+  /*left: 385px;*/
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  transform: rotate(7deg);
+  background-image: url('../images/rye.png');
+}
+
+.cabbage {
+  /*top: 135px;*/
+  /*left: 510px;*/
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
+  background-image: url('../images/cabbage.png');
+}
+
+.bx-controls {
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.bx-next--locked {
+  opacity: .3;
+  cursor: default;
+}
+
+.vegetable-test, .vegetable-test__item {
+  height: 185px;
+}
+
+.vegetable-test__holder {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  background-color: #8bbd50;
+}
+
+.vegetable-test__image {
+  position: absolute;
+}
+
+.vegetable-test__image-parent {
+  top: 0;
+  left: 105px;
+}
+
+.vegetable-test__image-cultural, .vegetable-test__image-q {
+  top: 0;
+  right: 105px;
+}
+
+.vegetable-test__image-cultural {
+  display: none;
+}
+
+.slider-disabler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  z-index: 99999;
+  display: none;
+}
+
+.vegetable-test__item-hint-holder {
+  display: block;
+  position: relative;
+}
+
+.vegetable-test__item-hint {
+  width: 250px;
+  font-size: 13px;
+  position: absolute;
+  line-height: 1.1;
+}
+
+.vegetable-test__item-hint1 {
+  top: 15px;
+  left: 115px;
+}
+
+.vegetable-test__item-hint2 {
+  top: 15px;
+  right: 105px;
+}
+
+.win-holder {
+  width: 100%;
+  height: 630px;
+  position: absolute;
+  top: 100px;
+  display: none;
+  z-index: 9999;
+}
+
+.win {
+  width: 635px;
+  margin: 50px auto 0 auto;
+  font-family: "Open Sans", helvetica, arial;
+}
+
+.win-text {
+  font-size: 28px;
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.try-again-button {
+  width: 60px;
+  height: 40px;
+  font-size: 14px;
+  padding-left: 40px;
+  box-sizing: content-box;
+  cursor: pointer;
+  display: block;
+  margin: 60px auto 0 auto;
+  text-decoration: none;
+  text-align: right;
+  border: 0;
+  background-image: url("../images/onemore.png");
+  background-position: 0px 0px;
+  background-size: 30px 35px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.vegetable-desc {
+  font-size: 14px;
+  color: #333333;
+  position: absolute;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.vegetable-desc__parent {
+  top: -30px;
+  left: 120px;
+}
+
+.vegetable-desc__culture {
+  top: -30px;
+  right: 125px;
+}
+
+.clearfix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.vegetable-test__title {
+  background-color: #ffffff;
+  font-weight: bold;
+  padding: 20px 90px;
+}
+
+.vegetable-test__title-item {
+  float: left;
+  text-transform: uppercase;
+}
+
+.vegetable-test__title-name {
+  color: #f36;
+  font-size: 24px;
+  width: 170px;
+}
+
+.vegetable-test__title-desc {
+  color: #333;
+  font-size: 14px;
+  width: 330px;
+  line-height: 1.1;
+  margin-left: 90px;
+}
+
+.footer {
+  padding: 30px 50px;
+  width: 776px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.footer_social, .footer__text, .footer_logo {
+  float: left;
+}
+
+.footer_social {
+  margin-right: 30px;
+  width: 70px;
+}
+
+.footer__text {
+  margin-right: 30px;
+  width: 430px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.footer_logo, .footer_logo img {
+  width: 115px;
+}
+
+.footer_logo a {
+  text-decoration: none;
+}
+
+.footer__social-icon {
+  text-decoration: none;
+}
+
+.footer__social-icon img {
+  width: 20px;
+  height: 20px;
+}
