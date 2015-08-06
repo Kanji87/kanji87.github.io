@@ -79,15 +79,13 @@ body {
     font-size: 1em;
     color: #fff;
     box-sizing: border-box;
-    letter-spacing: 1px;
     -webkit-transition: all ease .5s;
     -o-transition: all ease .5s;
     transition: all ease .5s;
 }
 
 .desc p {
-    display: table-cell;
-    vertical-align: middle;
+    margin: 0;
     text-shadow: 0px 0px 10px #333;
 }
 
@@ -115,7 +113,7 @@ body {
 
     .item,
     .img {
-        height: 300px;
+        height: 290px;
     }
 }
 
@@ -130,19 +128,16 @@ body {
     }
 
     .desc {
-        position: relative;
-        bottom: 0;
-        height: auto;
-        font-size: .8em;
+        font-size: 1.2em;
     }
 }
 
 @media screen and (max-width: 440px) {
     .img {
-        height: 200px;
+        height: 185px;
     }
 
     .desc {
-        font-size: .75em;
+        font-size: 1em;
     }
 }
