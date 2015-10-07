@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ТГ</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+    <meta name="viewport" content="width=1280" />
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://gjallarhorn.ru/">
+    <meta property="og:title" content="Типичный Галлахорн">
+    <meta property="og:description" content="Первый, лучший, главный и самый популярный русскоязычный подкаст про Destiny">
+    <meta property="og:image" content="/static/img/logo_red.svg">
+    <!--<meta name="twitter:card" content="summary">-->
+    <!--<meta name="twitter:url" content="URL СТРАНИЦЫ">-->
+    <!--<meta name="twitter:title" content="ЗАГОЛОВОК СТРАНИЦЫ">-->
+    <!--<meta name="twitter:description" content="ОПИСАНИЕ СТРАНИЦЫ">-->
+    <!--<meta name="twitter:image" content="КАРТИНОЧКА">-->
+    <!--<meta name="twitter:site" content="@lolgjallarhorn">-->
+    <!--<meta name="twitter:creator" content="@lolgjallarhorn">-->
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mediaelementplayer.min.css"/>
+    <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" />-->
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+    <!--<script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>-->
+</head>
+<body>
+<header class="header">
+    <div class="wrapper">
+        <div class="header__logo header__block">
+            <img src="img/logo.svg" alt="" class="header__logo-img"/>
+        </div>
+        <ul class="header__menu header__block">
+            <!--<li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link--active">advisors</a>-->
+            <!--</li>-->
+            <li class="header__menu-item"><a href="news_feed.html" class="header__menu-link menu-item--hover-effect">новости</a></li>
+            <li class="header__menu-item"><a href="news.html" class="header__menu-link menu-item--hover-effect">новость</a></li>
+            <li class="header__menu-item"><a href="podcast_feed.html" class="header__menu-link menu-item--hover-effect">подскасты</a></li>
+            <li class="header__menu-item"><a href="podcast.html" class="header__menu-link menu-item--hover-effect">подскаст</a></li>
+            <li class="header__menu-item"><a href="stream_feed.html" class="header__menu-link menu-item--hover-effect">стримы</a></li>
+            <li class="header__menu-item"><a href="xur.html" class="header__menu-link menu-item--hover-effect">ксур</a></li>
+            <li class="header__menu-item"><a href="advisors.html" class="header__menu-link menu-item--hover-effect">адвизоры</a></li>
+            <!--<li class="header__menu-item"><a href="#" class="header__menu-link">гайды</a></li>-->
+            <!--<li class="header__menu-item"><a href="#" class="header__menu-link">вселенная</a></li>-->
+            <!--<li class="header__menu-item"><a href="#" class="header__menu-link">контакты</a></li>-->
+        </ul>
+        <div class="header__search header__block">
+            <form action="" class="header__search-form">
+                <i class="fa fa-search header__search-icon"></i>
+                <input class="header__search-form-input" type="search" name="" id=""/>
+            </form>
+        </div>
+    </div>
+</header>
+
+<section class="advisors">
+    <div class="wrapper">
+        <div class="advisors__container">
+            <div class="advisors__head">
+                <ul class="advisors__menu-list">
+                    <li class="advisors__menu-item"><a class="advisors__menu-link menu-item--hover-effect header__menu-link--active js-advisor-switcher" href="mission">missions</a></li>
+                    <li class="advisors__menu-item"><a class="advisors__menu-link menu-item--hover-effect js-advisor-switcher" href="raid">raids</a></li>
+                    <li class="advisors__menu-item"><a class="advisors__menu-link menu-item--hover-effect js-advisor-switcher" href="prison">prison of elders</a></li>
+                </ul>
+            </div>
+            <div class="advisors__body clearfix">
+                <div class="advisors__characters">
+                    <ul class="advisors__character-list">
+                        <li class="advisors__character-item">
+                            <div class="advisors__character-icon"><img src="img/thrash/advisor_char1.jpg" alt="" /></div>
+                            <div class="advisors__character-info">
+                                <p class="advisors__character-class">Warlock, 34</p>
+                                <p class="advisors__character-race">Awoken female</p>
+                            </div>
+                        </li>
+                        <li class="advisors__character-item">
+                            <div class="advisors__character-icon"><img src="img/thrash/advisor_char2.jpg" alt="" /></div>
+                            <div class="advisors__character-info">
+                                <p class="advisors__character-class">Titan, 24</p>
+                                <p class="advisors__character-race">Human female</p>
+                            </div>
+                        </li>
+                        <li class="advisors__character-item">
+                            <div class="advisors__character-icon"><img src="img/thrash/advisor_char3.jpg" alt="" /></div>
+                            <div class="advisors__character-info">
+                                <p class="advisors__character-class">Hunter, 14</p>
+                                <p class="advisors__character-race">Exo female</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="advisors__content">
+                    <div id="mission" class="advisors__mission clearfix js-advisor-block">
+                        <div class="advisors__mission-col">
+                            <p class="advisors__title">nightfall</p>
+                            <div class="advisors__mark advisors__mark--complete"></div>
+                            <div class="advisors__mark advisors__mark--incomplete"></div>
+                            <div class="advisors__mark advisors__mark--complete"></div>
+                            <div class="advisors__mission-info">
+                                <p class="advisors__mission-location">old russia, earth</p>
+                                <p class="advisors__mission-lvl">Level 32</p>
+                                <div class="advisors__mission-img"><img src="img/thrash/advisor_nightfall.jpg" alt="" /></div>
+                                <p class="advisors__mission-desc">Omnigul, the mastermind of Crota's armies, nests in the Cosmodrome. Eliminate this horror and purge its spawn.</p>
+                                <ul class="advisors__modifier-list">
+                                    <li class="advisors__modifier-item advisors__modifier--airborne">Airborne</li>
+                                    <li class="advisors__modifier-item advisors__modifier--angry">Angry</li>
+                                    <li class="advisors__modifier-item advisors__modifier--arc-burn">Arc burn</li>
+                                    <li class="advisors__modifier-item advisors__modifier--brawler">Brawler</li>
+                                    <li class="advisors__modifier-item advisors__modifier--catapult">Catapult</li>
+                                    <li class="advisors__modifier-item advisors__modifier--exposure">Exposure</li>
+                                    <li class="advisors__modifier-item advisors__modifier--grounded">Grounded</li>
+                                    <li class="advisors__modifier-item advisors__modifier--jaggler">Jaggler</li>
+                                    <li class="advisors__modifier-item advisors__modifier--lightswitch">Lightswitch</li>
+                                    <li class="advisors__modifier-item advisors__modifier--small-arms">Small arms</li>
+                                    <li class="advisors__modifier-item advisors__modifier--solar-burn">Solar burn</li>
+                                    <li class="advisors__modifier-item advisors__modifier--specialist">Specialist</li>
+                                    <li class="advisors__modifier-item advisors__modifier--trickle">Trickle</li>
+                                    <li class="advisors__modifier-item advisors__modifier--void-burn">Void burn</li>
+                                    <li class="advisors__modifier-item advisors__modifier--nightfall">Nightfall</li>
+                                    <li class="advisors__modifier-item advisors__modifier--epic">Epic</li>
+                                    <li class="advisors__modifier-item advisors__modifier--void">Void</li>
+                                </ul>
+                                <p class="advisors__reward-title">rewards</p>
+                                <ul class="advisors__reward-list">
+                                    <li class="advisors__reward-item advisors__reward-item--crucible-gear">Crucible gear<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--engram">Engram<span>x 1</span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--etheric">Etheric Light<span>x 2</span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--materials">Ascendant materials<span>x 5</span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--raid-gear">Raid gear<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--relic-iron">Relic iron<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--spinmetal">Spinemetal<span>x 10</span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--spirit-bloom">Spirit bloom<span>x 10</span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--wormspore">Wormspore<span>x 10</span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--strange-coin">Strange coin<span>x 9</span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--unknown">Unknown<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--vanguard-rep">Vanguard reputation<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--crucible-rep">Crucible reputation<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--xp">XP bonus<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--core">Weapon core<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--core">Armor core<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--helium">Helium filaments<span>x 10</span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--legendmarks">Legendary marks<span>x 15</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="advisors__mission-col">
+                            <p class="advisors__title">heroic playlist</p>
+                            <div class="advisors__mark advisors__mark--incomplete"></div>
+                            <div class="advisors__mark advisors__mark--incomplete"></div>
+                            <div class="advisors__mark advisors__mark--complete"></div>
+                            <div class="advisors__mission-info">
+                                <p class="advisors__mission-location">ishar sink, venus</p>
+                                <p class="advisors__mission-lvl">Level 32</p>
+                                <div class="advisors__mission-img"><img src="img/thrash/advisor_strike.jpg" alt="" /></div>
+                                <p class="advisors__mission-desc">Pierce the Vex labyrinth and defeat the mind responsible for the transformation of Venus.</p>
+                                <ul class="advisors__modifier-list">
+                                    <li class="advisors__modifier-item advisors__modifier--jaggler">Jaggler</li>
+                                    <li class="advisors__modifier-item advisors__modifier--lightswitch">Lightswitch</li>
+                                    <li class="advisors__modifier-item advisors__modifier--small-arms">Small arms</li>
+                                </ul>
+                                <p class="advisors__reward-title">rewards</p>
+                                <ul class="advisors__reward-list">
+                                    <li class="advisors__reward-item advisors__reward-item--raid-gear">Raid gear<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--relic-iron">Relic iron<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--spinmetal">Spinemetal<span>x 10</span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--spirit-bloom">Spirit bloom<span>x 10</span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--wormspore">Wormspore<span>x 10</span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--strange-coin">Strange coin<span>x 9</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="advisors__mission-col">
+                            <p class="advisors__title">daily pve</p>
+                            <div class="advisors__mark advisors__mark--incomplete"></div>
+                            <div class="advisors__mark advisors__mark--incomplete"></div>
+                            <div class="advisors__mark advisors__mark--incomplete"></div>
+                            <div class="advisors__mission-info">
+                                <p class="advisors__mission-location">meridian bay, mars</p>
+                                <p class="advisors__mission-lvl">Level 32</p>
+                                <div class="advisors__mission-img"><img src="img/thrash/advisor_pve.jpg" alt="" /></div>
+                                <p class="advisors__mission-desc">Survive the military power of the Cabal and find the Gate to the Black Garden.</p>
+                                <ul class="advisors__modifier-list">
+                                    <li class="advisors__modifier-item advisors__modifier--airborne">Airborne</li>
+                                    <li class="advisors__modifier-item advisors__modifier--angry">Angry</li>
+                                    <li class="advisors__modifier-item advisors__modifier--arc-burn">Arc burn</li>
+                                </ul>
+                                <p class="advisors__reward-title">rewards</p>
+                                <ul class="advisors__reward-list">
+                                    <li class="advisors__reward-item advisors__reward-item--crucible-gear">Crucible gear<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--engram">Engram<span>x 1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="advisors__mission-col">
+                            <p class="advisors__title">daily pvp</p>
+                            <div class="advisors__mark advisors__mark--complete"></div>
+                            <div class="advisors__mark advisors__mark--complete"></div>
+                            <div class="advisors__mark advisors__mark--complete"></div>
+                            <div class="advisors__mission-info">
+                                <p class="advisors__mission-location">skirmish</p>
+                                <p class="advisors__mission-lvl">Level 32</p>
+                                <div class="advisors__mission-img"><img src="img/thrash/advisor_pvp.jpg" alt="" /></div>
+                                <p class="advisors__mission-desc">New Monarchy seeks those capable of reclaiming the frontier, one battle at a time. Small team tactics. Kill the enemy. Revive teammates.</p>
+                                <ul class="advisors__modifier-list">
+                                    <li class="advisors__modifier-item advisors__modifier--void-burn">Void burn</li>
+                                    <li class="advisors__modifier-item advisors__modifier--nightfall">Nightfall</li>
+                                    <li class="advisors__modifier-item advisors__modifier--epic">Epic</li>
+                                </ul>
+                                <p class="advisors__reward-title">rewards</p>
+                                <ul class="advisors__reward-list">
+                                    <li class="advisors__reward-item advisors__reward-item--strange-coin">Strange coin<span>x 9</span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--unknown">Unknown<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--vanguard-rep">Vanguard reputation<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--crucible-rep">Crucible reputation<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--xp">XP bonus<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--core">Weapon core<span></span></li>
+                                    <li class="advisors__reward-item advisors__reward-item--core">Armor core<span></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="raid" class="advisors__raid clearfix js-advisor-block">
+                        <div class="advisors__raid-col">
+                            <p class="advisors__title">vault of glass</p>
+                            <div class="advisors__raid-progress">
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 26</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                    </ul>
+                                </div>
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 30</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="advisors__raid-progress">
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 26</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                    </ul>
+                                </div>
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 30</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="advisors__raid-progress">
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 26</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                    </ul>
+                                </div>
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 30</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="advisors__reward-title">rewards</p>
+                            <ul class="advisors__reward-list">
+                                <li class="advisors__reward-item advisors__reward-item--strange-coin">Strange coin<span>x 9</span></li>
+                                <li class="advisors__reward-item advisors__reward-item--unknown">Unknown<span></span></li>
+                                <li class="advisors__reward-item advisors__reward-item--xp">XP bonus<span></span></li>
+                            </ul>
+                        </div>
+                        <div class="advisors__raid-col">
+                            <p class="advisors__title">vault of glass</p>
+                            <div class="advisors__raid-progress">
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 26</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                    </ul>
+                                </div>
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 30</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="advisors__raid-progress">
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 26</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                    </ul>
+                                </div>
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 30</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="advisors__raid-progress">
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 26</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                    </ul>
+                                </div>
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 30</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="advisors__reward-title">rewards</p>
+                            <ul class="advisors__reward-list">
+                                <li class="advisors__reward-item advisors__reward-item--strange-coin">Strange coin<span>x 9</span></li>
+                                <li class="advisors__reward-item advisors__reward-item--unknown">Unknown<span></span></li>
+                                <li class="advisors__reward-item advisors__reward-item--xp">XP bonus<span></span></li>
+                            </ul>
+                        </div>
+                        <div class="advisors__raid-col">
+                            <p class="advisors__title">vault of glass</p>
+                            <div class="advisors__raid-progress">
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 26</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                    </ul>
+                                </div>
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 30</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="advisors__raid-progress">
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 26</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                    </ul>
+                                </div>
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 30</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="advisors__raid-progress">
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 26</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                    </ul>
+                                </div>
+                                <div class="advisors__raid-progress-col">
+                                    <p class="advisors__raid-progress-title">Level 30</p>
+                                    <ul class="advisors__raid-progress-bar">
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item advisors__raid-progress-bar-item--done"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                        <li class="advisors__raid-progress-bar-item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="advisors__reward-title">rewards</p>
+                            <ul class="advisors__reward-list">
+                                <li class="advisors__reward-item advisors__reward-item--strange-coin">Strange coin<span>x 9</span></li>
+                                <li class="advisors__reward-item advisors__reward-item--unknown">Unknown<span></span></li>
+                                <li class="advisors__reward-item advisors__reward-item--xp">XP bonus<span></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="prison" class="advisors__prison clearfix js-advisor-block">
+                        <div class="advisors__prison-col">
+                            <p class="advisors__title advisors__prison-icon advisors__prison-worm">cult of worm</p>
+                            <div class="advisors__mark advisors__mark--complete"></div>
+                            <div class="advisors__mark advisors__mark--incomplete"></div>
+                            <div class="advisors__mark advisors__mark--complete"></div>
+                            <ul class="advisors__prison-round-list">
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 1</p>
+                                        <p class="advisors__prison-round-name">vex</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 2</p>
+                                        <p class="advisors__prison-round-name">vex</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 3</p>
+                                        <p class="advisors__prison-round-name">vex</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 4</p>
+                                        <p class="advisors__prison-round-name">vex</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 5</p>
+                                        <p class="advisors__prison-round-name">hive</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="advisors__reward-title">rewards</p>
+                            <ul class="advisors__reward-list">
+                                <li class="advisors__reward-item advisors__reward-item--strange-coin">Strange coin<span>x 9</span></li>
+                                <li class="advisors__reward-item advisors__reward-item--unknown">Unknown<span></span></li>
+                                <li class="advisors__reward-item advisors__reward-item--xp">XP bonus<span></span></li>
+                            </ul>
+                        </div>
+                        <div class="advisors__prison-col">
+                            <p class="advisors__title advisors__prison-icon advisors__prison-legion">broken legion</p>
+                            <div class="advisors__mark advisors__mark--complete"></div>
+                            <div class="advisors__mark advisors__mark--incomplete"></div>
+                            <div class="advisors__mark advisors__mark--complete"></div>
+                            <ul class="advisors__prison-round-list">
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 1</p>
+                                        <p class="advisors__prison-round-name">vex</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 2</p>
+                                        <p class="advisors__prison-round-name">vex</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 3</p>
+                                        <p class="advisors__prison-round-name">vex</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 4</p>
+                                        <p class="advisors__prison-round-name">vex</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 5</p>
+                                        <p class="advisors__prison-round-name">hive</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="advisors__reward-title">rewards</p>
+                            <ul class="advisors__reward-list">
+                                <li class="advisors__reward-item advisors__reward-item--strange-coin">Strange coin<span>x 9</span></li>
+                                <li class="advisors__reward-item advisors__reward-item--unknown">Unknown<span></span></li>
+                                <li class="advisors__reward-item advisors__reward-item--xp">XP bonus<span></span></li>
+                            </ul>
+                        </div>
+                        <div class="advisors__prison-col">
+                            <p class="advisors__title advisors__prison-icon advisors__prison-skolas">skolas's revenge</p>
+                            <div class="advisors__mark advisors__mark--complete"></div>
+                            <div class="advisors__mark advisors__mark--incomplete"></div>
+                            <div class="advisors__mark advisors__mark--complete"></div>
+                            <ul class="advisors__prison-round-list">
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 1</p>
+                                        <p class="advisors__prison-round-name">vex</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 2</p>
+                                        <p class="advisors__prison-round-name">vex</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 3</p>
+                                        <p class="advisors__prison-round-name">vex</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 4</p>
+                                        <p class="advisors__prison-round-name">vex</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                                <li class="advisors__prison-round-item">
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-num">Round 5</p>
+                                        <p class="advisors__prison-round-name">hive</p>
+                                    </div>
+                                    <div class="advisors__prison-round-item-col">
+                                        <p class="advisors__prison-round-modifier advisors__modifier-item advisors__modifier--airborne">Airborne</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="advisors__reward-title">rewards</p>
+                            <ul class="advisors__reward-list">
+                                <li class="advisors__reward-item advisors__reward-item--strange-coin">Strange coin<span>x 9</span></li>
+                                <li class="advisors__reward-item advisors__reward-item--unknown">Unknown<span></span></li>
+                                <li class="advisors__reward-item advisors__reward-item--xp">XP bonus<span></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="wrapper clearfix">
+            <!--<div class="footer__links clearfix fll">-->
+                <!--<ul class="footer__links-list">-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Advisors</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Missions</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Raids</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Prison of Elders</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Weekly PVP</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Xur</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+                <!--<ul class="footer__links-list">-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Новости</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">События</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Анонсы</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">TTK</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Weekly Update</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Xur</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+                <!--<ul class="footer__links-list">-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Подкаст</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Стримы</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Гайды</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Вселенная</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Weekly PVP</a>-->
+                    <!--</li>-->
+                    <!--<li class="footer__links-item">-->
+                        <!--<a href="#" class="footer__links-item-link">Контакты</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <div class="footer__contacts flr">
+                <ul class="footer__social-list clearfix">
+                    <li class="footer__social-item">
+                        <a href="http://vk.com/lolgjallarhorn" target="_blank" class="footer__social-item-link">
+                            <i class="fa fa-vk"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" target="_blank" class="footer__social-item-link">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://twitter.com/lolgjallarhorn"  target="_blank" class="footer__social-item-link">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="http://www.youtube.com/channel/UCBOeZzipNKAKWzZWtoUrqSQ"  target="_blank" class="footer__social-item-link">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="http://www.twitch.tv/lolgjallarhorn"  target="_blank" class="footer__social-item-link">
+                            <i class="fa fa-twitch"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://itunes.apple.com/ru/podcast/podkast-tipicnyj-gallahorn/id990666174?l=en&mt=2" target="_blank" class="footer__social-item-link">
+                            <i class="fa fa-apple"></i>
+                        </a>
+                    </li>
+                </ul>
+                <a href="mailto:vulgaris@gjallarhorn.ru" class="footer__mail">vulgaris@gjallarhorn.ru</a>
+                <p class="footer__copyright">&copy; 2015 | Типичный Галлахорн</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = 'gjallarhorn';
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] ||
+            document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+</body>
+</html>
