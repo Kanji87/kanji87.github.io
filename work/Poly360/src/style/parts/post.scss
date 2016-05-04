@@ -1,0 +1,90 @@
+.speaker-post {
+  margin-top: 80px;
+  margin-bottom: 90px;
+}
+
+.speaker-post__img {
+  width: 280px;
+  margin-right: 20px;
+  float: left;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  @include respond-to(tablet) {
+    width: 240px;
+    margin-right: 20px;
+  }
+}
+
+.speaker-post__content {
+  width: 580px;
+  float: left;
+
+  @include respond-to(tablet) {
+    width: 500px;
+    box-sizing: border-box;
+    padding-right: 20px;
+  }
+}
+
+.speaker-post__content-title {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.speaker-post__content-title-eng {
+  font-weight: bold;
+}
+
+.speaker-post__content-title-eng,
+.speaker-post__content-state,
+.speaker-post__content-country {
+  font-size: 21px;
+  line-height: 1.1;
+}
+
+.speaker-post__content-text {
+  margin-top: 80px;
+
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.social-likes {
+  overflow: hidden;
+}
+
+.social-likes__item {
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  float: left;
+  cursor: pointer;
+
+  &:last-child {
+    margin-top: 0;
+  }
+}
+
+.social-likes__widget_vkontakte {
+  background-image: url($imgPath + 'icons/share_vk.svg');
+}
+
+.social-likes__widget_facebook {
+  background-image: url($imgPath + 'icons/share_fb.svg');
+}
+
+.social-likes__widget_twitter {
+  background-image: url($imgPath + 'icons/share_tw.svg');
+}
+

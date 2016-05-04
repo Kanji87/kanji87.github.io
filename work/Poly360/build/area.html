@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>360</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+</head>
+<body>
+<div class="wrapper clearfix">
+
+<aside class="sidebar">
+    <div class="logo">
+        <a class="logo__poly" href="#"></a>
+        <a class="logo__360" href="#"></a>
+    </div>
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="menu__item">
+                <a class="menu__item-link" href="#">О фестивале</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__item-link menu__item-link--active" href="#">Программа</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__item-link" href="#">Билеты</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__item-link" href="#">Блог</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__item-link" href="#">Площадки</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="big-eye"></div>
+</aside>
+<section class="main">
+    <div class="content__head clearfix">
+        <div class="content__head-title">
+            <h1 class="header-title">V Международный фестиваль кино о науке и технологиях</h1>
+            <p class="header-subtitle">Москва 21–28 октября 2015</p>
+        </div>
+        <ul class="content__head-link-list clearfix">
+            <li class="content__head-link-item content__head-link-social">
+                <a class="content__head-link-fb" href="#"></a>
+            </li>
+            <li class="content__head-link-item content__head-link-social">
+                <a class="content__head-link-vk" href="#"></a>
+            </li>
+            <li class="content__head-link-item content__head-link-social">
+                <a class="content__head-link-instagram" href="#"></a>
+            </li>
+            <li class="content__head-link-item content__head-link-social">
+                <a class="content__head-link-youtube" href="#"></a>
+            </li>
+            <li class="content__head-link-item content__head-link-lang">
+                <a href="#">eng</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="page-title__container">
+            <h2 class="page-title">площадки</h2>
+            <a class="link-arrow-right" href="#">Все площадки</a>
+        </div>
+        <div class="area">
+            <div id="map" class="area__map">
+                <!--<img class="area__map-img" src="img/map_area.jpg" alt="" />-->
+            </div>
+            <div class="area__info">
+                <p class="area__info-name">Формула кино «Горизонт»</p>
+                <p class="area__info-abbr">ФК  "Горизонт"</p>
+                <p class="area__info-adress">М. “Фрунзенская”<br>Комсомольский проспект, д. 21/10</p>
+                <p class="area__info-contact">+7 (495) 967–8168</p>
+                <p class="area__info-price">Стоимость билета: от 400 руб</p>
+            </div>
+            <div class="timetable">
+                <div class="timetable__row clearfix">
+                    <div class="timetable__row-item movie-timetable__date">
+                        <p><span class="movie-timetable__date-weekday">четверг</span><span class="movie-timetable__date-day">3 сентября</span></p>
+                    </div>
+                    <div class="timetable__row-item timetable__date">
+                        <p>12-00</p>
+                    </div>
+                    <div class="timetable__row-item timetable__event-name">
+                        <a href="#" class="timetable__event-title-ru">ПОД НАПРЯЖЕНИЕМ</a>
+                        <p class="timetable__event-title-en">Energized</p>
+                    </div>
+                    <div class="timetable__row-item timetable__info">
+                        <span class="timetable__info-type bg-purple">событие</span>
+                        <span class="timetable__info-age">12+</span>
+                    </div>
+                    <div class="timetable__row-item timetable__location">
+                        <a href="#">Центр документального кино</a>
+                    </div>
+                    <div class="timetable__row-item timetable__status">
+                        <a href="#">Билеты</a>
+                    </div>
+                </div>
+                <div class="timetable__row clearfix">
+                    <div class="timetable__row-item movie-timetable__date">
+                    </div>
+                    <div class="timetable__row-item timetable__date">
+                        <p>12-00</p>
+                    </div>
+                    <div class="timetable__row-item timetable__event-name">
+                        <a href="#" class="timetable__event-title-ru">ПОД НАПРЯЖЕНИЕМ</a>
+                        <p class="timetable__event-title-en">Energized</p>
+                    </div>
+                    <div class="timetable__row-item timetable__info">
+                        <span class="timetable__info-type bg-red">q&a</span>
+                        <span class="timetable__info-age">12+</span>
+                    </div>
+                    <div class="timetable__row-item timetable__location">
+                        <a href="#">Центр документального кино</a>
+                    </div>
+                    <div class="timetable__row-item timetable__status">
+                        <a href="#" class="timetable__status--closed">Регистрация окончена</a>
+                    </div>
+                </div>
+                <div class="timetable__row clearfix">
+                    <div class="timetable__row-item movie-timetable__date">
+                    </div>
+                    <div class="timetable__row-item timetable__date">
+                        <p>12-00</p>
+                    </div>
+                    <div class="timetable__row-item timetable__event-name">
+                        <a href="#" class="timetable__event-title-ru">ПОД НАПРЯЖЕНИЕМ</a>
+                        <p class="timetable__event-title-en">Energized</p>
+                    </div>
+                    <div class="timetable__row-item timetable__info">
+                        <span class="timetable__info-type bg-purple">событие</span>
+                        <span class="timetable__info-age">12+</span>
+                    </div>
+                    <div class="timetable__row-item timetable__location">
+                        <a href="#">Центр документального кино</a>
+                    </div>
+                    <div class="timetable__row-item timetable__status">
+                        <a href="#">Билеты</a>
+                    </div>
+                </div>
+                <div class="timetable__row clearfix">
+                    <div class="timetable__row-item movie-timetable__date">
+                        <p><span class="movie-timetable__date-weekday">понедельник</span><span class="movie-timetable__date-day">23 сентября</span></p>
+                    </div>
+                    <div class="timetable__row-item timetable__date">
+                        <p>12-00</p>
+                    </div>
+                    <div class="timetable__row-item timetable__event-name">
+                        <a href="#" class="timetable__event-title-ru">ПОД НАПРЯЖЕНИЕМ</a>
+                        <p class="timetable__event-title-en">Energized</p>
+                    </div>
+                    <div class="timetable__row-item timetable__info">
+                        <span class="timetable__info-age">16+</span>
+                    </div>
+                    <div class="timetable__row-item timetable__location">
+                        <a href="#">Центр документального кино</a>
+                    </div>
+                    <div class="timetable__row-item timetable__status">
+                        <a href="#" class="timetable__status--unactive">Билеты проданы</a>
+                    </div>
+                </div>
+                <div class="timetable__row clearfix">
+                    <div class="timetable__row-item movie-timetable__date">
+                        <p><span class="movie-timetable__date-weekday">воскресенье</span><span class="movie-timetable__date-day">31 сентября</span></p>
+                    </div>
+                    <div class="timetable__row-item timetable__date">
+                        <p>12-00</p>
+                    </div>
+                    <div class="timetable__row-item timetable__event-name">
+                        <a href="#" class="timetable__event-title-ru">ПОД НАПРЯЖЕНИЕМ</a>
+                        <p class="timetable__event-title-en">Energized</p>
+                    </div>
+                    <div class="timetable__row-item timetable__info">
+                        <span class="timetable__info-type bg-purple">событие</span>
+                        <span class="timetable__info-age">12+</span>
+                    </div>
+                    <div class="timetable__row-item timetable__location">
+                        <a href="#">Центр документального кино</a>
+                    </div>
+                    <div class="timetable__row-item timetable__status">
+                        <a href="#" class="timetable__status--unactive">Билеты проданы</a>
+                    </div>
+                </div>
+                <div class="timetable__row clearfix">
+                    <div class="timetable__row-item movie-timetable__date">
+                    </div>
+                    <div class="timetable__row-item timetable__date">
+                        <p>12-00</p>
+                    </div>
+                    <div class="timetable__row-item timetable__event-name">
+                        <a href="#" class="timetable__event-title-ru">СЕТЕВОЙ ТОРЧОК</a>
+                        <p class="timetable__event-title-en">WEB JUNKIE</p>
+                    </div>
+                    <div class="timetable__row-item timetable__info">
+                        <span class="timetable__info-type bg-red">q&a</span>
+                        <span class="timetable__info-age">16+</span>
+                    </div>
+                    <div class="timetable__row-item timetable__location">
+                        <a href="#">Центр документального кино</a>
+                    </div>
+                    <div class="timetable__row-item timetable__status">
+                        <a href="#">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-likes" data-counters="no">
+                <div class="social-likes__item vkontakte" title="Поделиться ссылкой во Вконтакте"></div>
+                <div class="social-likes__item facebook" title="Поделиться ссылкой на Фейсбуке"></div>
+                <div class="social-likes__item twitter" data-via="Polytechnicum" data-related="Polytechnicum" title="Поделиться ссылкой в Твиттере"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer clearfix"> <!-- Для главной страницы футеру надо добавить класс footer--without-border, чтобы убрать рамку сверху -->
+        <img class="footer__age" src="img/icons/age.svg" alt="" />
+        <div class="footer__col footer__subscribe">
+            <p class="footer__title">Подписаться</p>
+            <form class="footer__subscribe-form" action="">
+                <input type="text" placeholder="Ваш Емейл адрес" />
+            </form>
+            <a class="link-arrow-right" href="#">Подписаться</a>
+            <a class="footer__subscribe-link" href="#">Пресс-центр</a>
+            <a class="footer__subscribe-link" href="#">Архив</a>
+            <a class="footer__subscribe-link" href="#">Партнеры</a>
+        </div>
+        <div class="footer__col footer__social">
+            <p class="footer__title">Мы в соцсетях</p>
+            <ul class="footer__social-list clearfix">
+                <li class="footer__social-item">
+                    <a class="footer__social-link footer__social-link-fb" href="#"></a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link footer__social-link-vk" href="#"></a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link footer__social-link-instagram" href="#"></a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link footer__social-link-youtube" href="#"></a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link footer__social-link-tw" href="#"></a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link footer__social-link-ok" href="#"></a>
+                </li>
+            </ul>
+            <p class="footer__subtitle">Организатор</p>
+            <a class="footer__logo-poly" href="#">
+                <img src="img/logo_poly_grey.svg" alt="" />
+            </a>
+            <p>&copy; 2015 360.polymus.ru</p>
+            <p>Все права защищены.</p>
+            <a href="#">Правила использования сайта</a>
+        </div>
+        <div class="footer__col footer__contact">
+            <p class="footer__title">Контакт</p>
+            <a href="mailto:info@polymus.ru">info@polymus.ru</a>
+            <p>Тел. +7 (495) 730-54-38</p>
+            <p class="footer__subtitle">Со-организатор</p>
+            <a class="footer__logo-beat" href="#">
+                <img src="img/logo_beat.svg" alt="" />
+            </a>
+        </div>
+    </footer>
+</section>
+
+</div>
+<script>
+    $(function(){
+        ymaps.ready(init);
+        var myMap;
+        function init () { // функция - собиралка карты и фигни
+            myMap = new ymaps.Map("map", { // создаем и присваиваем глобальной переменной карту и суем её в див с id="map"
+                center: [55.76, 37.64], // ну тут центр
+                behaviors: ['default', 'scrollZoom'], // скроллинг колесом
+                zoom: 11 // тут масштаб
+            });
+
+            var myPlacemark = new ymaps.Placemark([55.8, 37.6], {}, {
+                iconImageHref: 'img/icons/location.svg',
+                iconImageSize: [20, 30],
+                cursor: 'grab'
+            });
+            myMap.geoObjects.add(myPlacemark);
+        }
+    });
+</script>
+</body>
+</html>

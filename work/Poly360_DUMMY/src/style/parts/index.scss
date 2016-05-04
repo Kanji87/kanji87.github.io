@@ -1,0 +1,152 @@
+.main-page-text {
+  width: 880px;
+  height: 580px;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  background-image: url($imgPath + 'main_bg_text_dummy1.svg');
+  background-repeat: no-repeat;
+  background-position: 114px top;
+  -webkit-background-size: contain;
+  background-size: contain;
+
+  img {
+    display: none;
+  }
+
+  @include respond-to(tablet) {
+    width: 326px;
+    height: 348px;
+    background-position: 0;
+    margin-left: 145px;
+  }
+
+  @include respond-to(fablet) {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    background: 0;
+    display: none;
+  }
+}
+
+.main-page-text--mobile {
+  @extend .main-page-text;
+
+  display: none;
+
+  @include respond-to(fablet) {
+    display: block;
+    margin-top: 60px;
+    width: 87.5%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.content--main-page {
+  margin-top: 275px;
+
+  @include respond-to(tablet) {
+    margin-top: 50px;
+  }
+}
+
+.countdown {
+  @include respond-to(tablet) {
+    padding-left: 70px;
+    margin-bottom: 20px;
+  }
+
+  @include respond-to(fablet) {
+    padding-left: 0;
+  }
+
+  @include respond-to(phone) {
+    padding: 0 10px;
+  }
+}
+
+.countdown-container {
+  @include respond-to(fablet) {
+    text-align: center;
+  }
+}
+
+.countdown__title {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: .025em;
+  font-family: pmdisplay;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+
+  @include respond-to(fablet) {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.day,
+.hour,
+.minute,
+.second {
+  display: inline-block;
+  margin-right: 60px;
+
+  @include respond-to(fablet) {
+    margin-right: 30px;
+  }
+
+  @include respond-to(phone) {
+    margin-right: 20px;
+  }
+}
+
+.second {
+  margin-right: 0;
+}
+
+.day-l,
+.hour-l,
+.minute-l,
+.second-l {
+  font-family: pmdisplay;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: .025em;
+  margin-bottom: 10px;
+
+  @include respond-to(fablet) {
+    text-align: left !important;
+  }
+}
+
+.day-n,
+.hour-n,
+.minute-n,
+.second-n {
+  font-family: pmbig;
+  font-size: 144px;
+  letter-spacing: -.05em;
+  line-height: 1;
+  margin-left: -10px;
+
+  @include respond-to(tablet) {
+    font-size: 85px;
+    margin-right: -6px;
+  }
+
+  @include respond-to(fablet) {
+    font-size: 81px;
+    margin-left: -5px;
+  }
+
+  @include respond-to(phone) {
+    font-size: 60px;
+  }
+}

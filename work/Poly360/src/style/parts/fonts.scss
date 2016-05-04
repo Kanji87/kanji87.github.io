@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'pmdisplay';
+  src: url('../fonts/PMDisplay0_W/PMDisplay0_W.eot');
+  src: url('../fonts/PMDisplay0_W/PMDisplay0_W.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PMDisplay0_W/PMDisplay0_W.woff') format('woff'), url('../fonts/PMDisplay0_W/PMDisplay0_W.ttf')  format('truetype'), url('../fonts/PMDisplay0_W/PMDisplay0_W.svg#../fonts/PMDisplay0_W/PMDisplay0_W') format('svg');
+}
+
+@font-face {
+  font-family: 'pmserif';
+  src: url('../fonts/PMSerif-Web/PMSerif-Regular_W.eot');
+  src: url('../fonts/PMSerif-Web/PMSerif-Regular_W.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PMSerif-Web/PMSerif-Regular_W.woff') format('woff'), url('../fonts/PMSerif-Web/PMSerif-Regular_W.ttf')  format('truetype'), url('../fonts/PMSerif-Web/PMSerif-Regular_W.svg#../fonts/PMSerif-Web/PMSerif-Regular_W') format('svg');
+}
+
+@font-face {
+  font-family: 'pmserif';
+  src: url('../fonts/PMSerif-Web/PMSerif-Bold_W.eot');
+  src: url('../fonts/PMSerif-Web/PMSerif-Bold_W.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PMSerif-Web/PMSerif-Bold_W.woff') format('woff'), url('../fonts/PMSerif-Web/PMSerif-Bold_W.ttf')  format('truetype'), url('../fonts/PMSerif-Web/PMSerif-Bold_W.svg#../fonts/PMSerif-Web/PMSerif-Bold_W') format('svg');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'pmserif';
+  src: url('../fonts/PMSerif-Web/PMSerif-Italic_W.eot');
+  src: url('../fonts/PMSerif-Web/PMSerif-Italic_W.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PMSerif-Web/PMSerif-Italic_W.woff') format('woff'), url('../fonts/PMSerif-Web/PMSerif-Italic_W.ttf')  format('truetype'), url('../fonts/PMSerif-Web/PMSerif-Italic_W.svg#../fonts/PMSerif-Web/PMSerif-Italic_W') format('svg');
+  font-style: italic;
+}

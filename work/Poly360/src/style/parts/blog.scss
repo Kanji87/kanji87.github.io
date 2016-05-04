@@ -1,0 +1,224 @@
+.blog-item {
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include respond-to(fablet) {
+    padding: 0 10px;
+  }
+}
+
+.blog-item__title {
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 10px;
+  padding-right: 150px;
+
+  @include respond-to(tablet) {
+    padding-right: 50px;
+  }
+
+  @include respond-to(fablet) {
+    padding-right: 10px;
+  }
+
+  @include respond-to(phone) {
+    font-size: 26px;
+  }
+}
+
+.blog-item__title-link {
+  color: $black;
+
+  &:hover {
+    color: $purple;
+  }
+}
+
+.blog-item__timestamp {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.blog-item__content {
+  padding-right: 300px;
+
+  @include respond-to(tablet) {
+    padding-right: 100px;
+  }
+
+  @include respond-to(fablet) {
+    padding-right: 10px;
+  }
+}
+
+.blog-item__img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.blog-item__desc {
+  font-size: 16px;
+  border-bottom: 5px solid $black;
+  padding-bottom: 30px;
+}
+
+.paginator {
+  text-align: center;
+  width: 580px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  @include respond-to(tablet) {
+    width: 660px;
+  }
+
+  @include respond-to(fablet) {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+}
+
+.paginator__arr-img {
+  width: 10px;
+  height: 10px;
+}
+
+.paginator__prev-arr {
+  margin-right: 15px;
+}
+
+.paginator__next-arr {
+  margin-left: 15px;
+}
+
+.paginator__prev {
+  float: left;
+  padding-top: 2px;
+}
+
+.paginator__next {
+  float: right;
+  padding-top: 2px;
+}
+
+.paginator__list {
+  display: inline-block;
+}
+
+.paginator__list-item {
+  float: left;
+  font-family: pmdisplay;
+  font-size: 16px;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.paginator__arr span {
+  @include respond-to(phone) {
+    display: none;
+  }
+}
+
+.blog-post__img {
+  margin-bottom: 25px;
+
+  @include respond-to(tablet) {
+    margin-bottom: 15px;
+  }
+}
+
+.blog-post__info {
+  font-size: 13px;
+  margin-bottom: 30px;
+
+  @include respond-to(tablet) {
+    margin-bottom: 20px;
+  }
+
+  @include respond-to(fablet) {
+    padding: 0 10px;
+  }
+}
+
+.blog-post__info-author {
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.blog-post__title {
+  font-size: 55px;
+  line-height: 1;
+  margin-bottom: 60px;
+
+  @include respond-to(tablet) {
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+
+  @include respond-to(fablet) {
+    font-size: 38px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+}
+
+.blog-post__content {
+  padding-right: 240px;
+
+  @include respond-to(tablet) {
+    padding-right: 100px;
+  }
+
+  @include respond-to(fablet) {
+    padding: 0 10px;
+  }
+}
+
+.blog-post__text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.blog-post__lead {
+  font-weight: bold;
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+
+.blog-post__question {
+  &:before {
+    content: 'вопрос';
+    font-family: pmdisplay;
+    margin-right: 10px;
+  }
+}
+
+.blog-post__answer {
+  &:before {
+    content: 'ответ';
+    font-family: pmdisplay;
+    margin-right: 10px;
+  }
+}
+
+.blog-post__slider {
+  width: 100%;
+  margin-bottom: 50px;
+
+  @include respond-to(fablet) {
+    margin-bottom: 30px;
+  }
+}
+
+.blog-post__slider-caption {
+  padding-top: 15px;
+  padding-right: 10px;
+  font-size: 13px;
+}

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'HelveticaWorldRegular';
+    src: url('h-r.eot');
+    src: url('h-r.eot') format('embedded-opentype'),
+         url('h-r.woff') format('woff'),
+         url('h-r.ttf') format('truetype'),
+         url('h-r.svg#HelveticaWorldRegular') format('svg');
+}
