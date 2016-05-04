@@ -1,0 +1,94 @@
+ADOBE INDESIGN PRINTING INSTRUCTIONS FOR SERVICE PROVIDER REPORT
+
+PUBLICATION NAME: PT_1024_Newsletter.indd
+
+PACKAGE DATE: 09/02/16 10:34
+Creation Date: 09/02/16
+Modification Date: 09/02/16
+
+CONTACT INFORMATION
+
+Company Name: 
+Contact: 
+Address: 
+
+
+
+
+
+Phone: 
+Fax: 
+Email: 
+
+SPECIAL INSTRUCTIONS AND OTHER NOTES
+
+
+
+
+
+
+External Plug-ins 1
+
+ExtensisFontManagementIDCC2014.InDesignPlugin
+
+
+Non Opaque Objects :On PagePB, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, A, B
+
+FONTS
+4 Fonts Used; 0 Missing, 0 Embedded, 0 Incomplete, 0 Protected
+
+Fonts Packaged
+- Name: ApercuProMono; Type: OpenType Type 1, Status: OK
+- Name: MinionPro-Regular; Type: OpenType Type 1, Status: OK
+- Name: MonotypeSorts; Type: TrueType, Status: OK
+- Name: PolytechSans; Type: OpenType Type 1, Status: OK
+
+
+COLOURS AND INKS
+4 Process Inks; 0 Spot Inks
+
+- Name and Type: Process Cyan; Angle: 0,000; Lines/Inch: 0,000
+- Name and Type: Process Magenta; Angle: 0,000; Lines/Inch: 0,000
+- Name and Type: Process Yellow; Angle: 0,000; Lines/Inch: 0,000
+- Name and Type: Process Black; Angle: 0,000; Lines/Inch: 0,000
+
+
+LINKS AND IMAGES
+(Missing & Embedded Links Only)
+Links and Images: 92 Links Found; 0 Modified, 0 Missing 0 Inaccessible
+Images: 0 Embedded, 92 use RGB colour space
+
+
+PRINT SETTINGS
+PPD: N/A, (EPSON Epson Stylus Photo TX650 @ Maxim’s iMac)
+Printing To: Printer
+Number of Copies: 1
+Reader Spreads: No
+Even/Odd Pages: Both
+Pages: All
+Proof: No
+Tiling: None
+Scale: 100%, 100%
+Page Position: Upper Left
+Print Layers: Visible & Printable Layers
+Printer's Marks: None
+Bleed: 0 px, 0 px, 0 px, 0 px
+Colour: Composite RGB
+Trapping Mode: None
+Send Image Data: Optimised Subsampling
+OPI/DCS Image Replacement: No
+Page Size: Custom: 1024 px x 3072 px
+Paper Dimensions: 595,2 px x 841,8 px
+Orientation: Portrait
+Negative: No
+Flip Mode: Off
+
+
+FILE PACKAGE LIST
+
+1. PT_1024_Newsletter.indd; type: Adobe InDesign publication; size: 10752K
+2. PT_1024_Newsletter.idml; type: InDesign Mark-up Document; size: 1382K
+3. ApercuProMono.otf; type: Font file; size: 49K
+4. MinionPro-Regular.otf; type: Font file; size: 213K
+5. MonotypeSorts; type: Font file; size: 76K
+6. PolytechSans.otf; type: Font file; size: 26K

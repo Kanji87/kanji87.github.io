@@ -1,0 +1,825 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <title>Polytech (Polytechnic Museum)</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/static/_/build/img/faviconp.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/_/build/css/main.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    
+    <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=en"></script>
+    
+    <base href="https://polymus.ru">
+    <script src="/eng/main.js"></script>
+    
+    <link rel="stylesheet" href="/static/_/build/css/main.min.css">
+    <link rel="stylesheet" href="/eng/style.css">
+</head>
+<body>
+
+<!--[if lte IE 8] <div>Ваш браузер устарел, обновите его пожалуйста</div> -->
+<div class="page__layout page-type__museum">
+    <div class="head-wrap">
+        <header class="page__header">
+            <a href="/en/api/v1/widget/render/?template=widgets/feedback/form/include/ajax.html&widget=PressFeedbackWidget&placeholder_page_id=" class="banner-beta ajax-popup-open-link popup-feedback hide">Добро пожаловать на бета-версию сайта
+                Политехнического музея!</a>
+            <ul class="header__nav-list pull-left hide-this">
+                <li class="header__nav-item header__nav-item--active item__inline">
+                    <a class="header__nav-link link__block" href="/en/">Политех</a>
+                </li>
+                <li class="header__nav-item item__inline">
+                    <a class="header__nav-link link__block hide-this" href="http://360.polymus.ru/">360&deg;</a>
+                </li>
+                <li class="header__nav-item item__inline hide-this">
+                    <a class="header__nav-link link__block" href="#">Книги</a>
+                </li>
+            </ul>
+            <ul class="header__social-list pull-left">
+                <li class="header__social-item item__inline">
+                    <a class="header__social-link header__social-link--facebook" href="https://www.facebook.com/polytechnicum"
+                       target="_blank"><i class="polyicon-facebook"></i></a>
+                </li>
+                <li class="header__social-item item__inline">
+                    <a class="header__social-link link__block header__social-link--vkontakte" href="https://vk.com/polytechnicum"
+                       target="_blank"><i class="polyicon-vk"></i></a>
+                </li>
+                <li class="header__social-item item__inline">
+                    <a class="header__social-link link__block header__social-link--ok" href="http://ok.ru/group/53227509383279"
+                       target="_blank"><i class="polyicon-odnoklassniki"></i></a>
+                </li>
+                <li class="header__social-item item__inline">
+                    <a class="header__social-link link__block header__social-link--twitter"
+                       href="https://twitter.com/Polytechnicum" target="_blank"><i class="polyicon-twitter"></i></a>
+                </li>
+                <li class="header__social-item item__inline">
+                    <a class="header__social-link link__block header__social-link--instagram" href="http://instagram.com/polytechnicum" target="_blank"><i
+                            class="polyicon-instagram"></i></a>
+                </li>
+                <li class="header__social-item item__inline">
+                    <a class="header__social-link link__block header__social-link--youtube"
+                       href="https://www.youtube.com/user/polytechnicum" target="_blank"><i
+                            class="polyicon-youtube"></i></a>
+                </li>
+                <!-- <li class="header__social-item item__inline">
+                    <a class="header__social-link link__block header__social-link--foursquare" href="http://4sq.com/1kSZ9OU"
+                       target="_blank"><i class="polyicon-foursquare"></i></a>
+                </li> -->
+                <li class="header__social-item item__inline">
+                    <a class="header__social-link link__block header__social-link--flickr"
+                       href="https://www.flickr.com/photos/polytechnicum/" target="_blank"><i
+                            class="polyicon-flickr"></i></a>
+                </li>
+            </ul>
+            <ul class="header__locale-list  pull-left">
+              <li class="header__locale-item item__inline">
+                <a class="header__locale-link link__block" href="http://polymus.ru/ru">Rus</a>
+              </li>
+              <li class="header__locale-item item__inline">
+                <a class="header__locale-link link__block" href="http://polymus.ru/eng/">Eng</a>
+              </li>
+            </ul>
+            <div class="header__user pull-right hide-this">
+                <a class="header__auth-link--login ajax-popup-open-link"
+                   href="/en/account/login/?next=/en/museum/?">
+                   <span class="keyhole-icon">
+                     <i class="polyicon-circle"></i><i class="polyicon-keyhole"></i>
+                   </span>
+                    Войти
+                </a>
+            </div>
+        </header>
+
+        <div class="top-block">
+            <a class="logo" href="/eng/">
+                <img src="/polytech_logo_rgb-01.png" width="280" alt="Polytech">
+            </a>
+            <h1 class="poly-en__title">The Polytechnic Museum</h1>
+            <nav class="top-block__nav hide">
+                <ul class="top-nav__list ">
+                    <!--Классы .top-nav__item-1 ... .top-nav__item-5
+                    необходимы для рассчета положения выпадающего списка-->
+                    
+                    
+                        <li class="top-nav__item top-nav__item-1 top-nav__item--museum item__inline">
+                            <a class="top-nav__link link__block" href="/en/museum/">Музей</a>
+                        </li>
+                    
+                    
+                    
+                        <li class="top-nav__item top-nav__item-2 top-nav__item--learning item__inline">
+                            <a class="top-nav__link link__block" href="/en/education/">Обучение</a>
+                        </li>
+                    
+                    
+                    
+                        <li class="top-nav__item top-nav__item-3 top-nav__item--events item__inline">
+                            <a class="top-nav__link link__block" href="/en/events/">События</a>
+                        </li>
+                    
+                    
+                    
+                        <li class="top-nav__item top-nav__item-4 top-nav__item--science item__inline">
+                            <a class="top-nav__link link__block" href="/en/pop-science/">Поп-наука</a>
+                        </li>
+                    
+                    <!-- <li class="top-nav__item top-nav__item--for-kids item__inline">
+                      <a class="top-nav__link link__block" href="#">Детям</a>
+                    </li> --> <!-- пока что попросили закомментить -->
+                </ul>
+            </nav>
+            <div class="pull-right holder__support-museum hide">
+                
+                <a class="sticker__support-museum sticker__support-museum-header" data-name="Поддержать музей"
+                   href="/en/support_us/"></a>
+            </div>
+        </div>
+
+        <div class="secondary-menu bi__bg-color--grey-lightest">
+            <ul class="secondary-menu__list additional-nav__list">
+                <li class="secondary-menu__item secondary-menu__item--has-dropdown">
+                    <a class="secondary-menu__link" onclick="return false;" href="#">The Museum</a>
+                    <div class="secondary-menu__submenu">
+                        <div class="secondary-menu__submenu-col">
+                            <ul class="secondary-menu__submenu-group">
+                                 <!-- <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/museum/general.html">General Information</a>
+                                </li>-->
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/museum/history.html">History</a>
+                                </li> 
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/museum/collection.html">Collections</a>
+                                </li><!--
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/museum/role.html">Role In Culture</a>
+                                </li> -->
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/museum/mission.html">Mission</a>
+                                </li>
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/museum/management.html">Management</a>
+                                </li>
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/museum/development_foundation.html">Development Foundation</a>
+                                </li>
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/museum/library.html">Library</a>
+                                </li>
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/museum/annual_report.html">Annual Report</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="secondary-menu__submenu-col">
+                            <ul class="secondary-menu__submenu-group">
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/museum/modernization/">Museum modernization</a>
+                                    <ul>
+                                        <li class="secondary-menu__submenu-item">
+                                            <a href="/eng/museum/modernization/about/">About Modernization</a>
+                                        </li>
+                                        <li class="secondary-menu__submenu-item">
+                                            <a href="/eng/museum/modernization/roadmap/">Roadmap</a>
+                                        </li>
+                                        <li class="secondary-menu__submenu-item">
+                                            <a href="/eng/museum/modernization/ideas/">Ideas</a>
+                                        </li>
+                                        <li class="secondary-menu__submenu-item">
+                                            <a href="/eng/museum/modernization/tenders/">Tenders</a>
+                                        </li>
+                                        <li class="secondary-menu__submenu-item">
+                                            <a href="/eng/museum/modernization/documents/">Official Documents</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </div> 
+                </li>
+                
+                <li class="secondary-menu__item secondary-menu__item--has-dropdown">
+                    <a class="secondary-menu__link" onclick="return false;" href="#">Current Projects</a>
+                    <div class="secondary-menu__submenu">
+                        <div class="secondary-menu__submenu-col">
+                            <ul class="secondary-menu__submenu-group">
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/current_projects/rds.html">RDS</a>
+                                </li>
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/current_projects/open_storage.html">Open Storage</a>
+                                </li>
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/current_projects/exhibition.html">Exhibitions</a>
+                                </li>
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/current_projects/learning.html">Learning</a>
+                                </li> 
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/current_projects/psa.html">Polytech.Science.Art</a>
+                                </li>
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/current_projects/elecronic_living_room.html">Electronic living room</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="secondary-menu__item secondary-menu__item--has-dropdown">
+                    <a class="secondary-menu__link" onclick="return false;" href="#">Flagship Annual Events</a>
+                    <div class="secondary-menu__submenu">
+                        <div class="secondary-menu__submenu-col">
+                            <ul class="secondary-menu__submenu-group">
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="http://fest.polymus.ru/eng" target="_blank">Polytech Festival</a>
+                                </li>
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/flagship_annual_events/international_contemporary_science_film_festival_360.html">Science Film Festival 360°</a>
+                                </li>
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/flagship_annual_events/conferences.html">Conferences</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="secondary-menu__item secondary-menu__item--has-dropdown">
+                    <a class="secondary-menu__link"  onclick="return false;" href="#">Renovation & Growth</a>
+                    <div class="secondary-menu__submenu">
+                        <div class="secondary-menu__submenu-col">
+                            <ul class="secondary-menu__submenu-group">
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/renovation_and_growth/historical_building.html">Historical Building</a>
+                                </li>
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/renovation_and_growth/msu.html">Museum and Educational Center</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="secondary-menu__item secondary-menu__item--has-dropdown">
+                    <a class="secondary-menu__link"  onclick="return false;" href="#">Museum Transformation</a>
+                    <div class="secondary-menu__submenu">
+                        <div class="secondary-menu__submenu-col">
+                            <ul class="secondary-menu__submenu-group">
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/museum_transformation/development_of_the_new_concept.html">Development of The New Concept</a>
+                                </li>
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/museum_transformation/new_concept_of_the_museum.html">New Concept of The Museum</a>
+                                </li>
+                                <li class="secondary-menu__submenu-item">
+                                    <a href="/eng/museum_transformation/museum_brand.html">Museum Brand</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('ul.additional-nav__list > li > a[href^="'+current_url.split('/', 4).join('/')+'"]').each(function(){
+            if (current_url.split('/').length >= $(this).attr('href').split('/').length)
+                $(this).parent().addClass('secondary-menu__item--active');
+        })
+        $('ul.top-nav__list li a').each(function(){
+            if (current_url.split('/', 3).join() == $(this).attr('href').split('/', 3).join()) {
+                return $(this).parent().addClass('active');
+            }
+        });
+    </script>
+    <ul class="top-breadcrumbs hide-this">
+        <li class="top-breadcrumbs__item">
+            <a href="/">Main</a>
+        </li>
+    </ul>
+    
+
+    <div class="content-wrap">
+        <div class="teaser-info teaser-info__museum-slider">
+            <div class="container">
+                <div class="slider top_slider top_slider-museum">
+                    <ul class="top_slider__container clearfix fotorama" data-loop="true" data-autoplay="true" data-arrows="true" data-width="782" data-height="294" id="top-slider">
+                        <li class="top_slider__item">
+                            <div class="top_slider__right">
+                                <img src="/eng/slider_kid4.png" class="top_slider__image">
+                            </div>
+                        </li>
+                        <li class="top_slider__item">
+                            <div class="top_slider__right">
+                                <img src="/eng/slider_create_1.png" class="top_slider__image">
+                            </div>
+                        </li>
+                        <li class="top_slider__item">
+                            <!-- <a href="#" class="top_slider__item-link"></a> -->
+                            <div class="top_slider__right">
+                                <img src="/eng/slider_reveal1.png" class="top_slider__image">
+                            </div>
+                        </li>
+                        <li class="top_slider__item">
+                            <div class="top_slider__right">
+                                <img src="/eng/slider_kid1.png" class="top_slider__image">
+                            </div>
+                        </li>
+                        <li class="top_slider__item">
+                            <div class="top_slider__right">
+                                <img src="/eng/slider_create_2.png" class="top_slider__image">
+                            </div>
+                        </li>
+                        <li class="top_slider__item">
+                            <div class="top_slider__right">
+                                <img src="/eng/slider_reveal2.png" class="top_slider__image">
+                            </div>
+                        </li>
+                        <li class="top_slider__item">
+                            <div class="top_slider__right">
+                                <img src="/eng/slider_kid2.png" class="top_slider__image">
+                            </div>
+                        </li>
+                        <li class="top_slider__item">
+                            <div class="top_slider__right">
+                                <img src="/eng/slider_create_3.png" class="top_slider__image">
+                            </div>
+                        </li>
+                        <li class="top_slider__item">
+                            <div class="top_slider__right">
+                                <img src="/eng/slider_reveal3.png" class="top_slider__image">
+                            </div>
+                        </li>
+                        <li class="top_slider__item">
+                            <div class="top_slider__right">
+                                <img src="/eng/slider_kid3.png" class="top_slider__image">
+                            </div>
+                        </li>
+                        <li class="top_slider__item">
+                            <div class="top_slider__right">
+                                <img src="/eng/slider_create_4.png" class="top_slider__image">
+                            </div>
+                        </li>
+                        <li class="top_slider__item">
+                            <div class="top_slider__right">
+                                <img src="/eng/slider_reveal4.png" class="top_slider__image">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="most-interesting">
+                    <ul class="interesting">
+                        <li class="interesting__item-museum">
+                            <a class="interesting__link" href="/eng/current_projects/rds.html">Rossiya Delaet Sama</a>
+                        </li>
+                        <li class="interesting__item-museum">
+                            <a class="interesting__link" href="http://fest.polymus.ru/eng" target="_blank">Polytech Festival</a>
+                        </li>
+                        <li class="interesting__item-museum">
+                            <a class="interesting__link" href="/eng/current_projects/open_storage.html">Open Storage</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+        <div class="empty-middle-bar"></div>
+        <section class="container grid-holder">
+            
+<aside class="sidebar pull-right">
+    <div class="sidebar-widget sidebar-widget__share hide">
+        <div class="social-share social-likes social-likes_notext">
+            <div class="facebook polyicon-facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+            <div class="twitter polyicon-twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+            <div class="vkontakte polyicon-vk" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+        </div>
+        <div class="social-share__dropdown-wrapper">
+            <div class="social-share__more-button">+ Share</div>
+
+            <div class="social-share__more-container">
+                <ul class="social-share__more-list social-likes" data-counters="no"
+                        >
+                    <li class="plusone polyicon-googleplus" title="Поделиться ссылкой на Google+">Google+</li>
+                    <li class="odnoklassniki polyicon-odnoklassniki" title="Поделиться ссылкой на Одноклассниках">Одноклассники</li>
+                    <li class="surfingbird polyicon-surfingbird" title="Поделиться ссылкой на Surfingbird">Surfingbird</li>
+                    <li class="moikrug polyicon-moikrug" title="Поделиться ссылкой в Моём круге">Мой круг</li>
+                    <li class="livejournal polyicon-livejournal" title="Поделиться ссылкой на LiveJournal">LiveJournal</li>
+                    <li class="mailru polyicon-mailru" title="Поделиться ссылкой в Моём мире">Мой мир</li>
+                    <li class="pinterest polyicon-pinterest" title="Поделиться картинкой в Pinterest" data-media="">Pinterest</li>
+                    <li class="yaru polyicon-yaru" title="Поделиться ссылкой в Я.ру" data-media="">Я.ру</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-widget inter-web bi__bg-color--grass-green">
+        <p class="inter-web_title">Visit Us</p>
+        <p>
+            <a style="color: #fff;" href="/eng/current_projects/rds.html" class="sidebar-title-link">POLYTECHNIC MUSEUM AT VDNKH</a>
+            119 Mira Ave. (VDNKh), bldg. 26, Moscow <br>
+            Botanicheskiy Sad Stn. <br>
+            +7 495 730-54-38 (ext. 1446) <br>
+            10.00–20.00, open daily except Mondays <br><br>
+        </p>
+        <p>
+            <a style="color: #fff;" href="http://polymus.ru/eng/current_projects/open_storage.html" class="sidebar-title-link">OPEN STORAGE</a>
+            42 Volgogradskiy Ave., bldg. 5, Moscow <br>
+            Tekstilshchiki Stn. <br>
+            +7 495 730-54-38 (ext. 1467) <br>
+            Tue, Sat: 11.00–17.00 <br>
+            Thu: 12.00–20.00
+        </p>
+    </div>
+    <div class="sidebar-widget inter-web bi__bg-color--lemon-yellow blac-text">
+        <p class="inter-web_title">Contact Us</p>
+        <p>
+            <a style="color: #000;" href="mailto:info@polymus.ru">info@polymus.ru</a> <br>
+            119 Mira Ave. (VDNKh), bldg. 46, 129223 Moscow <br>
+            Botanicheskiy Sad Stn. <br>
+        </p>
+    </div>
+    <div class="sidebar-widget inter-web bi__bg-color--violet">
+        <p class="inter-web_title">Press Office</p>
+        <p>+7 495 730−5438 (ext. 1520)</p>
+        <p>
+            <a style="color: #fff;" href="mailto:press@polymus.ru">press@polymus.ru</a>
+        </p>
+    </div>
+</aside>
+
+            <h2 class="page-title col-4 pull-up">About the Museum</h2>
+            <div class="main">
+                <div class="inner-bordered">
+                    <div class="content-area">
+                        <p>The Polytechnic Museum, founded in 1872, is one of the oldest science and technology museums in the world.</p>
+                        <p>The Museum aims to draw the audience's interest to knowledge and achievements of the human mind, inspire youth and support young professionals.</p>
+                        <p>Today, the Museum's historical building is being renovated, and the conception of the Museum itself is changing as well: it goes beyond the object collection, lectures and exhibition tours, promoting its activities as a platform for scientific discussions, educational projects and intellectual efforts.</p>
+                        <div class="sitemap">
+                            <ol>
+                                <li>
+                                    <span>The Museum</span>
+                                    <ul>
+                                        <!-- <li>General Information</li> -->
+                                        <li>
+                                            <a href="/eng/museum/history.html">History</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/museum/collection.html">Collections</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/museum/mission.html">Mission</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/museum/management.html">Management</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/museum/development_foundation.html">Development Foundation</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/museum/library.html">Library</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/museum/annual_report.html">Annual Report</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>Current Projects</span>
+                                    <ul>
+                                        <li>
+                                            <a href="/eng/current_projects/rds.html">RDS</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/current_projects/open_storage.html">Open Storage</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/current_projects/exhibition.html">Exhibitions</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/current_projects/learning.html">Learning</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/current_projects/psa.html">Polytech.Science.Art</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/current_projects/elecronic_living_room.html">Electronic living room</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>Flagship Annual Events</span>
+                                    <ul>
+                                        <li>
+                                            <a href="http://fest.polymus.ru/eng" target="_blank">Polytech Festival</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/flagship_annual_events/international_contemporary_science_film_festival_360.html">International Contemporary Science Film Festival 360°</a></li>
+                                        <li>
+                                            <a href="/eng/flagship_annual_events/conferences.html">Conferences</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>Renovation & Growth</span>
+                                    <ul>
+                                        <li>
+                                            <a href="/eng/renovation_and_growth/historical_building.html">Historical Building</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/renovation_and_growth/msu.html">Museum and Educational Center</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>Museum Transformation</span>
+                                    <ul>
+                                        <li>
+                                            <a href="/eng/museum_transformation/development_of_the_new_concept.html">Development of The New Concept</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/museum_transformation/new_concept_of_the_museum.html">New Concept of The Museum</a>
+                                        </li>
+                                        <li>
+                                            <a href="/eng/museum_transformation/museum_brand.html">Museum Brand</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="page__footer hide">
+            <div class="footer__inner">
+                
+                <a class="sticker__support-museum sticker__support-museum_footer" data-name="Поддержать музей" href="/en/support_us/"></a>
+                <nav class="fc">
+                    <div class="footer__col fc__1">
+                        <div class="fc__head">
+                            Музей
+                        </div>
+                        
+
+
+                    <ul class="fc__list">
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/museum/">About museum</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/museum/fonds/">Museum Fonds</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/museum/exhibition_halls/">Exhibition Halls</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/museum/press/">Press Office</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/museum/pros/">Professionals</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/museum/library/">Library</a>
+                            </li>
+                        
+                    </ul>
+
+                        <div class="fc__item">
+                            <a class="fc__link" href="/museum/about/contact/">Контакты</a>
+                        </div>
+                    </div>
+                    <div class="footer__col fc__2">
+                        <div class="fc__head">
+                            Обучение
+                        </div>
+                        
+
+
+                    <ul class="fc__list">
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/education/science_labs/">Science Labs</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/education/YDetei/">University for Children</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/education/lectures/">Lectures</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/education/Lecturers/">Lecturers</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/education/skvt/">skvt</a>
+                            </li>
+                        
+                    </ul>
+
+                    </div>
+                    <div class="footer__col fc__3">
+                        <div class="fc__head">
+                            События
+                        </div>
+                        
+
+
+                    <ul class="fc__list">
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/events/">All events</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/events/screenings/">Film Screenings</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/events/exhibitions/">Exhibitions</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/events/special_projects/">Special Projects</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/events/polytech_fest/">Polytech Festival</a>
+                            </li>
+                        
+                    </ul>
+
+                    </div>
+                    <div class="footer__col fc__4">
+                        <div class="fc__head">
+                            Поп-наука
+                        </div>
+                        
+
+
+                    <ul class="fc__list">
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/pop-science/">Feed</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/pop-science/video/">Video</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/pop-science/news/">News</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/pop-science/blogs/">Blogs</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/pop-science/games/">Games</a>
+                            </li>
+                        
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/pop-science/tests/tests/">Tests</a>
+                            </li>
+                        
+                    </ul>
+
+                    </div>
+                    <div class="footer__col fc__5 hide-this">
+                        <div class="fc__head">
+                            Детям
+                        </div>
+                    </div>
+                    <div class="footer__col fc__6">
+                        <div class="fc__head">
+                            О сайте
+                        </div>
+                        <ul class="fc__list">
+                            <!-- <li class="fc__item">
+                                        <a class="fc__link" href="/en/about">О сайте</a>
+                                    </li>
+                                    <li class="fc__item">
+                                        <a class="fc__link" href="/en/sitemap">Карта сайта</a>
+                                    </li> -->
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/persons">Все персоны</a>
+                            </li>
+                            <li class="fc__item">
+                                <a class="fc__link" href="/en/profile/subscriptions/">Подписка на рассылку</a>
+                            </li>
+                            <li class="fc__item">
+                                <a class="fc__link old-site" target="_blank" href="http://old.polymus.ru/">Предыдущая версия сайта</a>
+                            </li>
+                            <li class="fc__item">
+                                <span>&nbsp;</span>
+                            </li>
+                            <li class="fc__item">
+                                <span>&nbsp;</span>
+                            </li>
+                            <li class="fc__item">
+                                <p>
+                                    Телефон: +7 495 730-54-38<br>
+                                    e-mail: <a class="fc__link" href="mailto:info@polymus.ru">info@polymus.ru</a>
+                                </p>
+                            </li>
+                            <!-- <li class="fc__item">
+                                        <a class="fc__link" href="/en/contacts">Контакты</a>
+                                    </li>
+                                    <li class="fc__item">
+                                        <a class="fc__link" href="/en/help">Помощь</a>
+                                    </li> -->
+                        </ul>
+                    </div>
+                    <div class="footer__col fc__7">
+                        <div class="fc__head">
+                            Мы в соц. сетях
+                        </div>
+                        <ul class="fc__list fc__social-list">
+                            <li class="fc__item fc__social-item">
+                                <a class="fc__link fc__social" href="https://www.facebook.com/polytechnicum" target="_blank"><i class="polyicon-facebook"></i> Facebook</a>
+                            </li>
+                            <li class="fc__item fc__social-item">
+                                <a class="fc__link fc__social" href="https://vk.com/polytechnicum" target="_blank"><i class="polyicon-vk"></i> Vkontakte</a>
+                            </li>
+                            <li class="fc__item fc__social-item">
+                                <a class="fc__link fc__social" href="http://ok.ru/group/53227509383279" target="_blank"><i class="polyicon-odnoklassniki"></i> Одноклассники</a>
+                            </li>
+                            <li class="fc__item fc__social-item">
+                                <a class="fc__link fc__social" href="https://twitter.com/Polytechnicum" target="_blank"><i class="polyicon-twitter"></i> Twitter</a>
+                            </li>
+                            <li class="fc__item fc__social-item">
+                                <a class="fc__link fc__social fc__social--google" href="http://instagram.com/polytechnicum"><i
+                                        class="polyicon-instagram" target="_blank"></i> Instagram</a>
+                            </li>
+                            <!-- <li class="fc__item fc__social-item">
+                                <a class="fc__link fc__social" href="http://4sq.com/1kSZ9OU" target="_blank"><i class="polyicon-foursquare"></i> Foursquare</a>
+                            </li> -->
+                            <li class="fc__item fc__social-item">
+                                <a class="fc__link fc__social" href="http://www.youtube.com/user/polytechnicum" target="_blank"><i class="polyicon-youtube"></i> YouTube</a>
+                            </li>
+                            <li class="fc__item fc__social-item">
+                                <a class="fc__link fc__social" href="https://www.flickr.com/photos/polytechnicum/" target="_blank"><i class="polyicon-flickr"></i> Flickr</a>
+                            </li>
+                            <li class="fc__item fc__social-item">
+                                <a class="fc__link fc__social fc__social--rss" href="/en/rss/" target="_blank"><i class="polyicon-rss"></i> RSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="f__info">
+                    <div class="f__copy">
+                        &copy; 2005–2014 Политехнический музей
+                    </div>
+                    <ul class="f__copy-links">
+                        <li class="f__copy-item">
+                            
+                            <a class="f__copy-link" href="/en/copyrights/">Использование материалов сайта</a>
+                        </li>
+                        <li class="f__copy-item">
+                            
+                            <a class="f__copy-link" href="/en/agreement/">Соглашение с пользователем</a>
+                        </li>
+                        <!-- <li class="f__copy-item">
+                                    <a class="f__copy-link" href="/en/volunteers">Соглашение с волонтерами</a>
+                                </li> -->
+                    </ul>
+                </div>
+                <div class="error__report">
+                    <div class="er__text">
+                        Увидели ошибку на сайте?
+                    </div>
+                    <a href="/en/api/v1/widget/render/?template=widgets/feedback/form/include/ajax.html&widget=FeedbackWidget&placeholder_page_id=15" class="ajax-popup-open-link popup-feedback">Напишите нам!</a>
+                    <span class="footer__rate">12+</span>
+                </div>
+                <div class="footer-feedback">
+                    <a id="feedback_popup_button" class="fc__link ajax-popup-open-link popup-feedback" href="/en/api/v1/widget/render/?template=widgets/feedback/form/include/ajax.html&widget=FeedbackWidget&placeholder_page_id=15">Обратная
+                        связь</a>
+                </div>
+                <a href="#" id="scroll-to-top">Наверх</a>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<!-- external -->
+<script src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+
+
+    <script src="/static/_/build/js/vendor.min.js"></script>
+    <script src="/static/_/build/js/auth.min.js"></script>
+    <script src="/static/_/build/js/script.min.js"></script>
+
+
+
+</body>
+</html>

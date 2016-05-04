@@ -1,0 +1,19 @@
+{
+  "name": "Alice",
+  "version": "0.0.0",
+  "authors": [
+    "Ruslan Polonkoev <rpolonkoev@mail.ru>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*"
+  }
+}

@@ -1,0 +1,436 @@
+/* What it does: Remove spaces around the email design added by some email clients. */
+/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,
+body {
+  Margin: 0 !important;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  font-family: PolytechSans, Helvetica, arial;
+}
+
+/* What it does: Stops email clients resizing small text. */
+* {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+  width: 100%;
+}
+
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+  margin: 0 !important;
+}
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+  mso-table-lspace: 0px !important;
+  mso-table-rspace: 0px !important;
+}
+
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
+  table-layout: fixed !important;
+  Margin: 0 auto !important;
+}
+table table table {
+  table-layout: auto;
+}
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+  -ms-interpolation-mode:bicubic;
+  border: none !important;
+}
+
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+  border-bottom: none !important;
+}
+
+/* What it does: A work-around for iOS meddling in triggered links. */
+.mobile-link--footer a,
+a[x-apple-data-detectors] {
+  color:inherit !important;
+  text-decoration: underline !important;
+}
+
+/* Media Queries */
+@media screen and (max-width: 822px) {
+  .header__logo,
+  .header__link-to-mail {
+    text-align: left !important;
+  }
+
+  .header__logo,
+  .header__link-to-mail {
+    padding-top: 24px !important;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+  .fluid,
+  .fluid-centered {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    Margin-left: auto !important;
+    Margin-right: auto !important;
+  }
+  /* And center justify these ones. */
+  .fluid-centered {
+    Margin-left: auto !important;
+    Margin-right: auto !important;
+  }
+
+  /* What it does: Forces table cells into full-width rows. */
+  .stack-column,
+  .stack-column-center {
+    display: block !important;
+    //width: 100% !important;
+    //max-width: 100% !important;
+    direction: ltr !important;
+  }
+  /* And center justify these ones. */
+  .stack-column-center {
+    text-align: left !important;
+  }
+
+  /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+  .center-on-narrow {
+    text-align: left !important;
+    display: block !important;
+    Margin-left: auto !important;
+    Margin-right: auto !important;
+    float: none !important;
+  }
+  table.center-on-narrow {
+    display: inline-block !important;
+  }
+
+}
+
+/* custom styles */
+
+//.main {
+//  padding-top: 53px;
+//}
+
+.header {
+  padding: 0 24px;
+  background: #ffffff;
+}
+
+.header__col {
+  padding: 20px 0;
+  max-width: 100%;
+  //background: #ffffff;
+}
+
+.header__title {
+  font-size: 24px;
+  line-height: 25px;
+  text-align: left;
+  //max-width: 360px;
+  //min-width: 256px;
+  color: #3d21de;
+}
+
+.header__logo {
+  text-align: right;
+  padding-top: 0;
+  //max-width: 360px;
+  //min-width: 256px;
+}
+
+.header__date {
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 24px;
+  //padding-bottom: 24px;
+  color: #505050;
+}
+
+.header__link-to-mail {
+  line-height: 22px;
+  font-size: 12px;
+  color: #919191;
+  padding-top: 39px;
+  text-align: right;
+}
+
+.header__link-to-mail a {
+  line-height: 22px;
+  font-size: 12px;
+  color: #919191;
+  text-decoration: none !important;
+}
+
+.content-column {
+  background-color: #fff;
+  position: relative;
+  //min-height: 720px;
+
+  a {
+    text-decoration: none;
+    border: none !important;
+  }
+}
+
+.content-column__title {
+  line-height: 25px;
+  font-size: 24px;
+  padding: 15px 33px 15px;
+  color: #ff3b29;
+}
+
+.content-column__text {
+  line-height: 22px;
+  font-size: 16px;
+  padding: 0 33px 19px;
+  font-weight: normal;
+  border-bottom: 2px solid #e7e7e7;
+}
+
+.content-column__img {
+  border: 0;
+  width: 100%;
+  max-width: 360px;
+  display: block;
+}
+
+.content-column__type {
+  color: #919191;
+  font-size: 12px;
+  line-height: 22px;
+  padding: 20px 33px 0;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+}
+
+/* circle colors */
+
+.circle--blue {
+  background-color: #3d21de;
+}
+
+.circle--green {
+  background-color: #00a448;
+}
+
+.circle--red {
+  background-color: #ff3366;
+}
+
+.circle--violet {
+  background-color: #9900bf;
+}
+
+.circle--yellow {
+  background-color: #ff3;
+}
+
+.content-column__button {
+  text-align: center;
+  padding: 24px;
+}
+
+.content-column__button--blue {
+  background-color: #3d21de;
+}
+
+.content-column__button-link {
+  font-size: 15px;
+  line-height: 15px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 22px 0;
+  display: block;
+  width: 224px;
+}
+
+//.brand-column__type {
+//  @extend .content-column__type;
+//  color: #ffffff;
+//}
+//
+//.brand-column__title {
+//  @extend .content-column__title;
+//  color: #ffffff;
+//  padding-top: 36px;
+//}
+//
+//.brand-column__text {
+//  @extend .content-column__text;
+//  color: #ffffff;
+//  border: 0;
+//}
+//
+//.brand-column__button {
+//  @extend .content-column__button;
+//  padding-top: 316px;
+//}
+
+.brand-column {
+  //height: 720px !important;
+  position: relative !important;
+  background-position: 0 0 !important;
+}
+
+//.brand-img {
+//  display: block !important;
+//}
+
+.brand-column__type {
+  font-size: 12px;
+  line-height: 22px;
+  color: #ffffff;
+  //padding: 24px 33px;
+  position: absolute!important;
+  top: 24px!important;
+  padding: 0 33px;
+}
+
+.brand-column__title {
+  line-height: 25px;
+  font-size: 24px;
+  //padding: 36px 33px 20px;
+  color: #ffffff;
+  position: absolute!important;
+  top: 75px!important;
+  padding: 0 33px;
+}
+
+.brand-column__text {
+  line-height: 22px;
+  font-size: 16px;
+  //padding: 36px 33px 20px;
+  font-weight: normal;
+  color: #ffffff;
+  border: 0;
+  position: absolute!important;
+  top: 110px!important;
+  padding: 0 33px;
+}
+
+.brand-column__button {
+  text-align: center;
+  //padding: 60px 0 0 0;
+  position: absolute!important;
+  bottom: 24px!important;
+  left: 50%!important;
+  margin-left: -112px!important;
+}
+
+.brand-column__brand-logo {
+  width: 118px !important;
+  position: absolute !important;
+  top: 15px !important;
+  right: 0 !important;
+  padding: 0 25px 0 33px;
+
+  img {
+    display: block;
+  }
+}
+
+.show-more__button {
+  padding: 48px 23px;
+  max-width: 320px !important;
+  width: 100%;
+  text-align: center;
+  min-width: 276px !important;
+}
+
+.show-more__button-link {
+  background-color: #919191;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 22px 0;
+  max-width: 320px;
+  width: 100%;
+  min-width: 276px;
+}
+
+.footer__social-icon {
+  padding: 0 6px;
+  text-decoration: none !important;
+  display: inline-block !important;
+}
+
+.footer__text {
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #919191;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__link {
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #919191;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer__logo {
+  text-decoration: none;
+}
+
+.footer__unsubscribe {
+  color: #3d21de;
+  text-decoration: none !important;
+}
+
+.header__promo-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(80, 80, 80);
+  margin: 0;
+
+  a {
+    color: #5f3eff;
+    text-decoration: none;
+
+    &:visited {
+      color: #5f3eff;
+    }
+  }
+}
+
+.content-column__button--blue {
+  background-color: #5f3eff;
+}
+
+@media all and (max-width: 822px) {
+  .header__promo-wrapper {
+    max-width: 408px;
+  }
+}

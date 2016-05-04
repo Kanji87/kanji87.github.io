@@ -1,0 +1,738 @@
+/*
+* main_page.scss
+*/
+
+.promo-slide {
+  background-color: $black;
+  margin-top: -50px;
+  padding-bottom: 40px;
+
+  @include respond-to(tablet) {
+    margin-top: -40px;
+  }
+
+  @include respond-to(fablet) {
+    margin-top: -30px;
+  }
+
+  @include respond-to(phone) {
+    margin-top: -55px;
+  }
+}
+
+.promo-slide__img {
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+
+  @include respond-to(phone) {
+    margin-top: 30px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.promo-slide__img-full {
+  display: block;
+
+  @include respond-to(phone) {
+    display: none;
+  }
+}
+
+.promo-slide__img-phone {
+  display: none;
+
+  @include respond-to(phone) {
+    display: block;
+  }
+}
+
+.promo-slide_age {
+  display: block;
+  top: 20px;
+  left: 85px;
+  position: absolute;
+  color: #333333;
+  font-size: 2em;
+  border: 2px solid #333333;
+  border-radius: 100%;
+  padding: 0 10px;
+}
+
+.promo-slide__title {
+  line-height: 0;
+  margin: 0;
+  text-indent: -9999px;
+  color: transparent;
+}
+
+.promo-slide__hashtag {
+  bottom: 10px;
+  right: 30px;
+
+  @include respond-to(tablet) {
+    bottom: 8px;
+    right: 40px;
+  }
+
+  @include respond-to(phone) {
+    right: 35px;
+  }
+}
+
+.promo-slide__info {
+//  width: 700px;
+  margin: 0 auto;
+  width: 970px; //УФА
+
+//  @include respond-to(fablet) {
+//    width: 100%;
+//  }
+
+  @include respond-to(tablet) { // УФА
+    width: 100%;
+  }
+}
+
+.promo-slide__location {
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  @include respond-to(phone) {
+    margin-bottom: 10px;
+  }
+
+  i {
+    color: $yellow;
+    font-size: .9em;
+  }
+
+  p {
+    text-transform: uppercase;
+    color: $yellow;
+    font-size: 1.7em;
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+
+    @include respond-to(fablet) {
+      margin-bottom: 10px;
+    }
+
+    &:last-child { // УФА
+      text-align: right;
+
+      @include respond-to(tablet) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.promo-slide__action {
+  font-size: 1.3em;
+}
+
+.promo-slide__action-button {
+  text-align: center;
+
+  a {
+    width: 90%;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 40px;
+    text-decoration: none;
+    color: $black;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0 0;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+
+    @include respond-to(fablet) {
+      width: 250px;
+      margin-bottom: 15px;
+      -webkit-background-size: contain;
+      background-size: contain;
+      padding: 0;
+      height: 40px;
+      line-height: 38px;
+    }
+
+    @include respond-to(phone) {
+      line-height: 40px;
+    }
+  }
+}
+
+.promo-slide__visit a {
+  background-image: url($imgPath + 'hexagon_yellow_btn.png');
+  &:hover {
+    color: $yellow;
+    background-image: url($imgPath + 'hexagon_yellow_btn_hover.png');
+  }
+}
+
+.promo-slide__buy a {
+  background-image: url($imgPath + 'hexagon_green_btn.png');
+  &:hover {
+    color: $green;
+    background-image: url($imgPath + 'hexagon_green_btn_hover.png');
+  }
+}
+
+.promo-slide__share {
+  margin-top: 40px;
+
+  @include respond-to(phone) {
+    margin-top: 20px;
+  }
+}
+
+.about {
+  padding: 70px 0;
+  background-color: $red;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+
+.about-text {
+  font-size: 1.4em;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.slider {
+  background-color: $red;
+  position: relative;
+  height: 540px;
+  overflow: hidden;
+  padding-bottom: 70px;
+  box-sizing: content-box;
+
+  .bx-wrapper {
+    width: 970px !important;
+    height: 540px !important;
+    margin: 0 auto;
+
+    .bx-prev,
+    .bx-next {
+      top: 45%;
+      width: 30px;
+      height: 60px;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url($imgPath + 'main_slider_arrows.png');
+    }
+
+    .bx-prev {
+      background-position: 0 0;
+
+      &:hover,
+      &:active {
+        background-position: 0 -60px;
+      }
+    }
+
+    .bx-next {
+      background-position: 0 -120px;
+
+      &:hover,
+      &:active {
+        background-position: 0 -180px;
+      }
+    }
+  }
+
+  .bx-viewport {
+    background-color: $green;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  li {
+    height: 540px;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .pattern {
+    width: 100%;
+    height: 520px;
+    background-image: url($imgPath + 'gallery_pattern.png');
+    position: absolute;
+    background-position: -27px 0px;
+    top: 15px;
+  }
+
+  .bx-caption {
+    background-color: $deep-grey;
+    color: $white;
+    padding-left: 90px;
+    font-size: 1.3125em;
+    font-family: PolytechSans;
+    line-height: 1.2;
+  }
+
+  .bx-pager {
+    color: $white;
+    font-size: 1.3em;
+    font-family: PolytechSans;
+    font-weight: 300;
+    bottom: 5px;
+    left: 20px;
+    letter-spacing: -2px;
+    width: initial;
+    z-index: 50;
+
+    @include respond-to(fablet) {
+      bottom: 7px;
+    }
+
+    @include respond-to(fablet) {
+      bottom: 8px;
+    }
+  }
+
+  @include respond-to(tablet) {
+    height: 450px;
+
+    .bx-wrapper,
+    .bx-viewport,
+    li {
+      height: 450px !important;
+    }
+
+    .pattern {
+      display: none;
+    }
+  }
+
+  @include respond-to(fablet) {
+    height: 350px;
+
+    .bx-wrapper,
+    .bx-viewport,
+    li {
+      height: 350px !important;
+    }
+  }
+
+  @include respond-to(phone) {
+    height: 220px;
+
+    .bx-wrapper,
+    .bx-viewport,
+    li {
+      height: 220px !important;
+    }
+
+    .bx-caption,
+    .bx-pager {
+      font-size: 1em;
+    }
+
+    .bx-caption {
+      padding-left: 65px;
+    }
+  }
+}
+
+.tile__item {
+  float: left;
+  width: 33.33333%;
+  height: 320px;
+  position: relative;
+  background-color: $white;
+  overflow: hidden;
+
+  @include respond-to(tablet) {
+    display: block;
+    float: none;
+    width: 100%;
+    height: 330px;
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @include respond-to(phone) {
+    height: 250px;
+  }
+
+  figcaption {
+    background-color: $white;
+  }
+
+  &:nth-child(even) {
+    background-color: $orange;
+
+    figcaption {
+      background-color: $orange;
+    }
+  }
+
+  &:hover,
+  &:active {
+    figcaption {
+      opacity: 0;
+    }
+
+    .tile__item-description {
+      padding: 0 10px;
+      bottom: 0;
+    }
+  }
+}
+
+.tile__item-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.tile__item-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    max-width: inherit;
+    width: auto;
+
+  }
+
+  figcaption {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 0;
+    padding: 15px 0 13px;
+    text-align: center;
+    font-size: 2.3em;
+    line-height: .8;
+    opacity: 1;
+    -webkit-transition: opacity ease .3s;
+    -moz-transition: opacity ease .3s;
+    -ms-transition: opacity ease .3s;
+    -o-transition: opacity ease .3s;
+    transition: opacity ease .3s;
+  }
+}
+
+.tile__item-description {
+  position: absolute;
+  z-index: 999;
+  bottom: -350px;
+  left: 0;
+  height: 100%;
+  width: 101%;
+  color: $white;
+  font-size: 1.5em;
+  background-color: rgba(40, 40, 50, .7);
+  display: table;
+  line-height: 1.3;
+  -webkit-transition: all ease-in-out .3s;
+  -moz-transition: all ease-in-out .3s;
+  -ms-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+
+  span {
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+  }
+}
+
+.testimonials {
+  text-align: center;
+
+  .name {
+    color: $yellow;
+    margin-top: 35px;
+    font-size: 1.3125em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: "PolytechSans", helvetica, sans-serif;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    color: $white;
+    line-height: 1.2;
+    text-transform: none;
+  }
+
+  .bx-pager {
+    display: none;
+  }
+}
+
+.partners {
+  padding: 70px 0 80px; // УФА
+  background-color: $yellow;
+
+  @include respond-to(phone) {
+    padding-bottom: 40px;
+  }
+
+  .container {  // УФА
+    text-align: center;
+  }
+}
+
+.partners-list {
+  width: 620px;
+  margin: 0 auto;
+
+  @include respond-to(tablet) {
+    width: 100%;
+  }
+}
+
+.partner-name {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.partner-link {
+  display: block;
+}
+
+.partners__item {
+  text-align: center;
+  padding: 0 40px;
+
+  img {
+    max-width: 100%;
+    width: auto;
+  }
+
+  &:nth-child(2),
+  &:nth-child(3) {
+    .partner-name {
+      margin-bottom: 45px;
+    }
+  }
+
+  &:last-child {
+    display: inline-block;
+    float: none;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  @include respond-to(tablet) {
+    margin-bottom: 35px;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      .partner-name {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.forms {
+  background-color: $yellow;
+  padding-bottom: 100px;
+
+  .form__comment-name,
+  .form__comment-text,
+  .form__subscribe-email {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    border: 0;
+    outline: none;
+    font-size: 1.2em;
+  }
+
+  .form__comment-name {
+    color: $white;
+    background-color: $black;
+
+    &:focus {
+      color: $white;
+      border: 0;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  .form__comment-text {
+    resize: none;
+    color: $black;
+    height: 170px;
+
+    &:focus {
+      color: $black;
+      border: 0;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  .form__subscribe-email {
+    background-color: $white;
+
+    &:focus {
+      color: $black;
+      border: 0;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  @include respond-to(tablet) {
+    padding-bottom: 50px;
+  }
+
+  @include respond-to(phone) {
+    padding-bottom: 0;
+  }
+}
+
+.form__col {
+  //float: left;
+  box-sizing: border-box;
+  padding: 0;
+  vertical-align: top;
+  width: 50%;
+  margin: 0 auto;
+
+  &:first-child {
+    padding-left: 30px;
+  }
+
+  &:last-child {
+    padding-right: 30px;
+  }
+
+  @include respond-to(tablet) {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+
+    &:first-child,
+    &:last-child  {
+      padding: 0 150px;
+    }
+  }
+
+  @include respond-to(fablet) {
+    &:first-child,
+    &:last-child  {
+      padding: 0 30px;
+    }
+  }
+}
+
+.form__button {
+  display: block;
+  height: 60px;
+  width: 100%;
+  padding: 0;
+  margin-top: 40px;
+  font-size: 1.6em;
+  line-height: 60px;
+  color: $black;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  background-image: url($imgPath + 'hexagon_form_button.png');
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: all ease-in-out .3s;
+  -moz-transition: all ease-in-out .3s;
+  -ms-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+
+  &:hover,
+  &:active {
+    color: $yellow;
+    background-image: url($imgPath + 'hexagon_form_button_hover.png');
+  }
+
+  @include respond-to(tablet) {
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5em;
+  }
+
+  @include respond-to(phone) {
+    height: 35px;
+    margin-top: 20px;
+    line-height: 35px;
+    font-size: 1.2em;
+  }
+}
+
+.quotes {
+  background-image: url($imgPath + 'cat.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include respond-to(tablet) {
+    background-image: url($imgPath + 'cat_tablet.png');
+  }
+
+  @include respond-to(phone) {
+    background-image: url($imgPath + 'cat_phone.png');
+  }
+}
+
+.bx-controls {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.contest {
+  @extend .about;
+  background-color: $red;
+  padding-bottom: 0;
+
+  a {
+    color: $orange;
+    text-decoration: none;
+  }
+}

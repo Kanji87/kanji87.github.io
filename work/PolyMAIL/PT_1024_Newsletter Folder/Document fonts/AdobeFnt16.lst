@@ -1,0 +1,117 @@
+%!Adobe-FontList 1.16
+%Locale:0x419
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:\.DS_Store
+FileLength:6148
+FileModTime:1455019114
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ApercuProMono
+FamilyName:Apercu Pro Mono
+StyleName:Regular
+MenuName:Apercu Pro Mono
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Apercu Pro Mono
+WritingScript:Roman
+OutlineFileName:\ApercuProMono.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:50756
+FileModTime:1358878456
+NameArray:0,Mac,4,Apercu Pro Mono
+NameArray:0,Win,1,Apercu Pro Mono
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:218640
+FileModTime:1415721762
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:MonotypeSorts
+FamilyName:Monotype Sorts
+StyleName:Regular
+MenuName:Monotype Sorts
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Monotype Sorts
+WritingScript:Roman
+OutlineFileName:\MonotypeSorts
+DataFormat:sfntResource
+ResourceID:17253
+FileLength:78592
+FileModTime:1452906864
+NameArray:0,Mac,4,Monotype Sorts
+NameArray:0,Win,1,Monotype Sorts
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:MonotypeSorts
+OutlineFileName:\MonotypeSorts
+ResourceID:2007
+MacStyle:0
+FileLength:78592
+FileModTime:1452906864
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:PolytechSans
+FamilyName:Polytech Sans
+StyleName:Regular
+MenuName:Polytech Sans
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Polytech Sans
+FamilyNameNative:
+StyleNameNative:Regular
+FullNameNative:
+WritingScript:Cyrillic
+OutlineFileName:\PolytechSans.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:27156
+FileModTime:1396216974
+NameArray:0,Mac,4,Polytech Sans
+NameArray:0,Win,1,Polytech Sans
+%EndFont
+

@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'PolyIcons';
+    src: url('fonts/PolyIcons.eot?-d1l80l');
+    src: url('fonts/PolyIcons.eot?#iefix-d1l80l') format('embedded-opentype'), url('fonts/PolyIcons.woff?-d1l80l') format('woff'), url('fonts/PolyIcons.ttf?-d1l80l') format('truetype'), url('fonts/PolyIcons.svg?-d1l80l#PolyIcons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="polyicon-"], [class*=" polyicon-"] {
+    font-family: 'PolyIcons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.polyicon-youtube-logo:before {
+    content: "\e002";
+}
+
+.polyicon-vimeo-logo:before {
+    content: "\e00e";
+}
+
+.polyicon-search:before {
+    content: "\e062";
+}
+
+.polyicon-hamburger:before {
+    content: "\e071";
+}
+
+.polyicon-reload:before {
+    content: "\e075";
+}
+
+.polyicon-attachment:before {
+    content: "\e093";
+}
+
+.polyicon-document-empty:before {
+    content: "\e0fa";
+}
+
+.polyicon-eye:before {
+    content: "\e104";
+}
+
+.polyicon-edit:before {
+    content: "\e112";
+}
+
+.polyicon-comment:before {
+    content: "\e127";
+}
+
+.polyicon-calendar:before {
+    content: "\e14c";
+}
+
+.polyicon-box:before {
+    content: "\e62f";
+}
+
+.polyicon-youtube:before {
+    content: "\e62e";
+}
+
+.polyicon-google:before {
+    content: "\e62c";
+}
+
+.polyicon-calendar-circle:before {
+    content: "\e62d";
+}
+
+.polyicon-yaru:before {
+    content: "\e604";
+}
+
+.polyicon-surfingbird:before {
+    content: "\e605";
+}
+
+.polyicon-pinterest:before {
+    content: "\e606";
+}
+
+.polyicon-odnoklassniki:before {
+    content: "\e608";
+}
+
+.polyicon-moikrug:before {
+    content: "\e60e";
+}
+
+.polyicon-mailru:before {
+    content: "\e60f";
+}
+
+.polyicon-livejournal:before {
+    content: "\e614";
+}
+
+.polyicon-arrow-up-s:before {
+    content: "\e618";
+}
+
+.polyicon-arrow-up-m:before {
+    content: "\e619";
+}
+
+.polyicon-arrow-up-l:before {
+    content: "\e61a";
+}
+
+.polyicon-arrow-right-s:before {
+    content: "\e621";
+}
+
+.polyicon-arrow-right-m:before {
+    content: "\e622";
+}
+
+.polyicon-arrow-right-l:before {
+    content: "\e624";
+}
+
+.polyicon-arrow-left-s:before {
+    content: "\e626";
+}
+
+.polyicon-arrow-left-m:before {
+    content: "\e627";
+}
+
+.polyicon-arrow-left-l:before {
+    content: "\e628";
+}
+
+.polyicon-arrow-down-s:before {
+    content: "\e629";
+}
+
+.polyicon-arrow-down-m:before {
+    content: "\e62a";
+}
+
+.polyicon-arrow-down-l:before {
+    content: "\e62b";
+}
+
+.polyicon-circle:before {
+    content: "\e601";
+}
+
+.polyicon-rouble:before {
+    content: "\e602";
+}
+
+.polyicon-warning:before {
+    content: "\e600";
+}
+
+.polyicon-star:before {
+    content: "\e603";
+}
+
+.polyicon-quote-circle:before {
+    content: "\e607";
+}
+
+.polyicon-plus:before {
+    content: "\e609";
+}
+
+.polyicon-plus-circle:before {
+    content: "\e60a";
+}
+
+.polyicon-play:before {
+    content: "\e60b";
+}
+
+.polyicon-play-circle:before {
+    content: "\e60c";
+}
+
+.polyicon-location-marker:before {
+    content: "\e60d";
+}
+
+.polyicon-heart-full:before {
+    content: "\e610";
+}
+
+.polyicon-heart-empty:before {
+    content: "\e617";
+}
+
+.polyicon-cross:before {
+    content: "\e623";
+}
+
+.polyicon-check:before {
+    content: "\e625";
+}
+
+.polyicon-vk:before {
+    content: "\e611";
+}
+
+.polyicon-twitter:before {
+    content: "\e612";
+}
+
+.polyicon-rss:before {
+    content: "\e613";
+}
+
+.polyicon-rocket:before {
+    content: "\e615";
+}
+
+.polyicon-polygon:before {
+    content: "\e616";
+}
+
+.polyicon-keyhole:before {
+    content: "\e61b";
+}
+
+.polyicon-instagram:before {
+    content: "\e61c";
+}
+
+.polyicon-googleplus:before {
+    content: "\e61d";
+}
+
+.polyicon-foursquare:before {
+    content: "\e61e";
+}
+
+.polyicon-flickr:before {
+    content: "\e61f";
+}
+
+.polyicon-facebook:before {
+    content: "\e620";
+}

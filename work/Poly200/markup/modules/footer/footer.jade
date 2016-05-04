@@ -1,0 +1,42 @@
+mixin footer(data)
+    footer.page__footer.clearfix
+        a.top-btn(href='#about')
+            i.fa.fa-chevron-up
+        .footer__container.clearfix
+            .col-lg-3.col-md-3.col-s-12
+                .footer__contacts
+                    p
+                        span <i>Пресса</i> <br>
+                        span +7 903 290&ndash;49&ndash;44 <br>
+                        a(href='mailto:press@polymus.ru') press@polymus.ru
+                    p
+                        span <i>Площадка (MMOMA)</i><br>
+                        span +7 495 231&ndash;36&ndash;60
+            .col-lg-5.col-md-5.col-s-12
+                .social-icons
+                    a(href='https://www.facebook.com/polytechnicum', target='_blank')
+                        i.polyicon-facebook
+                    a(href='https://vk.com/polytechnicum', target='_blank')
+                        i.polyicon-vk
+                    a(href='http://ok.ru/group/53227509383279', target='_blank')
+                        i.polyicon-odnoklassniki
+                    a(href='https://twitter.com/Polytechnicum', target='_blank')
+                        i.polyicon-twitter
+                    a(href='http://instagram.com/polytechnicum', target='_blank')
+                        i.polyicon-instagram
+                    a(href='http://www.youtube.com/user/polytechnicum', target='_blank')
+                        i.polyicon-youtube
+                    a(href='https://www.flickr.com/photos/polytechnicum/', target='_blank')
+                        i.polyicon-flickr
+                .copy
+                    a(href='https://polymus.ru/ru/copyrights/', target='_blank') Использование материалов сайта
+                    a(href='https://polymus.ru/ru/agreement/', target='_blank') Соглашение с пользователем
+                    p &copy; 2005–2015 Политехнический музей
+            .col-lg-4.col-md-4.col-s-12
+                form(action='https://polymus.ru/ru/api/v1/subscription/subscribe_unauth/')
+                    p.subscribe-title Подписаться на новости
+                    input.subscribe-input(type='email', placeholder='Ваш e-mail')
+                    input(type='hidden' data-type='digest')
+                    input(type='hidden' data-id='6')
+                    .subscribe-submit
+                        input(type='submit', value='')

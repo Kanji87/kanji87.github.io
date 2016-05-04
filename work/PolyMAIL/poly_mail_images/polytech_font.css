@@ -1,0 +1,42 @@
+
+/* Polytech Sans Font */
+
+@font-face {
+  font-family: 'PolytechSans';
+  src: url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans.eot');
+  src: url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans.eot?#iefix') format('embedded-opentype'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans.woff') format('woff'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans.ttf') format('truetype'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans.svg#PolytechSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PolytechSans';
+  src: url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-medium.eot');
+  src: url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-medium.eot?#iefix') format('embedded-opentype'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-medium.woff') format('woff'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-medium.ttf') format('truetype'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-medium.svg#PolytechSans') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PolytechSans';
+  src: url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-bold.eot');
+  src: url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-bold.eot?#iefix') format('embedded-opentype'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-bold.woff') format('woff'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-bold.ttf') format('truetype'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-bold.svg#PolytechSans') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PolytechSans';
+  src: url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-italic.eot');
+  src: url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-italic.eot?#iefix') format('embedded-opentype'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-italic.woff') format('woff'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-italic.ttf') format('truetype'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-italic.svg#PolytechSans') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PolytechSans';
+  src: url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-light.eot');
+  src: url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-light.eot?#iefix') format('embedded-opentype'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-light.woff') format('woff'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-light.ttf') format('truetype'), url('https://polymus.ru/static/_/build/fonts/polytechsans/polytechsans-light.svg#PolytechSans') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}

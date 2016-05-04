@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PolyHolo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function(){
+            $('#startVideo').click(function(){
+                for (var i = 0; i < $('.holo__video-item').length; i++) {
+                    $('.holo__video-item video').get(i).paused ? $('.holo__video-item video').get(i).play() : $('.holo__video-item video').get(i).pause();
+                };
+            });
+        });
+    </script>
+</head>
+<body>
+    <section class="holo-wrapper">
+        <div class="holo-container">
+            <div class="holo__video-item">
+                <video preload muted> 
+                  <source src="sams.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="holo__video-item">
+                <video preload muted> 
+                  <source src="sams.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="holo__video-item">
+                <video preload muted> 
+                  <source src="sams.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="holo__video-item">
+                <video preload muted> 
+                  <source src="sams.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <button id="startVideo">Start/pause video</button>
+    </section>
+</body>
+</html>

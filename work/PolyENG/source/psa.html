@@ -1,0 +1,145 @@
+@@include('_header.html')
+    <div class="content-wrap">
+        <div class="teaser-info">
+            <div class="teaser-info__photo">
+                    <div class="teaser-slider">
+                        <div class="teaser-slider__teaser">
+                            <img src="http://polymus.ru/eng/img/psa/1.jpg">
+                            <img src="http://polymus.ru/eng/img/psa/2.jpg">
+                            <img src="http://polymus.ru/eng/img/psa/3.jpg">
+                            <img src="http://polymus.ru/eng/img/psa/4.jpg">
+                            <img src="http://polymus.ru/eng/img/psa/5.jpg">
+                            <img src="http://polymus.ru/eng/img/psa/6.jpg">
+                            <img src="http://polymus.ru/eng/img/psa/7.jpg">
+                            <img src="http://polymus.ru/eng/img/psa/8.jpg">
+                            <img src="http://polymus.ru/eng/img/psa/9.jpg">
+                        </div>
+                        <div class="teaser-slider__meta">
+                            <div class="teaser-slider__caption"></div>
+                            <div class="teaser-slider__nav">
+                                <div class="teaser-slider__prev polyicon-arrow-left-m"></div>
+                                <div class="teaser-slider__count"></div>
+                                <div class="teaser-slider__next polyicon-arrow-right-m"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(function () {
+                            $('.teaser-slider').each(function (index) {
+                                var $this = $(this);
+                                $('.teaser-slider__teaser', this)
+                                        .on('fotorama:show', function (e, fotorama) {
+                                            $('.teaser-slider__count', $this).text((fotorama.activeIndex + 1) + ' of ' + fotorama.size);
+                                            fotorama.$caption = fotorama.$caption || $('.teaser-slider__meta .teaser-slider__caption', $this);
+                                            fotorama.$caption.html(fotorama.activeFrame.caption);
+                                        })
+                                        .fotorama({
+                                            width: '100%',
+                                            maxHeight: '440',
+                                            fit: 'cover',
+                                            transition: 'swipe',
+                                            loop: true,
+                                            nav: false,
+                                            arrows: true,
+                                            click: true,
+                                            captions: false
+                                        });
+
+                                var fotoramaSlider = $('.teaser-slider__teaser', this).data('fotorama');
+                                $('.teaser-slider__next', this).click(function () {
+                                    fotoramaSlider.show({index: '>'});
+                                });
+                                $('.teaser-slider__prev', this).click(function () {
+                                    fotoramaSlider.show({index: '<'});
+                                });
+                            });
+                        });
+                    </script>
+            </div>
+    
+            <div class="teaser-info__sidebar teaser-info__expo bi__bg-color--grey-lightest pull-right">
+                <h3 class="teaser-info__expo-title">Polytech.Science.Art</h3>
+
+                <p class="teaser-info__expo-desc">
+                    Polytech.Science.Art program, launched in 2014, is dedicated to the significant phenomenon of contemporary culture, employing the synthesis of science, art and technology as an artistic method, and performing the scientific approach to artistic creativity.
+                    <br><br>
+                    The program runs education, research, exhibition and other experimental projects featuring Russian and international experts, creating a space for interdisciplinary cooperation.
+                </p>
+
+                <div class="teaser-info__meta_expo">
+                    
+                    <a style="display:block; border:0; margin-top: 20px; text-decoration: underline;" href="http://www.facebook.com/polytechscienceart" class="teaser-info__meta_expo-contact-us">Polytech.Science.Art</a>
+                    
+                    <a href="mailto:nvfuchs@polymus.ru" class="teaser-info__meta_expo-contact-us">Contact us</a>
+                        
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="empty-middle-bar"></div>
+         
+        <section class="container grid-holder">
+            @@include('_sidebar.html')
+
+            <h2 class="page-title col-4 pull-up">Polytech.Science.Art</h2>
+            <div class="main">
+                <div class="inner-bordered">
+                    <div class="content-area">
+                        <p>The Polytechnic Museum continues to constitute the platform for experimental and innovation activities related to science and technology, welcoming the most distinguished Russian and international experts to run creative workshops, give lectures and participate in discussions and collaborative projects.</p>
+                        <p>The Polytech.Science.Art 2015 program includes two series of workshops available for all the preselected applicants. The workshops, organized in collaboration with the <a target="_blank" href="http://garageccc.com/en">Garage Museum of Contemporary Art</a>, are hosted by artists and researchers from Poland, US, Germany, Turkey, UK and Belgium. The program results will be presented at the annual international festival Polytech.Science.Art Week, sided by the companion exhibition in December, 2015.
+                        <br>
+                        Apart from the creative workshop events, the Polytech.Science.Art program will feature the special summer session at <a target="_blank" href="http://www.strelka.com/en">the Strelka Institute of Media, Architecture and Design</a> dedicated to the Russian-French collaboration in science and technology art.
+                        <br>
+                        In September, the Polytech.Science.Art and <a target="_blank" href="https://www.cca.edu/">California College of the Arts</a> are going to present the collaborative project Sound & Vision scheduled to feature Genesis P-Orridge, Brian Eno and Kim Gordon.
+                        </p>
+                        <p><a href="http://polymus.ru/eng/img/psa/PSA_release_2015_eng.pdf">Polytech.Science.Art 2015 program release</a></p>
+                        <div>
+                            <iframe src="https://player.vimeo.com/video/107140900" width="663" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                        <p>
+                            Polytech.Science.Art program launched with the start of the creative workshops project in 2014. It also contributed <a target="_blank" href="http://360.polymus.ru/en/news/1669/">a video program</a> to the Polytechnic Museum’s <a target="_blank" href="https://polymus.ru/eng/flagship_annual_events/international_contemporary_science_film_festival_360.html">International Contemporary Science Film Festival 360°</a> and organized a series of public talks by the prominent artists and art critics.
+                            <br>
+                            The program culminated with the year-end Polytech.Science.Art Week featuring lectures, workshops, panel discussions and the exhibition celebrating the results of the workshop program’s first year.
+                        </p>
+                        <div>
+                            <iframe src="//www.slideshare.net/slideshow/embed_code/46310160" width="663" height="443" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                        </div>
+                        <br>
+                        <p>
+                            The workshop program embraced information technology, neurobiology, physics, psychoacoustics, fibertronics and many other fields of research. The participants <a target="_blank" href="http://artypical.com/?p=104">studied hacktivism</a> and avant-garde media with <a target="_blank" href="http://k0a1a.net/danja/">Danja Vasiliev</a> (Russia/Germany); <a target="_blank" href="http://artypical.com/?p=109">made a performance</a> within the interactive environment guided by <a target="_blank" href="http://www.soniacillari.net/">Sonia Cillari</a> (Italy); applied methods of augmented reality to urban spaces directed by Arturo Castro (Spain); <a target="_blank" href="http://artypical.com/?p=118">learned about fibertronics</a> and made an interactive map of Moscow on e-textile enabling microcomputers and sensors together with <a target="_blank" href="http://artemispapageorgiou.com/">Artemis Papageorgiou</a>(Greece); visualized their own brain signals using neural interfaces with Enzo Varriale (Italy) and explored sonic environment in an improvised laboratory by Aalborg University (Denmark).
+                        </p>
+                        <div>
+                            <iframe width="663" height="373" src="https://www.youtube.com/embed/4euGbk70ER4" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <div class="clearfix" style="padding: 0 24px; margin-bottom: 20px;">
+                            <div style="width: 120px; height: 125px; overflow: hidden; float: left; display: block">
+                                <img src="http://polymus.ru/eng/img/psa/NFuchs.jpg">
+                            </div>
+                            <p style="float: left; width: 475px; margin-left: 15px">
+                                <a href="mailto:nvfuchs@polymus.ru">Natalia Fuchs</a><br>
+                                The Polytech.Science.Art Program Curator <br>
+                                Art historian (Media Art Histories, Danube University) <br>
+                                Cultural management expert (Cultural Management, University of Manchester)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- external -->
+<script src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+
+
+    <script src="/static/_/build/js/vendor.min.js"></script>
+    <script src="/static/_/build/js/auth.min.js"></script>
+    <script src="/static/_/build/js/script.min.js"></script>
+
+
+
+</body>
+</html>

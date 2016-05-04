@@ -1,0 +1,300 @@
+.theme-heading {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% top;
+
+  @include respond-to(desktop) {
+    height: 500px;
+  }
+
+  @include respond-to(fablet) {
+    height: 400px;
+  }
+  
+  @include respond-to(phone) {
+    height: 250px;
+  }
+}
+
+.theme-hashtag {
+  bottom: 10px;
+  right: 20px;
+}
+
+h1.theme-title {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 90px;
+
+  @include respond-to(tablet) {
+    padding-top: 70px;
+  }
+
+  @include respond-to(fablet) {
+    padding-top: 50px;
+  }
+
+  @include respond-to(phone) {
+    padding-top: 30px;
+  }
+}
+
+.theme {
+  .white-share {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.content-block {
+  padding: 60px 20px 70px;
+  background-repeat: repeat;
+
+  @include respond-to(fablet) {
+    padding: 40px 30px;
+  }
+
+  @include respond-to(phone) {
+    padding: 30px 10px;
+  }
+}
+
+.content-block__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @include respond-to(phone) {
+    margin-bottom: 10px;
+  }
+}
+
+.content-block__text {
+  font-size: 1.2em;
+  margin-top: 20px;
+  text-align: center;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.theme-space {
+  .theme-heading {
+    background-image: url($imgPath + 'themes/space_title.jpg');
+    margin-top: -40px;
+
+    @include respond-to(desktop) {
+      margin-top: 0;
+    }
+  }
+
+  .theme-title {
+    padding-top: 170px;
+
+    @include respond-to(desktop) {
+      padding-top: 90px;
+    }
+
+    @include respond-to(tablet) {
+      padding-top: 70px;
+    }
+
+    @include respond-to(fablet) {
+      padding-top: 50px;
+    }
+
+    @include respond-to(phone) {
+      padding-top: 30px;
+    }
+  }
+
+  .content-block--bg-image {
+    background-image: url($imgPath + 'themes/lamp_pattern.png');
+    background-size: 15%;
+    background-position: -45px 45px;
+  }
+
+  .content-quote-block {
+    background-image: url($imgPath + 'themes/clock.png');
+    background-position: 10px 0;
+    background-repeat: no-repeat;
+    background-size: 10%;
+
+    @include respond-to(phone) {
+      background-image: none;
+    }
+  }
+}
+
+.theme-life {
+  .theme-heading {
+    background-image: url($imgPath + 'themes/life_title.jpg');
+  }
+
+  .content-block--bg-image {
+    background-image: url($imgPath + 'themes/life_pattern.png');
+    background-position: -15px 0;
+  }
+
+  .content-quote-block {
+    background-image: url($imgPath + 'themes/dodo_legs.png');
+    background-position: 10px 0;
+    background-repeat: no-repeat;
+    background-size: 10%;
+
+    @include respond-to(phone) {
+      background-image: none;
+    }
+  }
+}
+
+.theme-math {
+  .theme-heading {
+    background-image: url($imgPath + 'themes/math_title.jpg');
+  }
+
+  .content-block--bg-image {
+    background-image: url($imgPath + 'themes/math_pattern.png');
+    background-position: -15px 0;
+  }
+
+  .content-quote-block {
+    background-image: url($imgPath + 'themes/mouthpiece.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+
+    @include respond-to(phone) {
+      background-image: none;
+    }
+  }
+}
+
+.theme-time {
+  .theme-heading {
+    background-image: url($imgPath + 'themes/time_title.jpg');
+  }
+
+  .content-block--bg-image {
+    background-image: url($imgPath + 'themes/time_pattern.png');
+    background-position: -30px -8px;
+  }
+
+  .content-quote-block {
+    background-image: url($imgPath + 'themes/hat.png');
+    background-position: 95% 90%;
+    background-repeat: no-repeat;
+    background-size: 10%;
+
+    @include respond-to(phone) {
+      background-image: none;
+    }
+  }
+}
+
+.theme-perception {
+  .theme-heading {
+    background-image: url($imgPath + 'themes/perception.jpg');
+  }
+
+  .content-block--bg-image {
+    background-image: none;
+    background-position: 0 0;
+    background: repeating-linear-gradient(
+            135deg,
+            $yellow,
+            $yellow 2px,
+            $orange 2px,
+            $orange 4px
+    );
+  }
+
+  .content-quote-block {
+    background-image: url($imgPath + 'themes/brain.png');
+    background-position: 95% 90%;
+    background-repeat: no-repeat;
+    background-size: 10%;
+
+    @include respond-to(phone) {
+      background-image: none;
+    }
+  }
+}
+
+.content-quote-block {
+  text-align: center;
+  font-size: 1.5em;
+
+  span {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+  }
+}
+
+.content-image-block {
+
+  .content-block__title {
+    margin-bottom: 30px;
+    color: $white;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    text-align: center;
+    color: $white;
+    margin-bottom: 40px;
+
+    @include respond-to(phone) {
+      &:last-of-type {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  span {
+    display: block;
+    font-size: .8em;
+    color: $yellow;
+    margin-bottom: 10px;
+  }
+
+  a {
+    display: block;
+    text-decoration: underline;
+    color: $white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+      color: $white;
+    }
+  }
+
+  &.yellow-bg {
+    .content-block__title,
+    p,
+    span {
+      color: $black;
+    }
+
+    a {
+      color: $black;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $black;
+      }
+    }
+  }
+}

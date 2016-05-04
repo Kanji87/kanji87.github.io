@@ -1,0 +1,123 @@
+@@include('_header.html')
+
+    <div class="content-wrap">
+        <div class="teaser-info">
+            <div class="teaser-info__photo" style="width: 100%;">
+                    <div class="teaser-slider">
+                        <div class="teaser-slider__teaser" style="width: 100%;">
+                            <img src="http://polymus.ru/media/cache/6e/06/6e061d26c96872a84855ffc32ac1bcb5.jpg">
+                            <img src="http://polymus.ru/media/cache/89/ac/89ac345173237f951a9bd291c418b8b3.jpg">
+                            <img src="http://polymus.ru/media/cache/55/8a/558a01f5575de2a799d67d30064dd0e0.jpg">
+                            <img src="http://polymus.ru/media/cache/a9/bf/a9bf443e4550687bd115d15eb95cb869.jpg">
+                            <img src="http://polymus.ru/media/cache/2a/d9/2ad9b77a54179130e530333331b724f6.jpg">
+                            <img src="http://polymus.ru/media/cache/ef/a9/efa988befc883575c96606374fd43c22.jpg">
+                        </div>
+                        <div class="teaser-slider__meta">
+                            <div class="teaser-slider__caption"></div>
+                            <div class="teaser-slider__nav">
+                                <div class="teaser-slider__prev polyicon-arrow-left-m"></div>
+                                <div class="teaser-slider__count"></div>
+                                <div class="teaser-slider__next polyicon-arrow-right-m"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(function () {
+                            $('.teaser-slider').each(function (index) {
+                                var $this = $(this);
+                                $('.teaser-slider__teaser', this)
+                                        .on('fotorama:show', function (e, fotorama) {
+                                            $('.teaser-slider__count', $this).text((fotorama.activeIndex + 1) + ' of ' + fotorama.size);
+                                            fotorama.$caption = fotorama.$caption || $('.teaser-slider__meta .teaser-slider__caption', $this);
+                                            fotorama.$caption.html(fotorama.activeFrame.caption);
+                                        })
+                                        .fotorama({
+                                            width: '100%',
+                                            maxHeight: '440',
+                                            fit: 'cover',
+                                            transition: 'swipe',
+                                            loop: true,
+                                            nav: false,
+                                            arrows: true,
+                                            click: true,
+                                            captions: false
+                                        });
+
+                                var fotoramaSlider = $('.teaser-slider__teaser', this).data('fotorama');
+                                $('.teaser-slider__next', this).click(function () {
+                                    fotoramaSlider.show({index: '>'});
+                                });
+                                $('.teaser-slider__prev', this).click(function () {
+                                    fotoramaSlider.show({index: '<'});
+                                });
+                            });
+                        });
+                    </script>
+            </div>
+        </div>
+        <div class="empty-middle-bar"></div>
+         
+        <section class="container grid-holder">
+            @@include('_sidebar.html')
+
+            <h2 class="page-title col-4 pull-up">Learning</h2>
+            <div class="main">
+                <div class="inner-bordered">
+                    <div class="content-area">
+                        <h3><strong>Children</strong></h3>
+                        <p>The University for Children is a collaborative project of the Polytechnic Museum and the Higher School of Economics admitting students of 8–13 years old. Researchers and science popularizers give lectures, conduct practical training and laboratory work, introducing the young audiences to the elements of real science.</p>
+                        <p>The Children’s Lectorium is a place where scientists and specialists come to tell about complex things in simple and intriguing way. We welcome specialists from all areas of science, provided that they are interested in communication with children and able to kindle children’s interest. Materials presented at the Lectorium are intended for children of 7 to 12 years old and their parents.</p>
+                        <p>The Science Labs is hands-on training in biology, mathematics, robotics, chemistry, physics and automotive design, geared towards kids and youngsters. The program includes school classes, clubs, single workshops, scientific researches and experiments, conducted by young practicing scientists. Since 2014, the Science Labs provide special training programs for high-school graduates.</p>
+                        <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe width="560" height="315" src="//www.youtube.com/embed/4OUUnnXvbeM" frameborder="0" allowfullscreen></iframe></div>
+                        <p>The Science Tractor is a "locomotive" for a number of labs, fully-equipped for outdoor classes wherever it heads for — be it a school or a park. The program provides hands-on classes in chemistry, biology, physics, mathematics, robotics and automotive design.</p>
+                        <p>SKVT is a community, a program and a place where the Polytechnic Museum’s team supports enthusiastic young people in their creative endeavors, providing meetings, conversations and seminars for those, who love to design and carry out projects. We know exactly what it is like to do work of love—we design and run lectures, exhibitions and festivals—and we happy to share our experience with the youngsters. Participants have a chance to organize events and be responsible for all the stages of arrangements.</p>
+                        <h3><strong>Adults</strong></h3>
+                        <p>The Polytechnic Museum’s Lectorium is the largest organizer of popular science events, lectures and discussions. Before 2014, the Big Lecture Hall was the main venue of the Polytechnic Museum’s Lectorium. A number of prominent Russian and international scientists and artists gave lectures within its walls — among them are Niels Bohr, Ilya Mechnikov, Roger Penrose, Dick Swaab, Anthony Atala, Leonard Mlodinow, Kevin Warwick, Marina Abramovic, Konstantin Anokhin, Theo Jansen, Stanislav Smirnov and Brian Greene.</p>
+                        <div class="content-slider">
+                            <!-- <div class="content-slider__link-to-gallery">
+                                <a href="#">View all <i class="polyicon-arrow-right-m"></i></a>
+                            </div> -->
+                            <div class="content-slider__content">
+                                <!-- <div class='content-slider__caption__copyright'></div> -->
+                                <img src="http://polymus.ru/media/cache/d3/0a/d30aebc1b8a1b3b863c1363ae0ff9a5e.jpg">
+                                <img src="http://polymus.ru/media/cache/37/86/37863839e270902da2929e0a5de3b1a1.jpg">
+                                <img src="http://polymus.ru/media/cache/be/4c/be4c47068a3ba84bd234abfbc280f68a.jpg">
+                                <img src="http://polymus.ru/media/cache/60/ef/60eff4a35b2eced5c63fd239d40c0bbb.jpg">
+                            </div>
+                            <div class="content-slider__meta">
+                                <div class="content-slider__caption"></div>
+                                <div class="content-slider__nav">
+                                    <div class="content-slider__prev polyicon-arrow-left-m"></div>
+                                    <div class="content-slider__count"></div>
+                                    <div class="content-slider__next polyicon-arrow-right-m"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3><strong>Professionals</strong></h3>
+                        <p>In 2014, the Polytechnic Museum and the Higher School of Economics launched a collaborative Master’s program on Applied Cultural Studies. The program is based on reinvented notion of the museum as a platform for creative practices focusing on emotions, imagination and new experience rather that memory. The program was designed together with international experts, in particular—the experts from Reinwardt Academie (The Netherlands) and the University of Leicester's School of Museum Studies (UK). Looking to the global standards, the program creators involve top experts in the project—world-class professionals in modern museum affairs who have made the reputation working with Tate (London), Rijksmuseum (Amsterdam) and Chopin Museum (Warsaw).</p>
+                        <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe width="560" height="315" src="//www.youtube.com/embed/kIvMEtkYbR0" frameborder="0" allowfullscreen></iframe></div>
+                        <p>The Science Battle is a contest between young scientists, where each participant takes 10 minutes to present their research to the audience and explain their subject matter in plain language. An important part of the project is the participant’s preparation for the Battle—before the contest, they take a special training on public presentation and modern approaches to the science communication, learning to talk exciting science.</p>
+                        <h3><strong>Creative Professionals</strong></h3>
+                        <p>The <a href="https://polymus.ru/eng/current_projects/psa.html">Polytech.Science.Art</a> program, launched in 2014, represents one of the significant phenomena of contemporary culture—interdisciplinary collaboration between artists, scientists and engineers. The program runs education, research, exhibition and other experimental projects featuring Russian and international experts. The experts of the Polytech.Science.Art program formulate a comprehensive idea on the synthesis of science, art and technology as an artistic method, a space for innovation, present art projects showing scientific approach and innovative methods.</p>
+                        <!-- <p><a href="/eng/Polytech_Ars_Electronica2015.pdf">Polytech + Ars Electronica 2015</a></p> -->
+                        <p><a href="/eng/Polytech_Science_Art2014.pdf">Polytech.Science.Art 2014</a></p>
+                        <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe width="560" height="315" src="//www.youtube.com/embed/4euGbk70ER4" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- external -->
+<script src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+
+
+    <script src="/static/_/build/js/vendor.min.js"></script>
+    <script src="/static/_/build/js/auth.min.js"></script>
+    <script src="/static/_/build/js/script.min.js"></script>
+
+
+
+</body>
+</html>
