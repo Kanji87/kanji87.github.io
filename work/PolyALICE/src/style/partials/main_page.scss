@@ -538,16 +538,27 @@
   &:nth-child(2),
   &:nth-child(3) {
     .partner-name {
-      margin-bottom: 45px;
+      //margin-bottom: 45px;
+    }
+
+    img {
+      width: 250px;
+    }
+  }
+
+  &:first-child {
+    img {
+      width: 150px;
     }
   }
 
   &:last-child {
-    display: inline-block;
-    float: none;
+    .partner-name {
+      margin-bottom: 82px;
 
-    img {
-      width: 150px;
+      @include respond-to(tablet) {
+        margin-bottom: 30px;
+      }
     }
   }
 

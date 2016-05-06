@@ -226,3 +226,11 @@ h1.exhibition-title {
     height: 320px;
   }
 }
+
+.exhibition-price__title--excursion {
+  margin-top: 50px;
+
+  @include respond-to(fablet) {
+    margin-top: 20px;
+  }
+}
