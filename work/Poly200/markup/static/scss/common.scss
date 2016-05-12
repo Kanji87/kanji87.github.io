@@ -972,3 +972,41 @@ p.page__title-hashtag {
 .section-banner__relikva {
     background-color: #63c;
 }
+
+.section__video {
+    background-color: #000;
+
+    .section__title {
+        color: #fff;
+    }
+}
+
+.video-container {
+    width: 100%;
+    height: 700px;
+    position: relative;
+
+    @include respond-to(desktop) {
+        height: 600px;
+    }
+
+    @include respond-to(tablet) {
+        height: 500px;
+    }
+
+    @include respond-to(fablet) {
+        height: 400px;
+    }
+
+    @include respond-to(phone) {
+        height: 300px;
+    }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
