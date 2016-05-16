@@ -299,7 +299,7 @@
     bottom: 5px;
     left: 20px;
     letter-spacing: -2px;
-    width: initial;
+    width: auto;
     z-index: 50;
 
     @include respond-to(fablet) {
@@ -745,5 +745,36 @@
   a {
     color: $orange;
     text-decoration: none;
+  }
+}
+
+.about--video {
+  padding-top: 0;
+}
+
+.video-container {
+  width: 970px;
+  height: 540px;
+  margin: 0 auto;
+  position: relative;
+
+  @include respond-to(tablet) {
+    width: 100%;
+  }
+
+  @include respond-to(fablet) {
+    height: 400px;
+  }
+
+  @include respond-to(phone) {
+    height: 250px;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
