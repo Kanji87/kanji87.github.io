@@ -1,0 +1,49 @@
+mixin head(data)
+    meta(charset="utf-8")
+    |<title>#{data.title}</title>
+    meta(content="#{data.description}" name="description")
+    meta(content="" name="keywords")
+    meta(content="telephone=no" name="format-detection")
+    meta(name="robots" content="noodp, noydir")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    //- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers
+    meta(name="HandheldFriendly" content="true")
+    |<meta content="IE=edge" http-equiv="X-UA-Compatible">
+    |<!--[if IE 8 ]><link href="%=staticPrefix=%css/main_ie8%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><![endif]-->
+    |<!--[if IE 9 ]><link href="%=staticPrefix=%css/main_ie9%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><![endif]-->
+    |<!--[if (gt IE 9)|!(IE)]><!--><link href="%=staticPrefix=%css/main%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><!--<![endif]-->
+
+    if data.useSocialMetaTags
+        meta(property="fb:app_id" content="475227962600265")
+        meta(property="og:url" content="http://200.polymus.ru")
+        meta(property="og:site_name" content="#{data.title}")
+        meta(property="og:title" content="#{data.title}")
+        meta(property="og:description" content="#{data.description}")
+        |<meta property="og:image" content="http://200.polymus.ru/static/img/general/share.jpg" />
+        |<meta property="og:image:type" content="image/jpg" />
+        |<meta property="og:image:width" content="1200" />
+        |<meta property="og:image:height" content="630" />
+        |<meta property="twitter:card" content="summary_large_image" />
+        |<meta property="twitter:site" content="@Polytechnicum" />
+        |<meta property="twitter:creator" content="@Polytechnicum" />
+        |<meta property="twitter:title" content="#{data.title}" />
+        |<meta property="twitter:description" content="200 ударов в минуту #200ударов #выставка #политех #mmoma" />
+        |<meta property="twitter:image" content="http://200.polymus.ru/static/img/general/share.jpg" />
+        |<link rel="image_src" href="http://200.polymus.ru/static/img/general/share.jpg" />
+
+    link(rel="icon" type="image/png" href="%=staticPrefix=%img/general/favicon.ico")
+    link(rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" type="image/png" href="%=staticPrefix=%img/general/favicon.ico")
+    link(rel="apple-touch-icon" sizes='57x57' href="apple-icon-57x57.png")
+    link(rel="apple-touch-icon-precomposed" sizes='57x57' href="%=staticPrefix=%img/general/apple-icon-57x57.png")
+    link(rel="apple-touch-icon" sizes='72x72' href="%=staticPrefix=%img/general/apple-icon-72x72.png")
+    link(rel="apple-touch-icon" sizes='114x114' href="%=staticPrefix=%img/general/apple-icon-114x114.png")
+    link(rel="apple-touch-icon" sizes='120x120' href="%=staticPrefix=%img/general/apple-icon-120x120.png")
+    link(rel="apple-touch-icon" sizes='144x144' href="%=staticPrefix=%img/general/apple-icon-144x144.png")
+
+    //script(src='%=staticPrefix=%js/separate-js/assets.js')
+    //script(src='%=staticPrefix=%js/separate-js/plugins.js')
+    //script(src='%=staticPrefix=%js/separate-js/main.js')
+
+    script.
+        (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+    |<!--[if lt IE 9 ]><script src="%=staticPrefix=%js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar"><![endif]-->

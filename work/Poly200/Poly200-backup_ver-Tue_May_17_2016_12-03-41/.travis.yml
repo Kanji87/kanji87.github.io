@@ -1,0 +1,28 @@
+language: c
+
+os:
+  - linux
+  - osx
+
+env:
+  matrix:
+    - export NODE_VERSION="4"
+    - export NODE_VERSION="0.12"
+
+matrix:
+  fast_finish: true
+
+before_install:
+  - git clone https://github.com/creationix/nvm.git ./.nvm
+  - source ./.nvm/nvm.sh
+  - nvm install $NODE_VERSION
+  - nvm use $NODE_VERSION
+
+before_script:
+  - npm install
+  - npm install -g gulp
+  - gulp init
+  - gulp re-init
+
+script:
+  - gulp --release --ie
