@@ -65,17 +65,17 @@ body {
 }
 
 .page__social {
-    position: absolute;
-    right: 15px;
+    //position: absolute;
+    //right: 15px;
     //bottom: 55px;
-    bottom: -8px;
+    //bottom: -8px;
 
-    @include respond-to(desktop) {
+    //@include respond-to(desktop) {
         position: relative;
         margin-top: 35px;
         right: auto;
         bottom: auto;
-    }
+    //}
 }
 
 .social-likes {
@@ -937,29 +937,29 @@ p.page__title-hashtag {
 }
 
 .lection__text {
-    border-bottom: 1px solid #000;
+    //border-bottom: 1px solid #000;
     padding-bottom: 15px;
     margin-bottom: 10px;
 }
 
-.lection-col {
-
-    .section__text:last-child .lection__text {
-        border: 0;
-    }
-
-    @include respond-to(tablet) {
-        .section__text:last-child .lection__text {
-            border-bottom: 1px solid #000;
-        }
-
-        &:last-child {
-            .section__text:last-child .lection__text {
-                border: 0;
-            }
-        }
-    }
-}
+//.lection-col {
+//
+//    .section__text:last-child .lection__text {
+//        border: 0;
+//    }
+//
+//    @include respond-to(tablet) {
+//        .section__text:last-child .lection__text {
+//            border-bottom: 1px solid #000;
+//        }
+//
+//        &:last-child {
+//            .section__text:last-child .lection__text {
+//                border: 0;
+//            }
+//        }
+//    }
+//}
 
 .section-banner {
     text-align: center;
