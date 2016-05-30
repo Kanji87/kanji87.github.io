@@ -738,9 +738,8 @@
 }
 
 .contest {
-  @extend .about;
   background-color: $red;
-  padding-bottom: 0;
+  padding-bottom: 70px;
 
   a {
     color: $orange;

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Add user</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+		}
+
+		.main {
+			width: 760px;
+			height: 100%;
+			margin: 0 auto;
+			position: relative;
+			padding: 100px 0;
+		}
+
+		textarea {
+			resize: none;
+		}
+
+		.table-responsive {
+			margin-top: 60px;
+		}
+
+		.remove-icon {
+			cursor: pointer;
+		}
+
+		@media screen and (max-width: 768px) {
+			.main {
+				width: 100%;
+				padding: 50px;
+			}
+		}
+
+		@media screen and (max-width: 500px) {
+			.main {
+				padding: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<form class="form-horizontal form">
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-2 control-label">Логин</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" id="inputEmail3" placeholder="Логин">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputPassword3" class="col-sm-2 control-label">Пароль</label>
+				<div class="col-sm-10">
+					<input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputPassword3" class="col-sm-2 control-label">Комментарий</label>
+				<div class="col-sm-10">
+					<textarea class="form-control" rows="3"></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default">Добавить</button>
+				</div>
+			</div>
+		</form>
+		<div class="table-responsive">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Логин</th>
+						<th>Пароль</th>
+						<th>Комментарий</th>
+						<th>Дата добавления</th>
+						<th>Удалить</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<!-- <th scope="row">Red_Devil666</th> -->
+						<td>Red_Devil666</td>
+						<td>asffsa77</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quaerat.</td>
+						<td>23.05.1999</td>
+						<td><i class="remove-icon glyphicon glyphicon-remove"></i></td>
+					</tr>
+					<tr>
+						<!-- <th scope="row">Agell1551</th> -->
+						<td>Agell1551</td>
+						<td>llflf99((9</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem id voluptas alias vero quas, consequatur porro dicta modi molestiae rerum!</td>
+						<td>15.02.2004</td>
+						<td><i class="remove-icon glyphicon glyphicon-remove"></i></td>
+					</tr>
+					<tr>
+						<!-- <th scope="row">19Lollipop55</th> -->
+						<td>19Lollipop55</td>
+						<td>sjshh277728idkkdj**</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cupiditate cum, unde odio accusamus temporibus laudantium aliquam quia aliquid vitae suscipit dolores maiores eaque explicabo aspernatur ullam iusto, id? Accusamus!</td>
+						<td>09.12.2014</td>
+						<td><i class="remove-icon glyphicon glyphicon-remove"></i></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

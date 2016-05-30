@@ -239,3 +239,13 @@ h1.exhibition-title {
     margin-top: 20px;
   }
 }
+
+.exhibition-promo {
+  font-size: 18px;
+  padding-bottom: 40px;
+
+  a {
+    color: $orange;
+    text-decoration: none;
+  }
+}
