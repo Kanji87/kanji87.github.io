@@ -1,0 +1,87 @@
+.key-image {
+	position: relative;
+
+	width: 690px;
+	height: 100%;
+	margin: 0 auto;
+	img {
+		position: absolute;
+	}
+	&__title {
+		position: absolute;
+		z-index: 975;
+		top: 50%;
+
+		width: 100%;
+		height: 526px;
+
+		transform: translate(0, -50%);
+	}
+	&__cosmos {
+		z-index: 975;
+		top: 0;
+		left: 0;
+	}
+	&__cosmonaut {
+		z-index: 985;
+		top: 158px;
+		right: 62px;
+
+		width: 239px;
+		height: 494px;
+	}
+	&__exhibition {
+		z-index: 975;
+		top: 26px;
+		left: 64px;
+
+		width: 132px;
+		height: 88px;
+	}
+	&__era-born {
+		z-index: 980;
+		bottom: 12px;
+		left: 167px;
+
+		width: 440px;
+		height: 196px;
+	}
+	&__planet-red-big{
+		z-index: 970;
+		top: -156px;
+		left: 120px;
+
+		width: 417px;
+		height: 419px;
+	}
+	&__planet-red-medium{
+		z-index: 970;
+		bottom: -52px;
+		left: 76px;
+
+		width: 182px;
+		height: 181px;
+	}
+	&__planet-red-small{
+		z-index: 970;
+		bottom: -150px;
+		left: 280px;
+
+		width: 140px;
+		height: 134px;
+	}
+	&__planet-yellow-small {
+		z-index: 980;
+		top: 189px;
+		right: -35px;
+		width: 69px;
+		height: 69px;
+	}
+	&__planet-yellow-medium {
+		z-index: 965;
+		top: -61px;
+		right: 44px;
+		width: 122px;
+		height: 121px;
+	}
+}

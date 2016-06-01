@@ -1,0 +1,27 @@
+.nav {
+    position: relative;
+    z-index: 990;
+
+    padding-top: 25px;
+
+    @include cf();
+
+    &-list {
+        &__item {
+            &:not(:first-child) {
+                padding-right: 0;
+                padding-left: 48px;
+            }
+            
+            &-link {
+                font-size: 14px;
+                line-height: 24px;
+
+                text-decoration: none;
+                text-transform: none;
+
+                color: $white;
+            }
+        }
+    }
+}

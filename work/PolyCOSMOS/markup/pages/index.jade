@@ -1,27 +1,28 @@
 doctype html
 html(class="no-js", lang="ru")
 
-    include ../modules/head/head
-    include ../modules/example/example
-    include ../modules/footer/footer
+	include ../modules/head/head
+	include ../modules/header/header
+	include ../modules/key_image/key_image
+	include ../modules/footer/footer
 
-    head
-        +head(head.defaults)
-    body.page
-        |%=symbols=%
+	head
+		+head(head.defaults)
+	body.page
+		|%=symbols=%
 
-        section.page__wrapper
+		+header()
 
-            //- Include your modules here
-            +example()
+		section.section-main.slider-wrapper
+			.section-main__border
+			img.page-background__one(src='%=static=%img/general/back2.png')
 
-            .page__buffer
+			+key_image()
+			
+		+footer()
 
-        .page__footer
-            +footer()
+		script(src='%=static=%js/separate-js/svg4everybody.min.js')
+		script svg4everybody();
 
-        script(src='%=static=%js/separate-js/svg4everybody.min.js')
-        script svg4everybody();
-
-        //- Main scripts. You can replace it, but I recommend you to leave it here
-        script(src='%=static=%js/main%=hash=%%=min=%.js')
+		//- Main scripts. You can replace it, but I recommend you to leave it here
+		script(src='%=static=%js/main%=hash=%%=min=%.js')

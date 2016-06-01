@@ -34,9 +34,6 @@
 /* Mixins */
 @mixin respond-to($media) {
     @if $media == phone {
-        @media only screen and (max-width: $fablet - 1) { @content; }
-    }
-    @else if $media == fablet {
         @media only screen and (max-width: $tablet - 1) { @content; }
     }
     @else if $media == tablet {
@@ -92,6 +89,7 @@
         content: '';
         display: inline-block;
         vertical-align: middle;
-        height: 100%; width: .1px;
+        height: 100%;
+        width: .1px;
     }
 }
