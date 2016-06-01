@@ -2,7 +2,7 @@ doctype html
 html(class="no-js", lang="ru")
 
     include ../modules/head/head
-    include ../modules/example/example
+    include ../modules/header/header
     include ../modules/footer/footer
 
     head
@@ -11,14 +11,33 @@ html(class="no-js", lang="ru")
         |%=symbols=%
 
         section.page__wrapper
+            .side-menu
+                ul.side-menu__main
+                    li.side-menu__main-item
+                        a.side-menu__main-button.side-menu__main-button--burger.js-open-side-menu(href="#")
+                    li.side-menu__main-item
+                        a.side-menu__main-button.side-menu__main-button--search.js-open-side-menu(href="#")
+                    li.side-menu__main-item
+                        a.side-menu__main-button.side-menu__main-button--user.js-open-side-menu(href="#")
+                    li.side-menu__main-item
+                        a.side-menu__main-button.side-menu__main-button--bookmark.js-open-side-menu(href="#")
 
-            //- Include your modules here
-            +example()
+                ul.side-menu__advanced
+                    li.side-menu__advanced-item
+                    li.side-menu__advanced-item
+                    li.side-menu__advanced-item
 
-            .page__buffer
+                .side-menu__wrapper
+                    .side-menu__content
+                        a.side-menu__main-button.side-menu__main-button--close.js-close-side-menu(href="#")
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis adipisci voluptatem veritatis et, laudantium eum tenetur eaque eveniet necessitatibus qui accusamus molestiae nam quis, neque alias deserunt numquam distinctio nemo aspernatur atque. Perspiciatis tempore quod, optio nulla sed soluta cum voluptatum laboriosam. Accusantium recusandae eos voluptas illum, sequi odit unde.
 
-        .page__footer
-            +footer()
+            section.section-main
+
+                +header()
+
+                +footer()
 
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();

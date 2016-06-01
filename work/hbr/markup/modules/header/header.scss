@@ -1,0 +1,129 @@
+.header {
+    &__main-image {
+        overflow: hidden;
+
+        width: 970px;
+        height: 250px;
+    }
+    &__logo {
+        display: block;
+        float: left;
+
+        width: 140px;
+        height: 101px;
+    }
+}
+
+.nav {
+    position: relative;
+
+    margin-top: 30px;
+
+    @include cf();
+    &__items {
+        float: left;
+
+        max-width: 770px;
+        margin-left: 60px;
+    }
+    &__submenu-list {
+        position: absolute;
+        top: 109px;
+        left: -35px;
+
+        box-sizing: border-box;
+        width: 1040px;
+        padding: 0 35px;
+        max-height: 0;
+
+        transition: all ease-in-out .3s;
+
+        background-color: #000;
+    }
+    &__action-list,
+    &__menu-list {
+        float: right;
+
+        @include cf();
+    }
+    &__action-item,
+    &__menu-item {
+        float: left;
+
+        margin-right: 25px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__action-item {
+        padding: 20px 0;
+    }
+    &__menu-item {
+        &:hover {
+            .nav__submenu-list {
+                max-height: 183px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 4px;
+                    background-color: rgba(0, 0, 0, .4);
+                    display: block;
+                    bottom: -4px;
+                    left: 0;
+                    position: absolute;
+                }
+            }
+            .nav__submenu-col {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    &__action-link {
+        font-family: 'roboto';
+        font-size: 13px;
+
+        text-decoration: none;
+
+        color: #4d4d4d;
+    }
+    &__menu-link,
+    &__submenu-link {
+        font-family: 'roboto';
+        font-size: 16px;
+        font-weight: bold;
+
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+            color: $red;
+        }
+    }
+    &__menu-link {
+        padding: 10px 0 26px;
+
+        transition: all ease .1s;
+
+        color: #000;
+        &:hover {
+            border-bottom: 4px solid $red;
+        }
+    }
+    &__submenu-col {
+        float: left;
+        visibility: hidden;
+        opacity: 0;
+
+        transition: visibility ease .3s, opacity ease .3s;
+    }
+    &__submenu-link {
+        display: block;
+
+        padding: 13px 0;
+
+        color: #fff;
+    }
+}

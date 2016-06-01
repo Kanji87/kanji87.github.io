@@ -84,4 +84,12 @@
 		width: 122px;
 		height: 121px;
 	}
+	&__date {
+		z-index: 990;
+		bottom: 20px;
+		width: 524px;
+		height: 40px;
+		left: 50%;
+		margin-left: -262px;
+	}
 }

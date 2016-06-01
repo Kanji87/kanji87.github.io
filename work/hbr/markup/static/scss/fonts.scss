@@ -16,3 +16,91 @@
 // Var for using custom font
 $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 */
+
+@font-face {
+    font-family: 'futura';
+    src: url('../fonts/FuturaLightC.woff2') format('woff2'),
+         url('../fonts/FuturaLightC.woff') format('woff');
+    font-weight: 300;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'notoserif';
+    src: url('../fonts/NotoSerif-Bold.woff2') format('woff2'),
+         url('../fonts/NotoSerif-Bold.woff') format('woff');
+    font-weight: bold;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'notoserif';
+    src: url('../fonts/NotoSerif-Regular.woff2') format('woff2'),
+         url('../fonts/NotoSerif.woff') format('woff');
+    font-weight: normal;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+         url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans-Semibold.woff2') format('woff2'),
+         url('../fonts/OpenSans-Semibold.woff') format('woff');
+    font-weight: 600;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'RobotoBlack';
+    src: url('../fonts/Roboto-Black.woff2') format('woff2'),
+         url('../fonts/Roboto-Black.woff') format('woff');
+    font-weight: normal;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+         url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+         url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+         url('../fonts/Roboto-Medium.woff') format('woff');
+    font-weight: normal;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+         url('../fonts/RobotoCondensed-Regular.woff') format('woff');
+    font-weight: normal;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'RobotoSlab-Light';
+    src: url('../fonts/RobotoSlab-Light.woff2') format('woff2'),
+         url('../fonts/RobotoSlab-Light.woff') format('woff');
+    font-weight: normal;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
