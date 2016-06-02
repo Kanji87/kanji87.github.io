@@ -13,18 +13,6 @@ body {
 
 .section-main {
     position: relative;
-    
-    &__border {
-        position: absolute;
-        z-index: 990;
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 100%;
-
-        border: 7px solid $light-yellow;
-    }
 }
 
 .page-background__one {
@@ -35,4 +23,18 @@ body {
 
     width: 100%;
     height: auto;
+}
+
+.page__border {
+    position: fixed;
+    z-index: 990;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    border: 7px solid $light-yellow;
 }

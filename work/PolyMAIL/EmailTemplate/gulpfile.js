@@ -13,7 +13,7 @@ var gulp = require('gulp'),
     rimraf = require('rimraf'),
     connect = require('gulp-connect'),
     inlineCss = require('gulp-inline-css'),
-    jade = require('gulp-jade'),
+    // jade = require('gulp-jade'),
     replace = require('gulp-replace'),
     fs = require('fs'),
     opn = require('opn');
@@ -121,15 +121,6 @@ gulp.task('css-inline', function() {
 
         }))
         .pipe(gulp.dest('build/inlined'));
-});
-
-gulp.task('jade', function() {
-    return gulp.src(['src/**/*.jade', '!src/**/_*.jade'])
-        .pipe(jade({
-            pretty: true
-        }))
-        .pipe(gulp.dest('build/'))
-        .pipe(connect.reload());
 });
 
 gulp.task('css-embed', function() {
