@@ -1,4 +1,5 @@
 .header {
+    // padding: 0 35px;
     &__main-image {
         overflow: hidden;
 
@@ -28,13 +29,13 @@
     }
     &__submenu-list {
         position: absolute;
-        top: 109px;
+        top: 106px;
         left: -35px;
 
         box-sizing: border-box;
         width: 1040px;
-        padding: 0 35px;
         max-height: 0;
+        padding: 0 17px;
 
         transition: all ease-in-out .3s;
 
@@ -64,20 +65,24 @@
                 max-height: 183px;
                 padding-top: 21px;
                 padding-bottom: 21px;
-
                 &:after {
-                    content: '';
-                    width: 100%;
-                    height: 4px;
-                    background-color: rgba(0, 0, 0, .4);
-                    display: block;
+                    position: absolute;
                     bottom: -4px;
                     left: 0;
-                    position: absolute;
+
+                    display: block;
+
+                    width: 100%;
+                    height: 4px;
+
+                    content: '';
+
+                    background-color: rgba(0, 0, 0, .4);
                 }
             }
             .nav__submenu-col {
                 visibility: visible;
+
                 opacity: 1;
             }
         }
@@ -93,7 +98,7 @@
     &__menu-link,
     &__submenu-link {
         font-family: 'roboto';
-        font-size: 16px;
+        font-size: 13px;
         font-weight: bold;
 
         text-decoration: none;
@@ -113,11 +118,26 @@
         }
     }
     &__submenu-col {
-        float: left;
         visibility: hidden;
-        opacity: 0;
+        float: left;
+        width: 240px;
+        box-sizing: border-box;
+        padding: 0 18px;
 
         transition: visibility ease .3s, opacity ease .3s;
+
+        opacity: 0;
+
+        &--promo {
+            @include cf();
+            width: 335px;
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            height: 80px;
+            margin-top: -40px;
+
+        }
     }
     &__submenu-link {
         display: block;
@@ -126,4 +146,40 @@
 
         color: #fff;
     }
+
+    &__submenu-promo-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__submenu-promo-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    &__submenu-promo-content {
+        width: 220px;
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        transform: translate(0, -50%);
+    }
+
+    &__submenu-promo-title {
+        font-family: 'RobotoCondensed';
+        font-size: 16px;
+        line-height: 17px;
+        color: #fff;
+    }
+
+    &__submenu-promo-author {
+        font-family: 'roboto';
+        font-size: 11px;
+        line-height: 17px;
+        color: #999;
+    }
+
 }

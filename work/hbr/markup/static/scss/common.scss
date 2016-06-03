@@ -1,13 +1,20 @@
 // Common styles of the project
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
 ul {
-    padding: 0;
     margin: 0;
+    padding: 0;
+
     list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -15,96 +22,97 @@ img {
 }
 
 .page__wrapper {
-	width: 1100px;
-	margin: 0 auto;
-	position: relative;
+    position: relative;
+
+    width: 1100px;
     min-height: 100%;
+    margin: 0 auto;
 }
 
 .side-menu {
-	background-color: #f3f4f5;
-	top: 0;
-	position: fixed;
-	width: 60px;
-	height: 100%;
+    position: fixed;
     z-index: 900;
+    top: 0;
 
+    width: 60px;
+    height: 100%;
+
+    background-color: #f3f4f5;
     &__main {
         position: relative;
         z-index: 100;
     }
-
     &__main-item {
         border-top: 1px solid #d9d9d9;
-
         &:last-child {
             border-bottom: 1px solid #d9d9d9;
         }
     }
-
     &__main-button {
+        display: block;
+
         width: 60px;
         height: 60px;
-        display: block;
+
         text-decoration: none;
+
         color: #000;
         background-repeat: no-repeat;
         background-position: center;
-
         &--burger {
-            background-size: 24px 17px;
             background-image: url('../img/general/menu_icon.svg');
+            background-size: 24px 17px;
         }
-
-        &--search{
-            background-size: 21px 22px;
+        &--search {
             background-image: url('../img/general/search_icon.svg');
+            background-size: 21px 22px;
         }
-
         &--user {
-            background-size: 23px 25px;
             background-image: url('../img/general/user_icon.svg');
+            background-size: 23px 25px;
         }
-
         &--bookmark {
-            background-size: 22px 22px;
             background-image: url('../img/general/bookmark_icon.svg');
+            background-size: 22px 22px;
         }
-
         &--close {
             position: absolute;
             top: 0;
             right: 0;
-            background-size: 22px 22px;
+
             background-image: url('../img/general/close_icon.svg');
+            background-size: 22px 22px;
         }
     }
 }
 
 .section-main {
-	padding-left: 95px;
-	padding-right: 35px;
+    padding-left: 95px;
+    padding-right: 35px;
 }
 
 .side-menu__content {
     padding: 50px 20px;
-    opacity: 0;
+
     transition: opacity ease .3s;
+
+    opacity: 0;
 }
 
 .side-menu__wrapper {
-    z-index: 90;
-    width: 0;
-    min-height: 100%;
-    background-color: #f3f4f5;
     position: absolute;
+    z-index: 90;
     top: 0;
     left: 60px;
+
+    width: 0;
+    min-height: 100%;
+
     transition: width ease .3s;
 
+    background-color: #f3f4f5;
     &--active {
         width: 360px;
-
         .side-menu__content {
             opacity: 1;
         }
@@ -113,4 +121,56 @@ img {
 
 a {
     transition: color ease .3s;
+}
+
+.page-content {
+    @include cf();
+    padding-top: 35px;
+    margin-top: 30px;
+    min-height: 100px;
+    border-top: 1px solid #d9d9d9;
+
+
+}
+
+.row {
+    @include cf();
+    margin-top: 30px;
+}
+
+.col {
+    float: left;
+    margin: 0 17px;
+    // box-sizing: border-box;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.col-medium {
+    width: 635px;
+    min-height: 100px;
+    background-color: rgba(0, 0, 0, .5);
+
+    .col-medium {
+        width: 100%;
+        background-color: rgba(5, 159, 245, .5);
+    }
+
+    .row {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.col-small {
+    width: 300px;
+    min-height: 100px;
+    background-color: rgba(200, 37, 2, .5);
 }
