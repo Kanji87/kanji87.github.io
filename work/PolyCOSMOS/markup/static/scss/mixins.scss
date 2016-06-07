@@ -43,7 +43,10 @@
         @media only screen and (max-width: $large - 1) { @content; }
     }
     @else if $media == large {
-        @media only screen and (min-width: $large) { @content; }
+        @media only screen and (max-width: $xlarge - 1) { @content; }
+    }
+    @else if $media == xlarge {
+        @media only screen and (min-width: $xlarge) { @content; }
     }
 }
 

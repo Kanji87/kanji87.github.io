@@ -1,95 +1,398 @@
 .key-image {
-	position: relative;
+    position: relative;
+    left: 50%;
 
-	width: 690px;
-	height: 100%;
-	margin: 0 auto;
-	img {
-		position: absolute;
-	}
-	&__title {
-		position: absolute;
-		z-index: 975;
-		top: 50%;
+    width: 930px;
+    height: 100%;
+    margin-left: -508px;
 
-		width: 100%;
-		height: 526px;
+    @include respond-to(large) {
+        width: 621px;
+        margin-left: -351px;
+    }
+    @include respond-to(tablet) {
+        width: 680px;
+        margin-left: -350px;
+    }
+    @include respond-to(phone) {
+        width: 282px;
+        margin-left: -140px;
+    }
+    img {
+        position: absolute;
 
-		transform: translate(0, -50%);
-	}
-	&__cosmos {
-		z-index: 975;
-		top: 0;
-		left: 0;
-	}
-	&__cosmonaut {
-		z-index: 985;
-		top: 158px;
-		right: 62px;
+        transition: all ease .3s;
+    }
+    &__title {
+        position: absolute;
+        z-index: 975;
+        top: 50%;
 
-		width: 239px;
-		height: 494px;
-	}
-	&__exhibition {
-		z-index: 975;
-		top: 26px;
-		left: 64px;
+        width: 100%;
+        height: 686px;
+        margin-top: -404px;
+        // transform: translate(0, -50%);
 
-		width: 132px;
-		height: 88px;
-	}
-	&__era-born {
-		z-index: 980;
-		bottom: 12px;
-		left: 167px;
+        @include respond-to(large) {
+            height: 474px;
+            margin-top: -273px;
+        }
+        @include respond-to(tablet) {
+            height: 514px;
+            margin-top: -328px;
+        }
+        @include respond-to(phone) {
+            height: 214px;
+            margin-top: -158px;
+        }
+    }
+    &__cosmos {
+        z-index: 975;
+        top: 0;
+        left: 0;
 
-		width: 440px;
-		height: 196px;
-	}
-	&__planet-red-big{
-		z-index: 970;
-		top: -156px;
-		left: 120px;
+        width: 900px;
 
-		width: 417px;
-		height: 419px;
-	}
-	&__planet-red-medium{
-		z-index: 970;
-		bottom: -52px;
-		left: 76px;
+        @include respond-to(large) {
+            width: 100%;
+        }
+    }
+    &__cosmonaut {
+        z-index: 985;
+        top: 160px;
+        left: 653px;
 
-		width: 182px;
-		height: 181px;
-	}
-	&__planet-red-small{
-		z-index: 970;
-		bottom: -150px;
-		left: 280px;
+        width: 347px;
+        height: 717px;
 
-		width: 140px;
-		height: 134px;
-	}
-	&__planet-yellow-small {
-		z-index: 980;
-		top: 189px;
-		right: -35px;
-		width: 69px;
-		height: 69px;
-	}
-	&__planet-yellow-medium {
-		z-index: 965;
-		top: -61px;
-		right: 44px;
-		width: 122px;
-		height: 121px;
-	}
-	&__date {
-		z-index: 990;
-		bottom: 20px;
-		width: 524px;
-		height: 40px;
-		left: 50%;
-		margin-left: -262px;
-	}
+        @include respond-to(large) {
+            top: 111px;
+            left: 450px;
+
+            width: 239px;
+            height: 464px;
+        }
+        @include respond-to(tablet) {
+            top: 204px;
+            left: 367px;
+
+            width: 236px;
+            height: 484px;
+        }
+        @include respond-to(phone) {
+            top: 87px;
+            left: 151px;
+
+            width: 122px;
+            height: 253px;
+        }
+    }
+    &__exhibition {
+        z-index: 975;
+        top: 60px;
+        left: 59px;
+
+        width: 191px;
+        height: 127px;
+
+        @include respond-to(large) {
+            top: 42px;
+            left: 41px;
+
+            width: 132px;
+            height: 88px;
+        }
+        @include respond-to(tablet) {
+            top: 72px;
+            left: 53px;
+
+            width: 130px;
+            height: 86px;
+        }
+        @include respond-to(phone) {
+            top: 3px;
+            left: 27px;
+
+            width: 79px;
+            height: 53px;
+        }
+    }
+    &__era-born {
+        z-index: 980;
+        bottom: 5px;
+        left: 299px;
+
+        width: 674px;
+        height: 300px;
+
+        @include respond-to(large) {
+            bottom: 4px;
+            left: 206px;
+
+            width: 464px;
+            height: 207px;
+        }
+        @include respond-to(tablet) {
+            bottom: -27px;
+            left: 145px;
+
+            width: 434px;
+            height: 192px;
+        }
+        @include respond-to(phone) {
+            bottom: -46px;
+            left: 16px;
+
+            width: 256px;
+            height: 114px;
+        }
+    }
+    &__planet-red-big {
+        z-index: 970;
+        top: -228px;
+        left: -12px;
+
+        width: 605px;
+        height: 608px;
+
+        @include respond-to(large) {
+            top: -156px;
+            left: 0;
+
+            width: 417px;
+            height: 419px;
+        }
+        @include respond-to(tablet) {
+            top: -115px;
+            left: 92px;
+
+            width: 411px;
+            height: 410px;
+        }
+        @include respond-to(phone) {
+            top: -86px;
+            left: 0;
+
+            width: 209px;
+            height: 210px;
+        }
+    }
+    &__planet-red-medium {
+        z-index: 970;
+        bottom: -133px;
+        left: 175px;
+
+        width: 276px;
+        height: 274px;
+
+        @include respond-to(large) {
+            top: 376px;
+            left: 121px;
+
+            width: 190px;
+            height: 189px;
+        }
+        @include respond-to(tablet) {
+            top: auto;
+            bottom: -67px;
+            left: 54px;
+
+            width: 179px;
+            height: 177px;
+        }
+        @include respond-to(tablet) {
+            top: 159px;
+            bottom: auto;
+            left: 52px;
+
+            width: 103px;
+            height: 102px;
+        }
+    }
+    &__planet-red-small {
+        z-index: 970;
+        bottom: -288px;
+        left: 430px;
+
+        width: 203px;
+        height: 195px;
+
+        @include respond-to(large) {
+            bottom: -198px;
+            left: 300px;
+
+            width: 140px;
+            height: 134px;
+        }
+        @include respond-to(tablet) {
+            bottom: -237px;
+            left: 250px;
+
+            width: 138px;
+            height: 131px;
+        }
+        @include respond-to(phone) {
+            bottom: -156px;
+            left: 113px;
+
+            width: 76px;
+            height: 72px;
+        }
+    }
+    &__planet-yellow-small {
+        z-index: 980;
+        top: 226px;
+        right: -83px;
+
+        width: 100px;
+        height: 100px;
+
+        @include respond-to(large) {
+            top: 157px;
+            right: -76px;
+
+            width: 69px;
+            height: 69px;
+        }
+        @include respond-to(tablet) {
+            top: 224px;
+            right: -14px;
+
+            width: 68px;
+            height: 68px;
+        }
+        @include respond-to(phone) {
+            top: 90px;
+            right: -5px;
+
+            width: 45px;
+            height: 45px;
+        }
+    }
+    &__planet-yellow-medium {
+        z-index: 965;
+        top: -36px;
+        right: 172px;
+
+        width: 177px;
+        height: 175px;
+
+        @include respond-to(large) {
+            top: -24px;
+            left: 410px;
+
+            width: 122px;
+            height: 121px;
+        }
+        @include respond-to(tablet) {
+            top: -28px;
+            left: 485px;
+
+            width: 136px;
+            height: 135px;
+        }
+        @include respond-to(phone) {
+            top: -31px;
+            left: 188px;
+
+            width: 72px;
+            height: 72px;
+        }
+    }
+    &__date {
+        z-index: 990;
+        bottom: 40px;
+        left: 50%;
+
+        width: 648px;
+        height: auto;
+        margin-left: -324px;
+
+        @include respond-to(large) {
+            bottom: 29px;
+            left: 150px;
+
+            width: 420px;
+            margin-left: 0;
+        }
+        @include respond-to(tablet) {
+            bottom: 34px;
+            left: 50%;
+
+            margin-left: -210px;
+        }
+        @include respond-to(phone) {
+            bottom: 27px;
+
+            width: 282px;
+            margin-left: -141px;
+        }
+    }
+}
+
+.hashtag {
+    position: absolute;
+    z-index: 990;
+    bottom: -29px;
+    left: 479px;
+
+    display: block;
+
+    width: 155px;
+    height: 99px;
+
+    @include respond-to(large) {
+        bottom: -20px;
+        left: 330px;
+
+        width: 107px;
+        height: 68px;
+    }
+    @include respond-to(tablet) {
+        bottom: -41px;
+        left: 264px;
+
+        width: 101px;
+        height: 64px;
+    }
+    @include respond-to(phone) {
+        bottom: -100px;
+        left: 66px;
+
+        width: 74px;
+        height: 47px;
+    }
+}
+
+.location-text {
+    position: absolute;
+    top: 365px;
+    right: -232px;
+
+    display: block;
+
+    width: 200px;
+    height: 108px;
+
+    @include respond-to(large) {
+        top: 250px;
+        right: -180px;
+
+        width: 138px;
+        height: 75px;
+    }
+    @include respond-to(tablet) {
+        top: 328px;
+        right: -26px;
+
+        width: 138px;
+        height: 75px;
+    }
+    @include respond-to(phone) {
+        display: none;
+    }
+}
+
+.js-key-image-parallax {
+    transition: all linear .1s;
 }

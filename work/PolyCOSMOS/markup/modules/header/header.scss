@@ -1,26 +1,103 @@
+.header {
+    @include respond-to(desktop) {
+        background-color: $light-yellow;
+    }
+    @include respond-to(phone) {
+        background-color: transparent;
+    }
+    &.solid,
+    &.hd-short {
+        background-color: $light-yellow;
+
+        @include respond-to(phone) {
+            background-color: transparent;
+        }
+        .nav-list__item-link {
+            color: #000;
+        }
+    }
+    .container {
+        box-sizing: border-box;
+    }
+    .open-btn {
+        position: relative;
+        z-index: 995;
+
+        display: none;
+
+        @include respond-to(phone) {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: block;
+
+            width: 53px;
+            height: 53px;
+            padding: 17px;
+
+            background-color: $light-yellow;
+        }
+        .menu_icon {
+            display: block;
+
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
 .nav {
     position: relative;
     z-index: 990;
 
-    padding-top: 25px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    text-align: center;
 
     @include cf();
-
+    @include respond-to(desktop) {
+        padding: 18px 0;
+    }
+    .main_menu {
+        @include respond-to(phone) {
+            display: none;
+        }
+    }
     &-list {
         &__item {
+            display: inline-block;
             &:not(:first-child) {
                 padding-right: 0;
-                padding-left: 48px;
+                padding-left: 64px;
             }
-            
             &-link {
-                font-size: 14px;
-                line-height: 24px;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 12px;
 
                 text-decoration: none;
                 text-transform: none;
 
                 color: $white;
+
+                @include respond-to(desktop) {
+                    color: #000;
+                }
+                &--en {
+                    margin-left: 10px;
+                }
+            }
+        }
+        &__link-seporator {
+            font-size: 13px;
+
+            position: absolute;
+            top: -3px;
+
+            @include respond-to(desktop) {
+                color: #000;
             }
         }
     }

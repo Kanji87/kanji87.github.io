@@ -117,7 +117,7 @@ gulp.task('css-inline', function() {
             //preserveMediaQueries: true,
             removeHtmlSelectors: false,
             applyWidthAttributes: true,
-            applyTableAttributes: true
+            applyTableAttributes: false
 
         }))
         .pipe(gulp.dest('build/inlined'));

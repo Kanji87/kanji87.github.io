@@ -1,0 +1,76 @@
+.footer {
+    padding: 75px 0 96px;
+    text-align: left;
+
+    &__content {
+        @include cf();
+    }
+
+    &__col {
+        float: left;
+    }
+
+    &__contact {
+        width: 570px;
+    }
+
+    &__action {
+        width: 300px;
+    }
+
+    &__contact-row {
+        @include cf();
+    }
+
+    &__contact-col {
+        float: left;
+
+        &:not(:first-of-type) {
+            margin-left: 70px;
+        }
+
+        &--s {
+            width: 130px;
+
+            &:last-child {
+                margin-left: 110px;
+            }
+        }
+
+        &--m {
+            width: 240px;
+        }
+    }
+
+    &__text {
+        font-family: 'formular';
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: .1px;
+        color: $white;
+        margin: 0;
+
+        &--bold {
+            font-weight: bold;
+        }
+    }
+}
+
+.footer__social-link {
+
+    &--youtube,
+    &--fb,
+    &--vk,
+    &--instagram {
+        path {
+            fill: $gold;
+            transition: all ease .3s;
+        }
+
+        &:hover {
+            path {
+                fill: $red;
+            }
+        }
+    }
+}

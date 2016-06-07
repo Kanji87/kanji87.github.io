@@ -1,15 +1,19 @@
 mixin header
-	header.header
-		.container
-			a.open-btn(href='#')
-				i.fa.fa-bars
-			nav.nav
-				ul.nav-list.main_menu
-					li.nav-list__item
-						a.nav-list__item-link(href='#') Купить билет
-					li.nav-list__item
-						a.nav-list__item-link(href='#') О выставке
-					li.nav-list__item
-						a.nav-list__item-link(href='#') Фотографии
-					li.nav-list__item
-						a.nav-list__item-link(href='#') Партнеры
+    header.header
+        .container
+            a.open-btn(href='#')
+                != jadeHelpers.Icon.call(locals, {iconName: 'menu_icon', className: 'menu_icon'})
+            nav.nav
+                ul.nav-list.main_menu
+                    li.nav-list__item
+                        a.nav-list__item-link(href='#') Купить билет
+                    li.nav-list__item
+                        a.nav-list__item-link(href='#') О выставке
+                    li.nav-list__item
+                        a.nav-list__item-link(href='#') Фотографии
+                    li.nav-list__item
+                        a.nav-list__item-link(href='#') Партнеры
+                    li.nav-list__item
+                        a.nav-list__item-link.nav-list__item-link--ru(href='#') Ru
+                        span.nav-list__link-seporator &nbsp;|
+                        a.nav-list__item-link.nav-list__item-link--en(href='#') En

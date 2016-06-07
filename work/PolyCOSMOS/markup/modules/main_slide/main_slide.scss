@@ -1,0 +1,197 @@
+.section-main {
+    position: relative;
+}
+
+.page__border {
+    position: fixed;
+    z-index: 990;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    border: 14px solid $light-yellow;
+
+    @include respond-to(large) {
+        border-width: 7px;
+    }
+}
+
+.buy-ticket {
+    position: absolute;
+    z-index: 990;
+    top: 25px;
+    left: 27px;
+
+    display: block;
+
+    border: 1px solid #231f20;
+
+    @include respond-to(large) {
+        top: 20px;
+        left: 20px;
+    }
+    @include respond-to(desktop) {
+        top: 60px;
+    }
+    @include respond-to(tablet) {
+        left: 17px;
+    }
+    @include respond-to(phone) {
+        display: none;
+    }
+    img {
+        display: block;
+    }
+    &__icon {
+        width: 72px;
+        height: 31px;
+        margin: 14px auto 19px;
+    }
+}
+
+.org {
+    z-index: 990;
+    right: 27px;
+    left: auto;
+
+    @include respond-to(large) {
+        top: 20px;
+        right: 20px;
+    }
+    @include respond-to(desktop) {
+        top: 60px;
+    }
+    @include respond-to(tablet) {
+        right: 17px;
+    }
+    @include respond-to(phone) {
+        display: none;
+    }
+    @extend .buy-ticket;
+    &__list {
+        padding-top: 13px;
+        padding-bottom: 12px;
+
+        @include cf();
+    }
+    &__item {
+        float: left;
+    }
+    &__link {
+        display: block;
+
+        width: auto;
+        height: 39px;
+        margin-left: 2px;
+        img {
+            width: auto;
+            height: 39px;
+        }
+        svg {
+            height: 39px;
+        }
+    }
+}
+
+.age_0_plus {
+    position: absolute;
+    right: 31px;
+    bottom: 100px;
+
+    width: 34px;
+    height: 40px;
+
+    @include respond-to(large) {
+        right: 11px;
+        bottom: 89px;
+    }
+    @include respond-to(tablet) {
+        right: 10px;
+        bottom: 114px;
+    }
+    @include respond-to(phone) {
+        right: 19px;
+        bottom: 66px;
+
+        width: 21px;
+        height: 26px;
+    }
+}
+
+.social-share {
+    position: absolute;
+    z-index: 10;
+    right: 40px;
+    bottom: 40px;
+
+    @include respond-to(large) {
+        right: 20px;
+        bottom: 29px;
+    }
+    @include respond-to(tablet) {
+        right: 19px;
+        bottom: 32px;
+    }
+    @include respond-to(phone) {
+        display: none;
+    }
+}
+
+.social-likes {
+    @include cf();
+    &__icon {
+        display: block;
+
+        width: 24px;
+        height: 28px;
+    }
+    &__widget {
+        float: left;
+
+        cursor: pointer;
+        &:not(:first-child) {
+            margin-left: 15px;
+        }
+    }
+    &__counter {
+        display: none;
+    }
+    &__icon_twitter {
+        background-image: url('%=static=%general/tw_icon.svg');
+    }
+    &__icon_facebook {
+        background-image: url('%=static=%general/fb_icon.svg');
+    }
+    &__icon_vkontakte {
+        background-image: url('%=static=%general/vk_icon.svg');
+    }
+}
+
+.main-partner {
+    position: absolute;
+    bottom: 38px;
+    left: 42px;
+
+    @include respond-to(large) {
+        bottom: 28px;
+        left: 20px;
+    }
+    @include respond-to(phone) {
+        display: none;
+    }
+    &__list {
+        margin-top: 12px;
+    }
+    &__item {
+        display: inline-block;
+
+        vertical-align: bottom;
+        &:last-child {
+            margin-left: 22px;
+        }
+    }
+}

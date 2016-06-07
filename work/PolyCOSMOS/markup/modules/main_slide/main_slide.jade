@@ -1,0 +1,44 @@
+include ../key_image/key_image
+
+mixin main_slide
+    section.section-main.slider-wrapper
+        img.page-background__one(src='%=static=%img/general/back2.png')
+
+        +key_image()
+
+        a.buy-ticket(href="#")
+            img(src="%=static=%img/general/buy_ticket_title.svg", alt="").buy-ticket__title
+            img(src="%=static=%img/general/ticket.svg", alt="").buy-ticket__icon
+
+        .org
+            img(src="%=static=%img/general/org_title.svg", alt="").org__title
+            ul.org__list
+                li.org__item
+                    a.org__link(href="#")
+                        != jadeHelpers.Icon.call(locals, {iconName: 'org_polymus_black', className: 'org_polymus_black'})
+                li.org__item
+                    a.org__link(href="#")
+                        != jadeHelpers.Icon.call(locals, {iconName: 'org_vdnh_white', className: 'org_vdnh_white'})
+                li.org__item
+                    a.org__link(href="#")
+                        img(src="%=static=%img/general/org_rosizo.png", alt="")
+
+        
+        != jadeHelpers.Icon.call(locals, {iconName: 'age_0_plus', className: 'age_0_plus'})
+
+        .main-partner
+            .main-partner__title
+                img(src="%=static=%img/general/partner_title.svg", alt="")
+            ul.main-partner__list
+                li.main-partner__item
+                    a.main-partner__link(href="#")
+                        img(src="%=static=%img/general/partner_science_museum.svg", alt="")
+                li.main-partner__item
+                    a.main-partner__link(href="#")
+                        img(src="%=static=%img/general/partner_rosgostrah.svg", alt="")
+
+        .social-share
+            .social-likes
+                .twitter(daata-via="@Polytechnicum")
+                .facebook
+                .vkontakte

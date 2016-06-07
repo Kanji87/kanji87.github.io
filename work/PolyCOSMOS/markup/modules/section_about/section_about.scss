@@ -1,0 +1,50 @@
+.about {
+    margin-top: 60px;
+
+    &__container {
+        background-color: $black;
+    }
+
+    &__title-container {
+        background-color: transparent;
+    }
+
+    &__title-img {
+        width: 148px;
+        height: 109px;
+        display: block;
+    }
+
+    &__content {
+        @include cf();
+
+        margin-top: 45px;
+    }
+
+    &__col {
+        width: 440px;
+        float: left;
+
+        &:last-child {
+            margin-left: 79px;
+        }
+    }
+
+    &__text {
+        font-family: 'formular';
+        letter-spacing: .7px;
+        line-height: 20px;
+        font-size: 15px;
+        color: $white;
+        margin: 0;
+
+        &:not(:first-child) {
+            margin-top: 23px;
+        }
+
+        &--bold {
+            font-weight: bold;
+            letter-spacing: .6px;
+        }
+    }
+}
