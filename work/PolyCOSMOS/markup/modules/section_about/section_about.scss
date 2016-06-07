@@ -56,6 +56,12 @@
         letter-spacing: .7px;
 
         color: $white;
+
+        @include respond-to(phone) {
+            font-size: 12px;
+
+            letter-spacing: .6px;
+        }
         &:not(:first-child) {
             margin-top: 23px;
         }
@@ -64,21 +70,14 @@
 
             letter-spacing: .6px;
         }
-
         p {
             margin: 0;
             padding: 0;
         }
-
         span {
             @include respond-to(phone) {
                 display: block;
             }
-        }
-
-        @include respond-to(phone) {
-            font-size: 12px;
-            letter-spacing: .6px;
         }
     }
 }
