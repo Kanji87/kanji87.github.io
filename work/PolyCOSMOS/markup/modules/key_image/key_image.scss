@@ -356,11 +356,11 @@
         height: 64px;
     }
     @include respond-to(phone) {
-        bottom: -100px;
-        left: 66px;
+        bottom: -90px;
+        left: 80px;
 
-        width: 74px;
-        height: 47px;
+        width: 63px;
+        height: 40px;
     }
 }
 
@@ -389,7 +389,12 @@
         height: 75px;
     }
     @include respond-to(phone) {
-        display: none;
+        width: 100px;
+        height: 54px;
+        top: -28px;
+        right: 53px;
+        z-index: 990;
+        transform: rotate(-358deg);
     }
 }
 

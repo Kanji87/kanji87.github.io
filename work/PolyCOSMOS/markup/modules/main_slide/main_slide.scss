@@ -41,15 +41,29 @@
         left: 17px;
     }
     @include respond-to(phone) {
-        display: none;
+        top: 18px;
+        left: 80px;
+        height: 49px;
     }
     img {
         display: block;
+    }
+    &__title {
+        @include respond-to(phone) {
+            width: 71px;
+            height: auto;
+        }
     }
     &__icon {
         width: 72px;
         height: 31px;
         margin: 14px auto 19px;
+
+        @include respond-to(phone) {
+            width: 44px;
+            height: 19px;
+            margin: 8px auto 10px;
+        }
     }
 }
 
@@ -69,14 +83,25 @@
         right: 17px;
     }
     @include respond-to(phone) {
-        display: none;
+        top: 18px;
+        right: 19px;
+        height: 49px;
     }
     @extend .buy-ticket;
+    &__title {
+        @include respond-to(phone) {
+            width: 75px;
+            height: auto;
+        }
+    }
     &__list {
         padding-top: 13px;
         padding-bottom: 12px;
 
         @include cf();
+        @include respond-to(phone) {
+            padding: 7px 0;
+        }
     }
     &__item {
         float: left;
@@ -90,9 +115,19 @@
         img {
             width: auto;
             height: 39px;
+            @include respond-to(phone) {
+                height: 23px;
+            }
         }
         svg {
             height: 39px;
+            @include respond-to(phone) {
+                height: 23px;
+                width: auto;
+            }
+        }
+        @include respond-to(phone) {
+            height: 23px;
         }
     }
 }
@@ -137,7 +172,9 @@
         bottom: 32px;
     }
     @include respond-to(phone) {
-        display: none;
+        bottom: -40px;
+        right: 50%;
+        margin-right: -50px;
     }
 }
 
@@ -180,8 +217,12 @@
         bottom: 28px;
         left: 20px;
     }
+
+    @include respond-to(tablet) {
+        bottom: 34px;
+    }
     @include respond-to(phone) {
-        display: none;
+        bottom: 68px;
     }
     &__list {
         margin-top: 12px;
@@ -190,8 +231,8 @@
         display: inline-block;
 
         vertical-align: bottom;
-        &:last-child {
-            margin-left: 22px;
-        }
+        // &:last-child {
+        //     margin-left: 22px;
+        // }
     }
 }

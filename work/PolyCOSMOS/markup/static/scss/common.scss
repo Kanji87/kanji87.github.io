@@ -7,8 +7,10 @@ body {
 
 body {
     font-family: $formular;
-    -webkit-font-smoothing: antialiased;
+
     background-color: $black;
+
+    -webkit-font-smoothing: antialiased;
 }
 
 ul {
@@ -31,10 +33,29 @@ ul {
 .section__container {
     width: 960px;
     margin: 0 auto;
+
+    @include respond-to(tablet) {
+        width: 640px;
+    }
+
+    @include respond-to(phone) {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
 }
 
 .section__banner {
     width: 100%;
     height: 90px;
+
     background-color: #000;
+}
+
+a {
+    transition: color ease .3s;
+}
+
+p {
+    margin: 0;
 }

@@ -1,76 +1,256 @@
 .footer {
     padding: 75px 0 96px;
-    text-align: left;
 
+    text-align: left;
     &__content {
+        position: relative;
+
         @include cf();
     }
-
     &__col {
         float: left;
-    }
 
+
+        @include respond-to(phone) {
+            float: none;
+            display: block;
+            width: 100% !important;
+        }
+    }
     &__contact {
         width: 570px;
     }
-
     &__action {
         width: 300px;
-    }
+        margin-left: 90px;
 
+        @include respond-to(tablet) {
+            position: absolute;
+            top: 115px;
+            right: 0;
+
+            width: auto;
+            margin-left: 0;
+        }
+    }
     &__contact-row {
         @include cf();
     }
-
     &__contact-col {
         float: left;
-
         &:not(:first-of-type) {
             margin-left: 70px;
-        }
 
-        &--s {
-            width: 130px;
+            @include respond-to(tablet) {
+                margin-left: 130px;
+            }
 
-            &:last-child {
-                margin-left: 110px;
+            @include respond-to(phone) {
+                margin-left: 0;
             }
         }
+        &--s {
+            width: 130px;
+            &:last-child {
+                margin-left: 110px;
 
+                @include respond-to(phone) {
+                    margin-left: 0;
+                }
+            }
+        }
         &--m {
             width: 240px;
         }
-    }
 
+
+        @include respond-to(phone) {
+            float: none;
+            display: block;
+            width: 100%;
+        }
+    }
+    &__contact-press {
+        margin-top: 15px;
+
+        @include respond-to(tablet) {
+            margin-top: 0;
+            .footer__contact-col {
+                display: block;
+                float: none;
+
+                margin-left: 0;
+            }
+            .footer__contact-col--s:not(:first-of-type) {
+                margin-top: 15px;
+            }
+        }
+    }
     &__text {
         font-family: 'formular';
         font-size: 14px;
         line-height: 20px;
-        letter-spacing: .1px;
-        color: $white;
+
         margin: 0;
 
+        letter-spacing: .1px;
+
+        color: $white;
         &--bold {
             font-weight: bold;
         }
     }
-}
+    &__link {
+        font-family: 'formular';
+        font-size: 14px;
+        line-height: 20px;
 
-.footer__social-link {
+        display: block;
 
-    &--youtube,
-    &--fb,
-    &--vk,
-    &--instagram {
-        path {
-            fill: $gold;
-            transition: all ease .3s;
-        }
+        text-decoration: none;
+        letter-spacing: .1px;
 
+        color: $gold;
         &:hover {
+            color: $red;
+        }
+    }
+    &__social-list {
+        @include cf();
+    }
+    &__social-item {
+        float: left;
+        &:not(:first-child) {
+            margin-left: 15px;
+        }
+    }
+    &__social-link {
+        &--youtube,
+        &--fb,
+        &--vk,
+        &--instagram {
             path {
-                fill: $red;
+                transition: all ease .3s;
+
+                fill: $gold;
+            }
+            &:hover {
+                path {
+                    fill: $red;
+                }
             }
         }
+    }
+    &__subscribe {
+        margin-top: 23px;
+
+        @include respond-to(tablet) {
+            margin-top: 43px;
+        }
+    }
+    &__subscribe-form {
+        position: relative;
+
+        margin-top: 15px;
+    }
+    &__subscribe-input {
+        display: block;
+
+        width: 300px;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        padding-right: 79px;
+        padding-left: 19px;
+
+        color: #000;
+        border: 0;
+        outline: none;
+
+        @include respond-to(tablet) {
+            width: 380px;
+        }
+
+        @include respond-to(phone) {
+            width: 70%;
+        }
+        &::-webkit-input-placeholder {
+            font-family: 'formular';
+            font-size: 14px;
+            line-height: 24px;
+
+            letter-spacing: .8px;
+            /* Chrome/Opera/Safari */
+
+            color: rgba(0, 0, 0, .5);
+        }
+        &::-moz-placeholder {
+            font-family: 'formular';
+            font-size: 14px;
+            line-height: 24px;
+
+            letter-spacing: .8px;
+            /* Firefox 19+ */
+
+            color: rgba(0, 0, 0, .5);
+        }
+        &:-ms-input-placeholder {
+            font-family: 'formular';
+            font-size: 14px;
+            line-height: 24px;
+
+            letter-spacing: .8px;
+            /* IE 10+ */
+
+            color: rgba(0, 0, 0, .5);
+        }
+    }
+    &__subscribe-submit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        &:before,
+        &:after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            display: block;
+
+            width: 20px;
+            height: 20px;
+
+            content: '';
+            pointer-events: none;
+
+            border-width: 2px;
+        }
+        &:before {
+            margin-top: -18px;
+            margin-left: -10px;
+
+            border-bottom: solid $white;
+        }
+        &:after {
+            margin-top: -10px;
+            margin-left: -1px;
+
+            border-left: solid $white;
+        }
+
+        @include respond-to(phone) {
+            right: 50%;
+        }
+    }
+    &__subscribe-submit-button {
+        display: block;
+
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+
+        border: 0;
+        background-color: $gold;
     }
 }

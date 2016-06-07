@@ -70,26 +70,6 @@ fieldset {
     margin-bottom: 20px;
 }
 
-input[type='text'],
-input[type='password'],
-input[type='email'],
-input[type='url'],
-textarea,
-select {
-    font: 13px HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-    display: inline-block;
-
-    width: 210px; 
-    max-width: 100%;
-    margin-bottom: 10px;
-    padding: 10px 10px 9px;
-
-    color: #aaa;
-    border: none;
-    outline: none;
-    background: #fff;
-}
 .white-text input[type='text'],
 .white-text input[type='password'],
 .white-text input[type='email'],
@@ -2425,9 +2405,6 @@ form .error:focus {
     color: #fff;
 
     -webkit-text-stroke: .35px;
-}
-.footer a {
-    color: #fff;
 }
 .footer.bg-light-grey,
 .footer.bg-white {
@@ -4853,10 +4830,6 @@ img {
          -o-transform: rotate(-10deg);
 
     color: rgba(0, 0, 0, .2);
-}
-
-a {
-    text-decoration: underline;
 }
 
 /* Remove link outline on ie */

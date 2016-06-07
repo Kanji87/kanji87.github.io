@@ -1,49 +1,83 @@
 .about {
     margin-top: 60px;
 
+    @include respond-to(phone) {
+        margin-top: 95px;
+    }
     &__container {
-        background-color: $black;
+        // background-color: $black;
+        background: linear-gradient(top, rgba(0,0,0,0) 10%,rgba(42,42,42,1) 50%);
     }
-
     &__title-container {
-        background-color: transparent;
+        background: 0;
     }
-
     &__title-img {
+        display: block;
+
         width: 148px;
         height: 109px;
-        display: block;
-    }
 
-    &__content {
-        @include cf();
-
-        margin-top: 45px;
-    }
-
-    &__col {
-        width: 440px;
-        float: left;
-
-        &:last-child {
-            margin-left: 79px;
+        @include respond-to(phone) {
+            width: 165px;
+            height: 106px;
         }
     }
+    &__content {
+        margin-top: 45px;
 
+        @include cf();
+    }
+    &__col {
+        float: left;
+
+        width: 440px;
+        margin-right: 79px;
+
+        @include respond-to(tablet) {
+            float: none;
+
+            width: 100%;
+            margin-right: 0;
+            &:last-child {
+                margin-top: 23px;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
     &__text {
         font-family: 'formular';
-        letter-spacing: .7px;
-        line-height: 20px;
         font-size: 15px;
-        color: $white;
+        line-height: 20px;
+
         margin: 0;
 
+        letter-spacing: .7px;
+
+        color: $white;
         &:not(:first-child) {
             margin-top: 23px;
         }
-
         &--bold {
             font-weight: bold;
+
+            letter-spacing: .6px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        span {
+            @include respond-to(phone) {
+                display: block;
+            }
+        }
+
+        @include respond-to(phone) {
+            font-size: 12px;
             letter-spacing: .6px;
         }
     }
