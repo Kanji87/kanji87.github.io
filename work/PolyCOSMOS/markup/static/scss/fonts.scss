@@ -27,9 +27,17 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
  * -------------------------- */
 
 @font-face {
+    font-family: 'activist';
+    src: url('../fonts/Activist.woff') format('woff'),
+         url('../fonts/Activist.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'formular';
     src: url('../fonts/Formular.woff') format('woff'),
-         url('../fonts/Formular.woff2') format('woff');
+         url('../fonts/Formular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -37,7 +45,7 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 @font-face {
     font-family: 'formular';
     src: url('../fonts/Formular-Black.woff') format('woff'),
-         url('../fonts/Formular-Black.woff2') format('woff');
+         url('../fonts/Formular-Black.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }

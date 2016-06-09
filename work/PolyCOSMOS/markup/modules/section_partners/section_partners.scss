@@ -9,11 +9,18 @@
     @include respond-to(phone) {
         margin-top: 125px;
     }
+    img {
+        max-width: 95%;
+    }
     &__container {
         padding: 57px 0 71px;
 
+        @include respond-to(tablet) {
+            padding-bottom: 60px;
+        }
         @include respond-to(phone) {
             padding-right: 20px;
+            padding-bottom: 40px;
             padding-left: 20px;
         }
     }
@@ -66,11 +73,27 @@
         margin-top: 20px;
     }
     &__gen-item {
+        @include respond-to(phone) {
+            width: 50%;
+            margin-bottom: 15px;
+        }
+        &:nth-child(2) {
+            .partners__gen-title {
+                width: 135px;
+
+                @include respond-to(tablet) {
+                    width: 100px;
+                }
+            }
+        }
         &:not(:first-child) {
-            margin-left: 50px;
+            margin-left: 45px;
 
             @include respond-to(tablet) {
                 margin-left: 20px;
+            }
+            @include respond-to(phone) {
+                margin-left: 0;
             }
         }
     }
@@ -80,19 +103,31 @@
         @include respond-to(tablet) {
             height: 80px;
         }
+        @include respond-to(phone) {
+            height: 80px;
+        }
         &--l {
             @include respond-to(tablet) {
                 width: 150px;
+            }
+            @include respond-to(phone) {
+                width: 90%;
             }
         }
         &--m {
             @include respond-to(tablet) {
                 width: 98px;
             }
+            @include respond-to(phone) {
+                width: 80%;
+            }
         }
         &--s {
             @include respond-to(tablet) {
                 width: 88px;
+            }
+            @include respond-to(phone) {
+                width: 75%;
             }
         }
     }
@@ -106,6 +141,9 @@
 
             @include respond-to(tablet) {
                 left: 0;
+            }
+            @include respond-to(phone) {
+                left: -10px;
             }
         }
     }
@@ -127,8 +165,41 @@
         @include respond-to(tablet) {
             width: 105px;
         }
+        @include respond-to(phone) {
+            width: 33%;
+        }
+        &:nth-child(1) {
+            .partners__off-title {
+                @include respond-to(phone) {
+                    width: 100px;
+                }
+            }
+        }
+        &--chocolate {
+            @include respond-to(phone) {
+                .partners__off-link {
+                    text-align: left;
+                }
+            }
+        }
+        &--anr {
+            @include respond-to(phone) {
+                .partners__off-img {
+                    position: absolute;
+                    top: 50%;
+                    left: -25px;
+
+                    width: 120%;
+                    max-width: 120%;
+
+                    transform: translate(0, -50%);
+                }
+            }
+        }
     }
     &__off-link {
+        position: relative;
+
         width: 160px;
         height: 80px;
 
@@ -136,10 +207,17 @@
             width: auto;
             height: 70px;
         }
+
+        @include respond-to(phone) {
+            height: 80px;
+        }
     }
     &__off-img--long {
         @include respond-to(tablet) {
             width: 80%;
+        }
+        @include respond-to(phone) {
+            width: 65%;
         }
     }
     &__off-img--med {
@@ -151,6 +229,9 @@
         @include respond-to(tablet) {
             width: 30%;
         }
+        @include respond-to(phone) {
+            width: 25%;
+        }
     }
     &__off-img--tass {
         position: relative;
@@ -159,12 +240,86 @@
         @include respond-to(tablet) {
             left: 0;
         }
+        @include respond-to(phone) {
+            left: -10px;
+        }
     }
     &__info {
         margin-top: 30px;
 
         @include respond-to(tablet) {
             margin-top: 10px;
+        }
+        @include respond-to(phone) {
+            margin-top: 15px;
+        }
+    }
+    &__info-item {
+        @include respond-to(phone) {
+            width: 33%;
+            margin-bottom: 15px;
+        }
+        &--archive {
+            @include respond-to(phone) {
+                clear: left;
+            }
+        }
+        &--izvest {
+            @include respond-to(phone) {
+                .partners__info-link {
+                    text-align: left;
+                }
+            }
+        }
+        &--gallery {
+            @include respond-to(phone) {
+                .partners__info-img {
+                    width: 60%;
+                }
+            }
+        }
+        &--museum {
+            .partners__info-link {
+                @include respond-to(phone) {
+                    text-align: center;
+                }
+            }
+        }
+        &--moslenta {
+            @include respond-to(phone) {
+                .partners__info-img {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+
+                    width: 120%;
+                    max-width: 120%;
+
+                    transform: translate(0, -50%);
+                }
+            }
+        }
+        &--ciolk {
+            @include respond-to(phone) {
+                .partners__info-img {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+
+                    width: 90%;
+                    max-width: 90%;
+
+                    transform: translate(0, -50%);
+                }
+            }
+        }
+        &--nplus {
+            @include respond-to(phone) {
+                .partners__info-img {
+                    width: 50%;
+                    max-width: 50%;
+                }
+            }
         }
     }
     &__info-title {
@@ -182,6 +337,13 @@
             width: 78px;
             height: 60px;
         }
+        @include respond-to(phone) {
+            position: relative;
+
+            width: 70%;
+            height: 50px;
+            text-align: center;
+        }
     }
     &__info-link--m {
         width: 135px;
@@ -189,15 +351,23 @@
         @include respond-to(tablet) {
             width: 90px;
         }
+        @include respond-to(phone) {
+            width: 100%;
+        }
     }
     &__info-img {
+        width: 40%;
         @include respond-to(tablet) {
             width: 50%;
         }
+        @include respond-to(phone) {
+            width: 30%;
+        }
     }
     &__info-img--long {
-        @include respond-to(tablet) {
-            width: 80%;
+        width: 80%;
+        @include respond-to(phone) {
+            width: 70%;
         }
     }
 }

@@ -18,8 +18,10 @@
         width: 282px;
         margin-left: -140px;
     }
-    img {
+    div {
         position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
 
         transition: all ease .3s;
     }
@@ -52,9 +54,19 @@
         left: 0;
 
         width: 900px;
+        height: 100%;
+        background-image: url('%=static=%/general/02.png');
 
         @include respond-to(large) {
             width: 100%;
+        }
+
+        @include respond-to(tablet) {
+            background-image: url('%=static=%/general/02_m.png');
+        }
+
+        @include respond-to(phone) {
+            background-image: url('%=static=%/general/02_s.png');
         }
     }
     &__cosmonaut {
@@ -64,6 +76,7 @@
 
         width: 347px;
         height: 717px;
+        background-image: url('%=static=%/general/01.png');
 
         @include respond-to(large) {
             top: 111px;
@@ -78,6 +91,7 @@
 
             width: 236px;
             height: 484px;
+            background-image: url('%=static=%/general/01_m.png');
         }
         @include respond-to(phone) {
             top: 87px;
@@ -85,6 +99,7 @@
 
             width: 122px;
             height: 253px;
+            background-image: url('%=static=%/general/01_s.png');
         }
     }
     &__exhibition {
@@ -94,6 +109,7 @@
 
         width: 191px;
         height: 127px;
+        background-image: url('%=static=%/general/08.png');
 
         @include respond-to(large) {
             top: 42px;
@@ -124,6 +140,7 @@
 
         width: 674px;
         height: 300px;
+        background-image: url('%=static=%/general/03.png');
 
         @include respond-to(large) {
             bottom: 4px;
@@ -154,6 +171,7 @@
 
         width: 605px;
         height: 608px;
+        background-image: url('%=static=%/general/key_planet_red_big.png');
 
         @include respond-to(large) {
             top: -156px;
@@ -168,6 +186,7 @@
 
             width: 411px;
             height: 410px;
+            background-image: url('%=static=%/general/key_planet_red_big_s.png');
         }
         @include respond-to(phone) {
             top: -86px;
@@ -175,6 +194,7 @@
 
             width: 209px;
             height: 210px;
+            background-image: url('%=static=%/general/key_planet_red_big_s.png');
         }
     }
     &__planet-red-medium {
@@ -184,6 +204,7 @@
 
         width: 276px;
         height: 274px;
+        background-image: url('%=static=%/general/key_planet_red_medium.png');
 
         @include respond-to(large) {
             top: 376px;
@@ -216,6 +237,7 @@
 
         width: 203px;
         height: 195px;
+        background-image: url('%=static=%/general/key_planet_red_small.png');
 
         @include respond-to(large) {
             bottom: -198px;
@@ -233,7 +255,7 @@
         }
         @include respond-to(phone) {
             bottom: -156px;
-            left: 113px;
+            left: 97px;
 
             width: 76px;
             height: 72px;
@@ -246,6 +268,7 @@
 
         width: 100px;
         height: 100px;
+        background-image: url('%=static=%/general/key_planet_yellow_small.png');
 
         @include respond-to(large) {
             top: 157px;
@@ -260,6 +283,7 @@
 
             width: 68px;
             height: 68px;
+            background-image: url('%=static=%/general/key_planet_yellow_small_m.png');
         }
         @include respond-to(phone) {
             top: 90px;
@@ -267,6 +291,7 @@
 
             width: 45px;
             height: 45px;
+            background-image: url('%=static=%/general/key_planet_yellow_small_s.png');
         }
     }
     &__planet-yellow-medium {
@@ -276,6 +301,7 @@
 
         width: 177px;
         height: 175px;
+        background-image: url('%=static=%/general/key_planet_yellow_medium.png');
 
         @include respond-to(large) {
             top: -24px;
@@ -290,6 +316,7 @@
 
             width: 136px;
             height: 135px;
+            background-image: url('%=static=%/general/key_planet_yellow_medium_m.png');
         }
         @include respond-to(phone) {
             top: -31px;
@@ -297,9 +324,11 @@
 
             width: 72px;
             height: 72px;
+            background-image: url('%=static=%/general/key_planet_yellow_medium_s.png');
         }
     }
     &__date {
+        position: absolute;
         z-index: 990;
         bottom: 40px;
         left: 50%;
@@ -373,6 +402,7 @@
 
     width: 200px;
     height: 108px;
+    background-image: url('%=static=%/general/location.png');
 
     @include respond-to(large) {
         top: 250px;
@@ -387,6 +417,7 @@
 
         width: 138px;
         height: 75px;
+        background-image: url('%=static=%/general/location_m.png');
     }
     @include respond-to(phone) {
         width: 100px;
@@ -395,6 +426,7 @@
         right: 53px;
         z-index: 990;
         transform: rotate(-358deg);
+        background-image: url('%=static=%/general/location_s.png');
     }
 }
 

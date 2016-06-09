@@ -11,6 +11,25 @@ body {
     background-color: $black;
 
     -webkit-font-smoothing: antialiased;
+    background-image: url('%=static=%general/bg1.jpg');
+    background-repeat: repeat-x;
+    background-size: 780px auto;
+
+    @include respond-to(large) {
+        background-size: 680px auto;
+    }
+
+    @include respond-to(tablet) {
+        background-size: 900px auto;
+    }
+
+    @include respond-to(phone) {
+        background-size: auto 2500px;
+    }
+
+    @include respond-to(xlarge) {
+        background-size: 1000px auto;
+    }
 }
 
 ul {

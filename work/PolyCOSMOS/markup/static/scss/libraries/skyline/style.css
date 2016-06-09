@@ -2800,9 +2800,6 @@ form .error:focus {
         max-height: 100%;
         padding-bottom: 40px;
     }
-    .header.opened .main_menu > li:last-child {
-        padding-bottom: 40px;
-    }
 }
 .header.solid .logo img,
 .header.hd-short .logo img {
