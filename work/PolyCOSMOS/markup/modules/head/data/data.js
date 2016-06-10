@@ -1,6 +1,6 @@
 head: {
     defaults: {
-        title: 'Выставка «Космос. Рождение новой эры»',
+        title: '«Космос: рождение новой эры»',
         useSocialMetaTags: true
     }
 }

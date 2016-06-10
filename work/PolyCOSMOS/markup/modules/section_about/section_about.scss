@@ -25,15 +25,15 @@
     &__content {
         margin-top: 45px;
         position: relative;
-        left: -20px;
+        // left: -20px;
 
         @include cf();
     }
     &__col {
         float: left;
 
-        // width: 440px;
-        // margin-right: 79px;
+        width: 440px;
+        margin-right: 79px;
 
         @include respond-to(tablet) {
             float: none;
@@ -88,10 +88,19 @@
             margin: 0;
             padding: 0;
         }
-        span {
-            @include respond-to(phone) {
-                display: block;
-            }
-        }
+        // span {
+        //     @include respond-to(phone) {
+        //         display: block;
+        //     }
+        // }
+    }
+
+    &__buy-ticket {
+        width: 279px;
+        height: 39px;
+        display: block;
+        background-image: url('%=static=%general/buy_ticket_img.png');
+        background-size: contain;
+        margin-top: 55px;
     }
 }

@@ -99,10 +99,27 @@
             margin-left: 45px;
 
             @include respond-to(tablet) {
-                margin-left: 20px;
+                margin-left: 30px;
             }
             @include respond-to(phone) {
                 margin-left: 0;
+            }
+        }
+
+        &--rosgostrah {
+            // .partners__gen-link {
+            //     width: 100px;
+            // }
+            .partners__gen-img {
+                max-width: 90%;
+
+                @include respond-to(tablet) {
+                    max-width: 95%;
+                }
+
+                @include respond-to(tablet) {
+                    max-width: 85%;
+                }
             }
         }
     }
@@ -116,8 +133,9 @@
             height: 80px;
         }
         &--l {
+            width: 200px;
             @include respond-to(tablet) {
-                width: 150px;
+                width: 130px;
             }
             @include respond-to(phone) {
                 width: 90%;
@@ -327,6 +345,15 @@
                     width: 50%;
                     max-width: 50%;
                 }
+            }
+        }
+
+        &--pozis {
+            position: relative;
+            left: 20px;
+            .partners__info-img {
+                width: 70%;
+                max-width: 70%;
             }
         }
     }

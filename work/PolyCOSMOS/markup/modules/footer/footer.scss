@@ -104,6 +104,9 @@
                 left: 20px;
             }
         }
+        // &--main {
+        //     width: 130px;
+        // }
     }
     &__contact-press {
         margin-top: 15px;
@@ -186,17 +189,18 @@
     &__subscribe-form {
         position: relative;
 
+        overflow: hidden;
+
+        height: 60px;
         margin-top: 15px;
     }
     &__subscribe-input {
         display: block;
 
         width: 300px;
-        height: 60px;
+        // height: 60px;
         margin: 0;
-        padding: 0;
-        padding-right: 79px;
-        padding-left: 19px;
+        padding: 21px 79px 21px 19px;
 
         color: #000;
         border: 0;
