@@ -8,7 +8,7 @@ function resetParallax() {
 }
 
 function keyImageParallax() {
-    if ( window.matchMedia( 'screen and (min-width: 720px)' ).matches ) {
+    if ( window.matchMedia( 'screen and (min-width: 740px)' ).matches ) {
         $(window).scroll(function () {
             $('.js-key-image-parallax').each(function () {
                 var yPos = -($(window).scrollTop() / $(this).data('speed'));

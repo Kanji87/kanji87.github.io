@@ -28,6 +28,8 @@
 
     display: block;
 
+    width: 122px;
+
     border: 1px solid #231f20;
 
     @include respond-to(large) {
@@ -35,7 +37,7 @@
         left: 20px;
     }
     // @include respond-to(desktop) {
-        // top: 60px;
+    // top: 60px;
     // }
     @include respond-to(tablet) {
         left: 17px;
@@ -45,6 +47,7 @@
         // left: 80px;
         left: 20px;
 
+        width: 77px;
         height: 49px;
     }
     img {
@@ -160,6 +163,13 @@
 
         width: 21px;
         height: 26px;
+        z-index: 995;
+    }
+    @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+        bottom: 53px;
+    }
+    @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+        bottom: -72px;
     }
 }
 
@@ -182,6 +192,9 @@
         bottom: -40px;
 
         margin-right: -50px;
+    }
+    @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+        bottom: -70px;
     }
 }
 
@@ -230,8 +243,25 @@
     @include respond-to(phone) {
         bottom: 68px;
     }
+    @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+        bottom: 53px;
+    }
+    @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+        bottom: -72px;
+    }
+    &__title {
+        @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+            width: 50px;
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            display: none;
+        }
+    }
     &__list {
         margin-top: 12px;
+        @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+            margin-top: 7px;
+        }
     }
     &__item {
         display: inline-block;
@@ -240,5 +270,12 @@
         // &:last-child {
         //     margin-left: 22px;
         // }
+    }
+
+    &__link {
+        @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+            display: block;
+            width: 28px;
+        }
     }
 }

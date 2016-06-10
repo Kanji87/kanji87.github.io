@@ -10,7 +10,7 @@
     background-size: cover;
 
     @include respond-to(phone) {
-        padding: 55px 0 140px;
+        padding: 55px 0 150px;
 
         background-size: auto 150%;
     }
@@ -20,7 +20,7 @@
         @include cf();
     }
     &__col {
-        float: left;
+        float: right;
 
         @include respond-to(phone) {
             display: block;
@@ -31,6 +31,14 @@
     }
     &__contact {
         width: 570px;
+
+        @include respond-to(tablet) {
+            margin-right: 70px;
+        }
+
+        @include respond-to(phone) {
+            margin-right: 0;
+        }
     }
     &__action {
         width: 300px;
@@ -47,9 +55,10 @@
         @include respond-to(phone) {
             position: relative;
             top: 0;
+            height: 200px;
 
             width: auto;
-            margin-top: 140px;
+            // margin-top: 140px;
             margin-left: 0;
         }
     }
@@ -100,7 +109,7 @@
         &--copyright {
             @include respond-to(phone) {
                 position: absolute;
-                top: 355px;
+                bottom: -85px;
                 left: 20px;
             }
         }
@@ -155,6 +164,10 @@
     }
     &__social-list {
         @include cf();
+        @include respond-to(phone) {
+            position: absolute;
+            bottom: 30px;
+        }
     }
     &__social-item {
         float: left;
@@ -185,6 +198,11 @@
         @include respond-to(tablet) {
             margin-top: 43px;
         }
+
+        @include respond-to(phone) {
+            position: absolute;
+            margin-top: 0;
+        }
     }
     &__subscribe-form {
         position: relative;
@@ -211,6 +229,7 @@
         }
         @include respond-to(phone) {
             width: 100%;
+            top: 0;
         }
         &::-webkit-input-placeholder {
             font-family: 'formular';

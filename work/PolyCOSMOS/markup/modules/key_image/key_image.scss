@@ -18,6 +18,9 @@
         width: 282px;
         margin-left: -140px;
     }
+    @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+        margin-left: -145px;
+    }
     div {
         position: absolute;
 
@@ -47,6 +50,9 @@
         @include respond-to(phone) {
             height: 214px;
             margin-top: -158px;
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            margin-top: -122px;
         }
     }
     &__cosmos {
@@ -104,6 +110,12 @@
 
             background-image: url('%=static=%/general/01_s.png');
         }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            width: 108px;
+            height: 225px;
+            top: 66px;
+            left: 154px;
+        }
     }
     &__exhibition {
         z-index: 975;
@@ -136,6 +148,9 @@
             width: 79px;
             height: 53px;
         }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            left: 20px;
+        }
     }
     &__era-born {
         z-index: 980;
@@ -167,6 +182,10 @@
 
             width: 256px;
             height: 114px;
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            left: 14px;
+            bottom: -32px;
         }
     }
     &__planet-red-big {
@@ -238,6 +257,10 @@
             width: 103px;
             height: 102px;
         }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            left: 31px;
+            bottom: -31px;
+        }
     }
     &__planet-red-small {
         z-index: 970;
@@ -269,6 +292,11 @@
 
             width: 76px;
             height: 72px;
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            bottom: -130px;
+            left: 20px;
+            z-index: 910;
         }
     }
     &__planet-yellow-small {
@@ -306,6 +334,11 @@
 
             background-image: url('%=static=%/general/key_planet_yellow_small_s.png');
         }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            right: -3px;
+            bottom: -2px;
+            top: auto;
+        }
     }
     &__planet-yellow-medium {
         z-index: 965;
@@ -342,6 +375,11 @@
 
             background-image: url('%=static=%/general/key_planet_yellow_medium_s.png');
         }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            top: 51px;
+            right: 16px;
+            left: auto;
+        }
     }
     &__date {
         position: absolute;
@@ -371,6 +409,13 @@
 
             width: 282px;
             margin-left: -141px;
+        }
+        @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+            bottom: 20px;
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            bottom: -17px;
+            z-index: 980;
         }
     }
 }
@@ -412,6 +457,9 @@
 
         width: 63px;
         height: 40px;
+    }
+    @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+        bottom: -70px;
     }
     &:hover {
         background-image: url('%=static=%general/hashtag_hover.png');
@@ -472,6 +520,17 @@
         @include respond-to(phone) {
             background-image: url('%=static=%/general/location_s_hover.png');
         }
+    }
+
+    @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+        width: 85px;
+        height: 46px;
+        top: -15px;
+        left: 117px;
+        right: auto;
+    }
+    @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+        left: 111px;
     }
 }
 

@@ -60,7 +60,7 @@
         color: $white;
 
         @include respond-to(phone) {
-            font-size: 12px;
+            font-size: 14px;
 
             letter-spacing: .6px;
         }
