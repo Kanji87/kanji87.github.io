@@ -150,6 +150,13 @@ a[x-apple-data-detectors] {
   font-weight: normal;
   border-bottom: 2px solid #e7e7e7; }
 
+.content-column__text--kosmos {
+  line-height: 22px;
+  font-size: 16px;
+  padding: 0 33px 19px;
+  font-weight: normal;
+  border: 0; }
+
 .content-column__img {
   border: 0;
   width: 100%;

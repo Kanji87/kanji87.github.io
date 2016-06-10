@@ -2,14 +2,16 @@
     padding: 75px 0 96px;
 
     text-align: left;
+
     background-image: url('%=static=%general/back6.png');
     background-repeat: no-repeat;
+    background-position: center;
     // background-size: 100%;
     background-size: cover;
-    background-position: center;
 
     @include respond-to(phone) {
         padding: 55px 0 140px;
+
         background-size: auto 150%;
     }
     &__content {
@@ -80,6 +82,10 @@
         }
         &--s {
             width: 130px;
+
+            @include respond-to(phone) {
+                width: 100%;
+            }
             &:last-child {
                 margin-left: 110px;
 
@@ -87,19 +93,15 @@
                     margin-left: 0;
                 }
             }
-            @include respond-to(phone) {
-                width: 100%;
-            }
         }
         &--m {
             width: 250px;
         }
         &--copyright {
-
             @include respond-to(phone) {
                 position: absolute;
-                left: 20px;
                 top: 355px;
+                left: 20px;
             }
         }
     }

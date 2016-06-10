@@ -6,9 +6,10 @@ mixin main_slide
 
         +key_image()
 
-        a.buy-ticket(href="http://vdnh.ru/events/vystavki/vystavka-kosmos-rozhdenie-novoy-ery-/" target="_blank")
+        a.buy-ticket(href="//primepass.ru/widget/v1/spot/vdnh/ext_event/149/schedules" target="_blank")
             img(src="%=static=%img/general/buy_ticket_title.svg", alt="").buy-ticket__title
             img(src="%=static=%img/general/ticket.svg", alt="").buy-ticket__icon
+         script(src="//primepass.ru/widget/v1/adaptor/adaptor.min.js" type="text/javascript")
 
         .org
             img(src="%=static=%img/general/org_title.svg", alt="").org__title

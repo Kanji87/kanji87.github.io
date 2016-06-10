@@ -20,10 +20,11 @@
     }
     div {
         position: absolute;
-        background-size: contain;
-        background-repeat: no-repeat;
 
         transition: all ease .3s;
+
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     &__title {
         position: absolute;
@@ -55,16 +56,15 @@
 
         width: 900px;
         height: 100%;
+
         background-image: url('%=static=%/general/02.png');
 
         @include respond-to(large) {
             width: 100%;
         }
-
         @include respond-to(tablet) {
             background-image: url('%=static=%/general/02_m.png');
         }
-
         @include respond-to(phone) {
             background-image: url('%=static=%/general/02_s.png');
         }
@@ -76,6 +76,7 @@
 
         width: 347px;
         height: 717px;
+
         background-image: url('%=static=%/general/01.png');
 
         @include respond-to(large) {
@@ -91,6 +92,7 @@
 
             width: 236px;
             height: 484px;
+
             background-image: url('%=static=%/general/01_m.png');
         }
         @include respond-to(phone) {
@@ -99,6 +101,7 @@
 
             width: 122px;
             height: 253px;
+
             background-image: url('%=static=%/general/01_s.png');
         }
     }
@@ -109,6 +112,7 @@
 
         width: 191px;
         height: 127px;
+
         background-image: url('%=static=%/general/08.png');
 
         @include respond-to(large) {
@@ -140,6 +144,7 @@
 
         width: 674px;
         height: 300px;
+
         background-image: url('%=static=%/general/03.png');
 
         @include respond-to(large) {
@@ -171,6 +176,7 @@
 
         width: 605px;
         height: 608px;
+
         background-image: url('%=static=%/general/key_planet_red_big.png');
 
         @include respond-to(large) {
@@ -186,6 +192,7 @@
 
             width: 411px;
             height: 410px;
+
             background-image: url('%=static=%/general/key_planet_red_big_s.png');
         }
         @include respond-to(phone) {
@@ -194,6 +201,7 @@
 
             width: 209px;
             height: 210px;
+
             background-image: url('%=static=%/general/key_planet_red_big_s.png');
         }
     }
@@ -204,6 +212,7 @@
 
         width: 276px;
         height: 274px;
+
         background-image: url('%=static=%/general/key_planet_red_medium.png');
 
         @include respond-to(large) {
@@ -237,6 +246,7 @@
 
         width: 203px;
         height: 195px;
+
         background-image: url('%=static=%/general/key_planet_red_small.png');
 
         @include respond-to(large) {
@@ -268,6 +278,7 @@
 
         width: 100px;
         height: 100px;
+
         background-image: url('%=static=%/general/key_planet_yellow_small.png');
 
         @include respond-to(large) {
@@ -283,6 +294,7 @@
 
             width: 68px;
             height: 68px;
+
             background-image: url('%=static=%/general/key_planet_yellow_small_m.png');
         }
         @include respond-to(phone) {
@@ -291,6 +303,7 @@
 
             width: 45px;
             height: 45px;
+
             background-image: url('%=static=%/general/key_planet_yellow_small_s.png');
         }
     }
@@ -301,6 +314,7 @@
 
         width: 177px;
         height: 175px;
+
         background-image: url('%=static=%/general/key_planet_yellow_medium.png');
 
         @include respond-to(large) {
@@ -316,6 +330,7 @@
 
             width: 136px;
             height: 135px;
+
             background-image: url('%=static=%/general/key_planet_yellow_medium_m.png');
         }
         @include respond-to(phone) {
@@ -324,6 +339,7 @@
 
             width: 72px;
             height: 72px;
+
             background-image: url('%=static=%/general/key_planet_yellow_medium_s.png');
         }
     }
@@ -370,6 +386,12 @@
     width: 155px;
     height: 99px;
 
+    // transition: background-image ease .3s;
+
+    background-image: url('%=static=%general/hashtag.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
     @include respond-to(large) {
         bottom: -20px;
         left: 330px;
@@ -391,10 +413,14 @@
         width: 63px;
         height: 40px;
     }
+    &:hover {
+        background-image: url('%=static=%general/hashtag_hover.png');
+    }
 }
 
 .location-text {
     position: absolute;
+    z-index: 995;
     top: 365px;
     right: -232px;
 
@@ -402,7 +428,12 @@
 
     width: 200px;
     height: 108px;
+
+    // transition: background-image ease .3s;
+
     background-image: url('%=static=%/general/location.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 
     @include respond-to(large) {
         top: 250px;
@@ -417,16 +448,30 @@
 
         width: 138px;
         height: 75px;
+
         background-image: url('%=static=%/general/location_m.png');
     }
     @include respond-to(phone) {
-        width: 100px;
-        height: 54px;
+        z-index: 990;
         top: -28px;
         right: 53px;
-        z-index: 990;
+
+        width: 100px;
+        height: 54px;
+
         transform: rotate(-358deg);
+
         background-image: url('%=static=%/general/location_s.png');
+    }
+    &:hover {
+        background-image: url('%=static=%/general/location_hover.png');
+
+        @include respond-to(tablet) {
+            background-image: url('%=static=%/general/location_m_hover.png');
+        }
+        @include respond-to(phone) {
+            background-image: url('%=static=%/general/location_s_hover.png');
+        }
     }
 }
 

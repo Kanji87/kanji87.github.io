@@ -6,6 +6,7 @@ html(class="no-js", lang="ru")
     include ../modules/main_slide/main_slide
     include ../modules/section_about/section_about
     include ../modules/section_partners/section_partners
+    include ../modules/section_map/section_map
     include ../modules/footer/footer
 
     head
@@ -28,7 +29,9 @@ html(class="no-js", lang="ru")
 
         +section_partners()
 
-        .section__banner(style='text-align: center; color: #fff; line-height: 90px;') BANNER 100%х90
+        //- .section__banner(style='text-align: center; color: #fff; line-height: 90px;') BANNER 100%х90
+
+        +section_map()
 
         +footer()
 

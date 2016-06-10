@@ -26,3 +26,10 @@ keyImageParallax();
 $(window).resize(function () {
     keyImageParallax();
 });
+
+
+$('.js-go-to').on('click', function () {
+    var id = $(this).attr('href'),
+        target = $(id);
+    $('html, body').animate({scrollTop: target.offset().top}, 'fast');
+});

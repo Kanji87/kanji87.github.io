@@ -1,21 +1,23 @@
 .partners {
-    margin-top: 190px;
+    margin-top: 200px;
 
     background-color: $white;
 
-    @include respond-to(tablet) {
-        margin-top: 140px;
-    }
+    // @include respond-to(tablet) {
+    //     margin-top: 140px;
+    // }
     @include respond-to(phone) {
-        margin-top: 125px;
+        margin-top: 180px;
     }
     img {
         max-width: 95%;
     }
     &__container {
         padding: 57px 0 71px;
+        position: relative;
 
         @include respond-to(tablet) {
+            padding-top: 30px;
             padding-bottom: 60px;
         }
         @include respond-to(phone) {
@@ -25,7 +27,14 @@
         }
     }
     &__title {
-        margin-top: -115px;
+        // margin-top: -115px;
+        position: absolute;
+        left: 0;
+        top: -140px;
+
+        @include respond-to(phone) {
+            left: 20px;
+        }
         &-img {
             display: block;
 
@@ -207,7 +216,6 @@
             width: auto;
             height: 70px;
         }
-
         @include respond-to(phone) {
             height: 80px;
         }
@@ -342,6 +350,7 @@
 
             width: 70%;
             height: 50px;
+
             text-align: center;
         }
     }
@@ -357,6 +366,7 @@
     }
     &__info-img {
         width: 40%;
+
         @include respond-to(tablet) {
             width: 50%;
         }
@@ -366,6 +376,7 @@
     }
     &__info-img--long {
         width: 80%;
+
         @include respond-to(phone) {
             width: 70%;
         }

@@ -12,16 +12,25 @@ mixin head(data)
     <link href="%=static=%css/main%=hash=%%=min=%.css" rel="stylesheet" type="text/css">
 
     if data.useSocialMetaTags
+        meta(property="fb:app_id" content="475227962600265")
+        meta(property="og:type", content="website")
         meta(property="og:title", content="#{data.title}")
         meta(property="og:description", content="Россия всего за несколько десятилетий смогла превратить давнюю мечту человечества о космических полетах в реальность. Как это было…")
-        meta(property="og:image", content="")
-        meta(property="og:image:type", content="image/jpeg")
-        meta(property="og:image:width", content="500")
-        meta(property="og:image:height", content="300")
+        meta(property="og:image", content="%=static=%img/content/share.png")
+        meta(property="og:image:type", content="image/png")
+        meta(property="og:image:width", content="1000")
+        meta(property="og:image:height", content="750")
         meta(property="twitter:description", content="Россия всего за несколько десятилетий смогла превратить давнюю мечту человечества о космических полетах в реальность. Как это было…")
-        link(rel="image_src", href="")
+        link(rel="image_src", href="%=static=%img/content/share.png")
 
-    link(rel="icon" type="image/x-icon" href="favicon.ico")
+    link(rel="icon" type="image/png" href="%=staticPrefix=%img/general/favicon.png")
+    link(rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" type="image/png" href="%=staticPrefix=%img/general/favicon.png")
+    link(rel="apple-touch-icon" sizes='57x57' href="apple-icon-57x57.png")
+    link(rel="apple-touch-icon-precomposed" sizes='57x57' href="%=staticPrefix=%img/general/favicon_57.png")
+    link(rel="apple-touch-icon" sizes='72x72' href="%=staticPrefix=%img/general/favicon_72.png")
+    link(rel="apple-touch-icon" sizes='114x114' href="%=staticPrefix=%img/general/favicon_114x114.png")
+    link(rel="apple-touch-icon" sizes='120x120' href="%=staticPrefix=%img/general/favicon_120x120.png")
+    link(rel="apple-touch-icon" sizes='144x144' href="%=staticPrefix=%img/general/favicon_144x144.png")
         
     script.
         (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)

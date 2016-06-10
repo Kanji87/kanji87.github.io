@@ -24,14 +24,16 @@
     }
     &__content {
         margin-top: 45px;
+        position: relative;
+        left: -20px;
 
         @include cf();
     }
     &__col {
         float: left;
 
-        width: 440px;
-        margin-right: 79px;
+        // width: 440px;
+        // margin-right: 79px;
 
         @include respond-to(tablet) {
             float: none;
@@ -69,6 +71,18 @@
             font-weight: bold;
 
             letter-spacing: .6px;
+        }
+        &--schedule {
+            margin-top: 55px !important;
+            @include respond-to(tablet) {
+                margin-top: 40px !important;
+            }
+        }
+
+        &--main {
+            @include respond-to(tablet) {
+                margin-bottom: 20px;
+            }
         }
         p {
             margin: 0;
