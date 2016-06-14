@@ -16,7 +16,7 @@ body {
     background-size: 780px auto;
 
     @include respond-to(large) {
-        background-size: 680px auto;
+        background-size: auto 1580px;
     }
 
     @include respond-to(tablet) {

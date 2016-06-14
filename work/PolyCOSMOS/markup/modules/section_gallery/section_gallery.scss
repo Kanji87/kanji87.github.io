@@ -1,13 +1,11 @@
 .gallery {
     margin-top: 80px;
-    padding-bottom: 200px;
+    padding-bottom: 220px;
 
     background-image: url('../img//general/back6.png');
     background-size: cover;
 
     @include respond-to(tablet) {
-        padding-bottom: 220px;
-
         background-size: auto 950px;
     }
     @include respond-to(phone) {
