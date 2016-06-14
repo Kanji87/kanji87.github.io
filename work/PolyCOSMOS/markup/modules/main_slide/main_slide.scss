@@ -4,7 +4,7 @@
 
 .page__border {
     position: fixed;
-    z-index: 990;
+    z-index: 995;
     top: 0;
     left: 0;
 
@@ -55,7 +55,7 @@
     }
     &__title {
         @include respond-to(phone) {
-            width: 71px;
+            width: 75px;
             height: auto;
         }
     }
@@ -121,6 +121,8 @@
 
         @include respond-to(phone) {
             height: 23px;
+            width: 20px;
+            margin-left: 3px;
         }
         img {
             width: auto;
@@ -128,13 +130,14 @@
 
             @include respond-to(phone) {
                 height: 23px;
+                width: 20px;
             }
         }
         svg {
             height: 39px;
 
             @include respond-to(phone) {
-                width: auto;
+                width: 20px;
                 height: 23px;
             }
         }

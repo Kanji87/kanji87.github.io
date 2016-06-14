@@ -3834,15 +3834,7 @@ div.light_square .pp_close {
 }
 
 .bx-wrapper .bx-loading {
-    background-image: url(../img/bxslider/bx_loader.gif);
-}
-
-.bx-wrapper .bx-next,
-.bx-wrapper .bx-prev {
-    -webkit-transition: none;
-            transition: none; 
-
-    background-image: url(../img/bxslider/controls.svg);
+    background-image: url('%=static=%general/bxslider/bx_loader.gif');
 }
 
 .bx-wrapper .bx-controls-direction a {

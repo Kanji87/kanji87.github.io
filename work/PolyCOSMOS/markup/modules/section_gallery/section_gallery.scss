@@ -1,0 +1,126 @@
+.gallery {
+    margin-top: 80px;
+    padding-bottom: 200px;
+    background-image: url("../img//general/back6.png");
+    background-size: cover;
+
+    @include respond-to(tablet) {
+        background-size: auto 950px;
+        padding-bottom: 220px;
+    }
+
+    @include respond-to(phone) {
+        background-size: auto 700px;
+        padding-bottom: 180px;
+    }
+
+    &__container {
+        position: relative;
+
+        @include respond-to(phone) {
+            padding: 0;
+        }
+    }
+
+    &__title {
+        width: 160px;
+        height: 99px;
+        margin-bottom: 45px;
+        @include respond-to(phone) {
+            margin-left: 20px;
+        }
+    }
+
+    &__list {
+        height: 620px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    .bx-viewport {
+        height: 620px !important;
+
+        @include respond-to(tablet) {
+            height: 420px !important;
+        }
+
+        @include respond-to(phone) {
+            height: 200px !important;
+        }
+    }
+
+    .bx-prev,
+    .bx-next {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 41px;
+        @include respond-to(phone) {
+            width: 15px;
+            height: 30px;
+        }
+    }
+
+    .bx-prev {
+        background-image: url('%=static=%general/arrow_left.svg');
+        left: 40px;
+        @include respond-to(phone) {
+            left: 20px;
+        }
+    }
+
+    .bx-next {
+        background-image: url('%=static=%general/arrow_right.svg');
+        right: 40px;
+        @include respond-to(phone) {
+            right: 20px;
+        }
+    }
+
+    .bx-caption {
+        display: none;
+    }
+
+    &__caption {
+        color: $white;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: .56px;
+        width: 736px;
+        font-family: $formular;
+        position: absolute;
+        bottom: -60px;
+        min-height: 45px;
+        @include respond-to(tablet) {
+            width: 516px;
+        }
+        @include respond-to(phone) {
+            width: 240px;
+            padding-left: 20px;
+            position: relative;
+            bottom: 0;
+            margin-top: 15px;
+        }
+    }
+
+    .bx-pager {
+        position: absolute;
+        right: 0;
+        bottom: -35px;
+        line-height: 20px;
+        width: auto;
+        color: $white;
+        font-size: 12px;
+        display: inline-block;
+        text-align: right;
+        font-family: $formular;
+        font-weight: normal;
+        padding: 0;
+        @include respond-to(phone) {
+            right: 20px;
+        }
+    }
+
+}
