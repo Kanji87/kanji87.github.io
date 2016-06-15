@@ -1,0 +1,284 @@
+.section-main {
+    position: relative;
+}
+
+.page__border {
+    position: fixed;
+    z-index: 995;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    border: 14px solid $light-yellow;
+
+    @include respond-to(large) {
+        border-width: 7px;
+    }
+}
+
+.buy-ticket {
+    position: absolute;
+    z-index: 990;
+    top: 25px;
+    left: 27px;
+
+    display: block;
+
+    width: 122px;
+
+    border: 1px solid #231f20;
+
+    @include respond-to(large) {
+        top: 20px;
+        left: 20px;
+    }
+    // @include respond-to(desktop) {
+    // top: 60px;
+    // }
+    @include respond-to(tablet) {
+        left: 17px;
+    }
+    @include respond-to(phone) {
+        top: 18px;
+        // left: 80px;
+        left: 20px;
+
+        width: 77px;
+        height: 49px;
+    }
+    img {
+        display: block;
+    }
+    &__title {
+        @include respond-to(phone) {
+            width: 75px;
+            height: auto;
+        }
+    }
+    &__icon {
+        width: 72px;
+        height: 31px;
+        margin: 14px auto 19px;
+
+        @include respond-to(phone) {
+            width: 44px;
+            height: 19px;
+            margin: 8px auto 10px;
+        }
+    }
+}
+
+.org {
+    z-index: 990;
+    right: 27px;
+    left: auto;
+
+    @include respond-to(large) {
+        top: 20px;
+        right: 20px;
+    }
+    // @include respond-to(desktop) {
+    //     top: 60px;
+    // }
+    @include respond-to(tablet) {
+        right: 17px;
+    }
+    @include respond-to(phone) {
+        top: 18px;
+        right: 19px;
+
+        height: 49px;
+    }
+    @extend .buy-ticket;
+    &__title {
+        @include respond-to(phone) {
+            width: 75px;
+            height: auto;
+        }
+    }
+    &__list {
+        padding-top: 13px;
+        padding-bottom: 12px;
+
+        @include cf();
+        @include respond-to(phone) {
+            padding: 7px 0;
+        }
+    }
+    &__item {
+        float: left;
+    }
+    &__link {
+        display: block;
+
+        width: auto;
+        height: 39px;
+        margin-left: 2px;
+
+        @include respond-to(phone) {
+            height: 23px;
+            width: 20px;
+            margin-left: 3px;
+        }
+        img {
+            width: auto;
+            height: 39px;
+
+            @include respond-to(phone) {
+                height: 23px;
+                width: 20px;
+            }
+        }
+        svg {
+            height: 39px;
+
+            @include respond-to(phone) {
+                width: 20px;
+                height: 23px;
+            }
+        }
+    }
+}
+
+.age_0_plus {
+    position: absolute;
+    right: 31px;
+    bottom: 100px;
+
+    width: 34px;
+    height: 40px;
+
+    @include respond-to(large) {
+        right: 11px;
+        bottom: 89px;
+    }
+    @include respond-to(tablet) {
+        right: 10px;
+        bottom: 114px;
+    }
+    @include respond-to(phone) {
+        right: 19px;
+        bottom: 66px;
+
+        width: 21px;
+        height: 26px;
+        z-index: 995;
+    }
+    @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+        bottom: 53px;
+    }
+    @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+        bottom: -72px;
+    }
+}
+
+.social-share {
+    position: absolute;
+    z-index: 10;
+    right: 40px;
+    bottom: 40px;
+
+    @include respond-to(large) {
+        right: 20px;
+        bottom: 29px;
+    }
+    @include respond-to(tablet) {
+        right: 19px;
+        bottom: 32px;
+    }
+    @include respond-to(phone) {
+        right: 50%;
+        bottom: -40px;
+
+        margin-right: -50px;
+    }
+    @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+        bottom: -70px;
+    }
+}
+
+.social-likes {
+    @include cf();
+    &__icon {
+        display: block;
+
+        width: 24px;
+        height: 28px;
+    }
+    &__widget {
+        float: left;
+
+        cursor: pointer;
+        &:not(:first-child) {
+            margin-left: 15px;
+        }
+    }
+    &__counter {
+        display: none;
+    }
+    &__icon_twitter {
+        background-image: url('%=static=%general/tw_icon.svg');
+    }
+    &__icon_facebook {
+        background-image: url('%=static=%general/fb_icon.svg');
+    }
+    &__icon_vkontakte {
+        background-image: url('%=static=%general/vk_icon.svg');
+    }
+}
+
+.main-partner {
+    position: absolute;
+    bottom: 38px;
+    left: 42px;
+
+    @include respond-to(large) {
+        bottom: 28px;
+        left: 20px;
+    }
+    @include respond-to(tablet) {
+        bottom: 34px;
+    }
+    @include respond-to(phone) {
+        bottom: 68px;
+    }
+    @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+        bottom: 53px;
+    }
+    @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+        bottom: -72px;
+    }
+    &__title {
+        @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+            width: 50px;
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            display: none;
+        }
+    }
+    &__list {
+        margin-top: 12px;
+        @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+            margin-top: 7px;
+        }
+    }
+    &__item {
+        display: inline-block;
+
+        vertical-align: bottom;
+        // &:last-child {
+        //     margin-left: 22px;
+        // }
+    }
+
+    &__link {
+        @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+            display: block;
+            width: 28px;
+        }
+    }
+}

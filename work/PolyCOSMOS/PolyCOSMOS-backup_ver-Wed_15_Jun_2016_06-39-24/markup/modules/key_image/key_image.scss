@@ -1,0 +1,539 @@
+.key-image {
+    position: relative;
+    left: 50%;
+
+    width: 930px;
+    height: 100%;
+    margin-left: -508px;
+
+    @include respond-to(large) {
+        width: 621px;
+        margin-left: -351px;
+    }
+    @include respond-to(tablet) {
+        width: 680px;
+        margin-left: -350px;
+    }
+    @include respond-to(phone) {
+        width: 282px;
+        margin-left: -140px;
+    }
+    @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+        margin-left: -145px;
+    }
+    div {
+        position: absolute;
+
+        transition: all ease .3s;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &__title {
+        position: absolute;
+        z-index: 975;
+        top: 50%;
+
+        width: 100%;
+        height: 686px;
+        margin-top: -404px;
+        // transform: translate(0, -50%);
+
+        @include respond-to(large) {
+            height: 474px;
+            margin-top: -273px;
+        }
+        @include respond-to(tablet) {
+            height: 514px;
+            margin-top: -328px;
+        }
+        @include respond-to(phone) {
+            height: 214px;
+            margin-top: -158px;
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            margin-top: -122px;
+        }
+    }
+    &__cosmos {
+        z-index: 975;
+        top: 0;
+        left: 0;
+
+        width: 900px;
+        height: 100%;
+
+        background-image: url('%=static=%/general/02.png');
+
+        @include respond-to(large) {
+            width: 100%;
+        }
+        @include respond-to(tablet) {
+            background-image: url('%=static=%/general/02_m.png');
+        }
+        @include respond-to(phone) {
+            background-image: url('%=static=%/general/02_s.png');
+        }
+    }
+    &__cosmonaut {
+        z-index: 985;
+        top: 160px;
+        left: 653px;
+
+        width: 347px;
+        height: 717px;
+
+        background-image: url('%=static=%/general/01.png');
+
+        @include respond-to(large) {
+            top: 111px;
+            left: 450px;
+
+            width: 239px;
+            height: 464px;
+        }
+        @include respond-to(tablet) {
+            top: 204px;
+            left: 367px;
+
+            width: 236px;
+            height: 484px;
+
+            background-image: url('%=static=%/general/01_m.png');
+        }
+        @include respond-to(phone) {
+            top: 87px;
+            left: 151px;
+
+            width: 122px;
+            height: 253px;
+
+            background-image: url('%=static=%/general/01_s.png');
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            width: 108px;
+            height: 225px;
+            top: 66px;
+            left: 154px;
+        }
+    }
+    &__exhibition {
+        z-index: 975;
+        top: 60px;
+        left: 59px;
+
+        width: 191px;
+        height: 127px;
+
+        background-image: url('%=static=%/general/08.png');
+
+        @include respond-to(large) {
+            top: 42px;
+            left: 41px;
+
+            width: 132px;
+            height: 88px;
+        }
+        @include respond-to(tablet) {
+            top: 72px;
+            left: 53px;
+
+            width: 130px;
+            height: 86px;
+        }
+        @include respond-to(phone) {
+            top: 3px;
+            left: 27px;
+
+            width: 79px;
+            height: 53px;
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            left: 20px;
+        }
+    }
+    &__era-born {
+        z-index: 980;
+        bottom: 5px;
+        left: 299px;
+
+        width: 674px;
+        height: 300px;
+
+        background-image: url('%=static=%/general/03.png');
+
+        @include respond-to(large) {
+            bottom: 4px;
+            left: 206px;
+
+            width: 464px;
+            height: 207px;
+        }
+        @include respond-to(tablet) {
+            bottom: -27px;
+            left: 145px;
+
+            width: 434px;
+            height: 192px;
+        }
+        @include respond-to(phone) {
+            bottom: -46px;
+            left: 16px;
+
+            width: 256px;
+            height: 114px;
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            left: 14px;
+            bottom: -32px;
+        }
+    }
+    &__planet-red-big {
+        z-index: 970;
+        top: -228px;
+        left: -12px;
+
+        width: 605px;
+        height: 608px;
+
+        background-image: url('%=static=%/general/key_planet_red_big.png');
+
+        @include respond-to(large) {
+            top: -156px;
+            left: 0;
+
+            width: 417px;
+            height: 419px;
+        }
+        @include respond-to(tablet) {
+            top: -115px;
+            left: 92px;
+
+            width: 411px;
+            height: 410px;
+
+            background-image: url('%=static=%/general/key_planet_red_big_s.png');
+        }
+        @include respond-to(phone) {
+            top: -86px;
+            left: 0;
+
+            width: 209px;
+            height: 210px;
+
+            background-image: url('%=static=%/general/key_planet_red_big_s.png');
+        }
+    }
+    &__planet-red-medium {
+        z-index: 970;
+        bottom: -133px;
+        left: 175px;
+
+        width: 276px;
+        height: 274px;
+
+        background-image: url('%=static=%/general/key_planet_red_medium.png');
+
+        @include respond-to(large) {
+            top: 376px;
+            left: 121px;
+
+            width: 190px;
+            height: 189px;
+        }
+        @include respond-to(tablet) {
+            top: auto;
+            bottom: -67px;
+            left: 54px;
+
+            width: 179px;
+            height: 177px;
+        }
+        @include respond-to(tablet) {
+            top: 159px;
+            bottom: auto;
+            left: 52px;
+
+            width: 103px;
+            height: 102px;
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            left: 31px;
+            bottom: -31px;
+        }
+    }
+    &__planet-red-small {
+        z-index: 970;
+        bottom: -288px;
+        left: 430px;
+
+        width: 203px;
+        height: 195px;
+
+        background-image: url('%=static=%/general/key_planet_red_small.png');
+
+        @include respond-to(large) {
+            bottom: -198px;
+            left: 300px;
+
+            width: 140px;
+            height: 134px;
+        }
+        @include respond-to(tablet) {
+            bottom: -237px;
+            left: 250px;
+
+            width: 138px;
+            height: 131px;
+        }
+        @include respond-to(phone) {
+            bottom: -156px;
+            left: 97px;
+
+            width: 76px;
+            height: 72px;
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            bottom: -130px;
+            left: 20px;
+            z-index: 910;
+        }
+    }
+    &__planet-yellow-small {
+        z-index: 980;
+        top: 226px;
+        right: -83px;
+
+        width: 100px;
+        height: 100px;
+
+        background-image: url('%=static=%/general/key_planet_yellow_small.png');
+
+        @include respond-to(large) {
+            top: 157px;
+            right: -76px;
+
+            width: 69px;
+            height: 69px;
+        }
+        @include respond-to(tablet) {
+            top: 224px;
+            right: -14px;
+
+            width: 68px;
+            height: 68px;
+
+            background-image: url('%=static=%/general/key_planet_yellow_small_m.png');
+        }
+        @include respond-to(phone) {
+            top: 90px;
+            right: -5px;
+
+            width: 45px;
+            height: 45px;
+
+            background-image: url('%=static=%/general/key_planet_yellow_small_s.png');
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            right: -3px;
+            bottom: -2px;
+            top: auto;
+        }
+    }
+    &__planet-yellow-medium {
+        z-index: 965;
+        top: -36px;
+        right: 172px;
+
+        width: 177px;
+        height: 175px;
+
+        background-image: url('%=static=%/general/key_planet_yellow_medium.png');
+
+        @include respond-to(large) {
+            top: -24px;
+            left: 410px;
+
+            width: 122px;
+            height: 121px;
+        }
+        @include respond-to(tablet) {
+            top: -28px;
+            left: 485px;
+
+            width: 136px;
+            height: 135px;
+
+            background-image: url('%=static=%/general/key_planet_yellow_medium_m.png');
+        }
+        @include respond-to(phone) {
+            top: -31px;
+            left: 188px;
+
+            width: 72px;
+            height: 72px;
+
+            background-image: url('%=static=%/general/key_planet_yellow_medium_s.png');
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            top: 51px;
+            right: 16px;
+            left: auto;
+        }
+    }
+    &__date {
+        position: absolute;
+        z-index: 990;
+        bottom: 40px;
+        left: 50%;
+
+        width: 648px;
+        height: auto;
+        margin-left: -324px;
+
+        @include respond-to(large) {
+            bottom: 29px;
+            left: 150px;
+
+            width: 420px;
+            margin-left: 0;
+        }
+        @include respond-to(tablet) {
+            bottom: 34px;
+            left: 50%;
+
+            margin-left: -210px;
+        }
+        @include respond-to(phone) {
+            bottom: 27px;
+
+            width: 282px;
+            margin-left: -141px;
+        }
+        @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+            bottom: 20px;
+        }
+        @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+            bottom: -17px;
+            z-index: 980;
+        }
+    }
+}
+
+.hashtag {
+    position: absolute;
+    z-index: 990;
+    bottom: -29px;
+    left: 479px;
+
+    display: block;
+
+    width: 155px;
+    height: 99px;
+
+    // transition: background-image ease .3s;
+
+    background-image: url('%=static=%general/hashtag.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include respond-to(large) {
+        bottom: -20px;
+        left: 330px;
+
+        width: 107px;
+        height: 68px;
+    }
+    @include respond-to(tablet) {
+        bottom: -41px;
+        left: 264px;
+
+        width: 101px;
+        height: 64px;
+    }
+    @include respond-to(phone) {
+        bottom: -90px;
+        left: 80px;
+
+        width: 63px;
+        height: 40px;
+    }
+    @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+        bottom: -70px;
+    }
+    &:hover {
+        background-image: url('%=static=%general/hashtag_hover.png');
+    }
+}
+
+.location-text {
+    position: absolute;
+    z-index: 995;
+    top: 365px;
+    right: -232px;
+
+    display: block;
+
+    width: 200px;
+    height: 108px;
+
+    // transition: background-image ease .3s;
+
+    background-image: url('%=static=%/general/location.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include respond-to(large) {
+        top: 250px;
+        right: -180px;
+
+        width: 138px;
+        height: 75px;
+    }
+    @include respond-to(tablet) {
+        top: 328px;
+        right: -26px;
+
+        width: 138px;
+        height: 75px;
+
+        background-image: url('%=static=%/general/location_m.png');
+    }
+    @include respond-to(phone) {
+        z-index: 990;
+        top: -28px;
+        right: 53px;
+
+        width: 100px;
+        height: 54px;
+
+        transform: rotate(-358deg);
+
+        background-image: url('%=static=%/general/location_s.png');
+    }
+    &:hover {
+        background-image: url('%=static=%/general/location_hover.png');
+
+        @include respond-to(tablet) {
+            background-image: url('%=static=%/general/location_m_hover.png');
+        }
+        @include respond-to(phone) {
+            background-image: url('%=static=%/general/location_s_hover.png');
+        }
+    }
+
+    @media only screen and ('max-height: 530px') and ('max-width: 320px') {
+        width: 85px;
+        height: 46px;
+        top: -15px;
+        left: 117px;
+        right: auto;
+    }
+    @media only screen and ('max-height: 440px') and ('max-width: 320px') {
+        left: 111px;
+    }
+}
+
+.js-key-image-parallax {
+    transition: all linear .1s;
+}

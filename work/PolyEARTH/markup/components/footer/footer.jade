@@ -1,0 +1,42 @@
+mixin footer(data)
+    footer.footer
+        .footer__container.section__container
+            .footer__contacts
+                .footer__contacts-col.col-md-6
+                    p.footer__text Для поситителей
+                    p.footer__text +7 495 730-54-38
+                .footer__contacts-col.col-md-6
+                    p.footer__text Пресса
+                    p.footer__text +7 903 290–49–44
+                    a.footer__link(href="mailto:press@polymus.ru") press@polymus.ru
+
+            .footer__copyright
+                ul.footer__social
+                    li.footer__social-item
+                        a.footer__social-link.footer__social-link--fb(href="#")
+                    li.footer__social-item
+                        a.footer__social-link.footer__social-link--vk(href="#")
+                    li.footer__social-item
+                        a.footer__social-link.footer__social-link--ig(href="#")
+                    li.footer__social-item
+                        a.footer__social-link.footer__social-link--yt(href="#")
+
+                a.footer__copyright-item.footer__link(href="#") Использование материалов сайта
+                a.footer__copyright-item.footer__link(href="#") Соглашение с пользователем
+                p.footer__copyright-item.footer__text © 2016 Политехнический музей
+
+            .footer__subscribe
+                p.footer__subscribe-title.footer__text Хотите получать новости Политеха?
+                form(action="https://polymus.ru/ru/api/v1/subscription/subscribe_unauth/").footer__subscribe-form
+                    input(type="email" name="" placeholder="Введите ваш e-mail").footer__subscribe-input
+                    input(type="hidden" name="data_type" value="digest")
+                    input(type="hidden" name="data_id" value="15")
+                    .footer__subscribe-submit
+                        input(type="submit" value="").footer__subscribe-submit-button
+
+
+
+
+
+
+

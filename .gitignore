@@ -40,3 +40,6 @@ webpack.config.js
 plugins-config.json
 work/PolyEARTH/docs
 work/PolyEARTH/tars
+work/PolyCOSMOS/docs
+work/PolyCOSMOS/PolyCOSMOS-backup_ver-Wed_15_Jun_2016_06-39-24/builds
+work/PolyCOSMOS/PolyCOSMOS-backup_ver-Wed_15_Jun_2016_06-39-24/docs

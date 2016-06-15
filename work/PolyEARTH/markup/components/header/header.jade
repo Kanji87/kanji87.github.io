@@ -1,0 +1,29 @@
+mixin header
+    header.header
+        a.open-btn(href='#')
+            != jadeHelpers.Icon.call(locals, {iconName: 'menu_icon', className: 'menu_icon'})
+            != jadeHelpers.Icon.call(locals, {iconName: 'menu_close_icon', className: 'menu_close_icon'})
+        nav.nav
+            ul.nav-list
+                li.nav-list__item
+                    a.nav-list__item-link(href='#') Посетить выставку
+                li.nav-list__item
+                    a.nav-list__item-link(href='#') Программа
+                li.nav-list__item
+                    a.nav-list__item-link(href='#') Художники
+                li.nav-list__item
+                    a.nav-list__item-link(href='#') Блог
+                li.nav-list__item
+                    .nav-list__sepor |
+                li.nav-list__item
+                    a.nav-list__item-link.nav-list__lang.nav-list__lang--active(href='#') ru
+                    a.nav-list__item-link.nav-list__lang(href='#') eng
+
+            .social-share
+                .social-likes
+                    .facebook
+                    .vkontakte
+                    .twitter(data-via="Polytechnicum")
+
+            a.header__poly-link(href="#")
+                != jadeHelpers.Icon.call(locals, {iconName: 'poly_icon', className: 'header__poly-icon'})

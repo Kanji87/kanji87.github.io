@@ -1,0 +1,34 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head
+    include ../components/header/header
+    include ../components/main_slide/main_slide
+    include ../components/section_about/section_about
+    include ../components/section_video/section_video
+    include ../components/section_partners/section_partners
+    include ../components/footer/footer
+
+    head
+        +head(head.defaults)
+    body
+        .svg
+            |%=symbols=%
+
+        +header()
+
+        +main_slide()
+
+        +section_about()
+
+        +section_video()
+
+        +section_partners()
+
+        +footer()
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

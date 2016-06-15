@@ -1,11 +1,17 @@
 module.exports = {
-    "autoprefixerConfig": [
-        "> 1%",
-        "last 2 versions",
-        "Firefox ESR",
-        "android 4"
-    ],
-    "postcss": [],
+    "buildPath": "./builds/",
+    "ulimit": 4096,
+    "useArchiver": true,
+    "sourcemaps": {
+        "js": {
+            "active": true,
+            "inline": true
+        },
+        "css": {
+            "active": true,
+            "inline": true
+        }
+    },
     "svg": {
         "active": true,
         "workflow": "symbols",
@@ -14,6 +20,15 @@ module.exports = {
             "usePolyfillForExternalSymbols": true,
             "pathToExternalSymbolsFile": ""
         }
+    },
+    "useImagesForDisplayWithDpi": [
+        96,
+        192
+    ],
+    "postcss": [],
+    "useBabel": false,
+    "css": {
+        "workflow": "concat"
     },
     "js": {
         "workflow": "concat",
@@ -29,15 +44,11 @@ module.exports = {
         "jsPathsToConcatAfterModulesJs": [],
         "lintJsCodeAfterModules": false
     },
-    "sourcemaps": {
-        "js": {
-            "active": true,
-            "inline": true
-        },
-        "css": {
-            "active": true,
-            "inline": true
-        }
+    "minifyHtml": false,
+    "fs": {
+        "staticFolderName": "static",
+        "imagesFolderName": "img",
+        "componentsFolderName": "modules"
     },
     "notifyConfig": {
         "useNotify": false,
@@ -45,30 +56,8 @@ module.exports = {
         "sounds": {},
         "taskFinishedText": "Task finished at: "
     },
-    "browserSyncConfig": {
-        "baseDir": "./dev",
-        "port": 3004,
-        "open": true,
-        "browser": "default",
-        "startUrl": "/index.html",
-        "useNotifyInBrowser": true,
-        "injectChanges": false
-    },
-    "minifyHtml": false,
-    "staticPrefix": "static/",
-    "buildPath": "./builds/",
-    "useBuildVersioning": true,
-    "useArchiver": true,
-    "ulimit": 4096,
     "templater": "jade",
-    "cssPreprocessor": "scss",
-    "useImagesForDisplayWithDpi": [
-        96,
-        192
-    ],
-    "fs": {
-        "staticFolderName": "static",
-        "imagesFolderName": "img"
-    },
-    "useBabel": false
+    "useBuildVersioning": true,
+    "generateStaticPath": true,
+    "cssPreprocessor": "scss"
 };

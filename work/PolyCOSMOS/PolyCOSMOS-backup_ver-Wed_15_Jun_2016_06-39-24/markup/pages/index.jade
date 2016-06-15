@@ -1,0 +1,45 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../modules/head/head
+    include ../modules/header/header
+    include ../modules/main_slide/main_slide
+    include ../modules/section_about/section_about
+    include ../modules/section_partners/section_partners
+    include ../modules/section_gallery/section_gallery
+    include ../modules/section_map/section_map
+    include ../modules/footer/footer
+
+    head
+        +head(head.defaults)
+    body.page
+        .svg-symbols
+            |%=symbols=%
+
+        +header()
+
+        .page__border
+            //- .page__border--left
+            //- .page__border--top
+            //- .page__border--right
+            //- .page__border--bottom
+
+        +main_slide()
+
+        +section_about()
+
+        +section_gallery()
+
+        +section_partners()
+
+        //- .section__banner(style='text-align: center; color: #fff; line-height: 90px;') BANNER 100%х90
+
+        +section_map()
+
+        +footer()
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

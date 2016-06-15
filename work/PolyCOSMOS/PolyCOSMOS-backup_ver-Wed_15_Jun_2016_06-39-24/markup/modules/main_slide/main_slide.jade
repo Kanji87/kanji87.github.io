@@ -1,0 +1,45 @@
+include ../key_image/key_image
+
+mixin main_slide
+    section.section-main.slider-wrapper
+        //- img.page-background__one(src='%=static=%img/general/background.jpg')
+
+        +key_image()
+
+        a.buy-ticket(href="//primepass.ru/widget/v1/spot/vdnh/ext_event/149/schedules" target="_blank")
+            img(src="%=static=%img/general/buy_ticket_title.svg", alt="").buy-ticket__title
+            img(src="%=static=%img/general/ticket.svg", alt="").buy-ticket__icon
+         script(src="//primepass.ru/widget/v1/adaptor/adaptor.min.js" type="text/javascript")
+
+        .org
+            img(src="%=static=%img/general/org_title.svg", alt="").org__title
+            ul.org__list
+                li.org__item
+                    a.org__link(href="https://polymus.ru/ru/" target="_blank")
+                        != jadeHelpers.Icon.call(locals, {iconName: 'org_polymus_black', className: 'org_polymus_black'})
+                li.org__item
+                    a.org__link(href="http://vdnh.ru/" target="_blank")
+                        != jadeHelpers.Icon.call(locals, {iconName: 'org_vdnh_white', className: 'org_vdnh_white'})
+                li.org__item
+                    a.org__link(href="http://www.rosizo.ru/" target="_blank")
+                        img(src="%=static=%img/general/org_rosizo.png", alt="")
+
+        
+        != jadeHelpers.Icon.call(locals, {iconName: 'age_0_plus', className: 'age_0_plus'})
+
+        .main-partner
+            .main-partner__title
+                img(src="%=static=%img/general/partner_title.svg", alt="")
+            ul.main-partner__list
+                li.main-partner__item
+                    a.main-partner__link(href="http://www.sciencemuseum.org.uk/" target="_blank")
+                        img(src="%=static=%img/general/partner_science_museum.svg", alt="")
+                //- li.main-partner__item
+                //-     a.main-partner__link(href="#")
+                //-         img(src="%=static=%img/general/partner_rosgostrah.svg", alt="")
+
+        .social-share
+            .social-likes
+                .twitter(data-via="Polytechnicum")
+                .facebook
+                .vkontakte
