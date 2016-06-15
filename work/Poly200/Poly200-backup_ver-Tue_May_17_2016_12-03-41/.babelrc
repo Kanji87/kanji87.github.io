@@ -1,8 +1,0 @@
-{
-  "ignore": [
-    "**/babel_ignore_*.js"
-  ],
-  "presets": [
-    "es2015"
-  ]
-}
