@@ -1,3 +1,23 @@
+// $(function () {
+//     function e() {
+//         var e = moment(),
+//             t = e.clone().set('hour', 12).set('minute', 0).set('second', 0).day(5 === e.isoWeekday() && e.get('hour') >= 12 ? 12 : 5).toDate();
+//         return t;
+//     }
+
+//     $('.js-activity-timer').countdown({
+//         until: e(),
+//         format: 'dHM',
+//         labels: ['Y', 'M', 'W', 'D', 'H', 'M', 'S'],
+//         labels1: ['Y', 'M', 'W', 'D', 'H', 'M', 'S'],
+//         onExpiry: function () {
+//             $(this).countdown('option', {
+//                 until: e()
+//             });
+//         }
+//     });
+// });
+
 $(function () {
     $('.js-toggle-info').on('click', function (e) {
         e.preventDefault();
@@ -68,19 +88,30 @@ $(function () {
             $('.header__nav').css('display', 'inline-block');
         }
     });
-});
 
-$(function () {
-    if ( $('.c-timeline__slider').length ) {
-        $('.c-timeline__slider').bxSlider({
-            adaptiveHeight: true,
-            pager: false,
-            nextText: '>',
-            prevText: '<',
-            hideControlOnEnd: true,
-            infiniteLoop: false
-            // nextSelector: 'c-slider__next',
-            // prevSelector: 'c-slider__prev'
-        });
+
+    if ( $('.js-slider').length ) {
+        if ( $('.js-slider').closest('.c-timeline').length ) {
+            $('.js-slider').bxSlider({
+                adaptiveHeight: true,
+                pager: false,
+                nextText: '>',
+                prevText: '<',
+                hideControlOnEnd: true,
+                infiniteLoop: false
+                // nextSelector: 'c-slider__next',
+                // prevSelector: 'c-slider__prev'
+            });
+        } else if ( $('.js-slider').closest('.c-article').length ) {
+            $('.js-slider').bxSlider({
+                adaptiveHeight: true,
+                nextText: '>',
+                prevText: '<',
+                hideControlOnEnd: true,
+                infiniteLoop: true,
+                pager: true,
+                pagerType: 'short'
+            });
+        }
     }
 });

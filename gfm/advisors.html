@@ -91,11 +91,6 @@
                 <title>noun_628577_cc</title>
                 <path d="M11.987.849a3.273 3.273 0 0 0-4.543.14l-.943.98-.945-.98a3.274 3.274 0 0 0-4.543-.14A3.082 3.082 0 0 0 .871 5.28l5.627 5.475 5.63-5.475a3.081 3.081 0 0 0-.14-4.431z" fill="#EADD98" fill-rule="evenodd" />
             </symbol>
-            <symbol id="icon_logout" viewBox="0 0 15 11">
-                <title>Shape</title>
-                <path d="M9.45.027v1.062h-8.1v8.849h8.1V11H0V.027h9.45zm2.362 3.971a.182.182 0 0 1 .07.033l2.335 1.372c.09.071.09.15 0 .221l-2.335 1.372c-.09.07-.183.04-.183-.067v-.885H4.95V4.983h6.75v-.885c0-.08.05-.115.113-.1z" fill="#FFF"
-                fill-rule="evenodd" />
-            </symbol>
             <symbol id="icon_refresh" viewBox="0 0 16 17">
                 <title>noun_592798_cc</title>
                 <path d="M8.032 16.07c2.051 0 4.126-.777 5.681-2.357a8.073 8.073 0 0 0 2.051-3.488L16 9.423l-1.58-.448-.235.802a6.535 6.535 0 0 1-1.627 2.781 6.402 6.402 0 0 1-9.052 0 6.402 6.402 0 0 1 0-9.052 6.402 6.402 0 0 1 9.1.048l-1.65-.024-.024 1.65 4.314.047.212-4.455-1.65-.07-.071 1.65c-3.135-3.136-8.25-3.136-11.386 0-3.135 3.135-3.135 8.25 0 11.385a8.03 8.03 0 0 0 5.681 2.334z"
@@ -111,6 +106,7 @@
             <header class="header">
                 <div class="l-grid">
                     <a href="/" class="header__logo">
+                        <h1>GuardianFM</h1>
                         <img src="static/img/general/gfm_logo.svg" alt="" class="header__logo-img">
                         <img src="static/img/general/gfm_logo_scroll.svg" alt="" class="header__logo-img--scroll">
                     </a>
@@ -118,11 +114,14 @@
                     <nav class="header__nav">
                         <!--если в каком-либо меню появилось обновление, то к классу пунтак меню (header__nav-item) добавляется класс с модификатором (header__nav-item--update)-->
                         <ul class="header__nav-list">
-                            <li class="header__nav-item"><a href="index.html" class="header__nav-link">Новости</a>
+                            <li class="header__nav-item header__nav-logo">
+                                <img src="static/img/general/gfm_logo.svg" alt="" class="header__nav-logo-img">
                             </li>
-                            <li class="header__nav-item header__nav-item--update"><a href="advisors.html" class="header__nav-link header__nav-link--active">Advisors</a>
+                            <li class="header__nav-item"><a href="/index.html" class="header__nav-link">Новости</a>
                             </li>
-                            <li class="header__nav-item"><a href="#" class="header__nav-link">Статьи</a>
+                            <li class="header__nav-item header__nav-item--update"><a href="/advisors.html" class="header__nav-link header__nav-link--active">Advisors</a>
+                            </li>
+                            <li class="header__nav-item"><a href="/guide-list.html" class="header__nav-link">Статьи</a>
                             </li>
                             <li class="header__nav-item"><a href="#" class="header__nav-link">Подкаст</a>
                             </li>
@@ -515,6 +514,7 @@
                     </ul>
                 </div>
             </footer>
+            <script src="static/js/main.min.js"></script>
         </div>
 
 
