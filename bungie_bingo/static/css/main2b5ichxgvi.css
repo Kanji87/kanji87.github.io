@@ -407,6 +407,14 @@ body {
   background-color: #242424;
   color: #fff;
   position: relative;
+  height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    min-height: 100%;
+    height: auto;
+  }
 }
 
 body,
@@ -502,6 +510,26 @@ ul, ol {
 @media only screen and (max-width: 400px) {
   .footer {
     margin-top: 40px;
+  }
+}
+
+.header {
+  padding-top: 55px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-height: 829px) {
+  .header {
+    padding-top: 15px;
   }
 }
 
@@ -603,24 +631,4 @@ ul, ol {
   text-align: center;
   font-size: 1.3rem;
   text-transform: uppercase;
-}
-
-.header {
-  padding-top: 55px;
-  height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media only screen and (max-height: 829px) {
-  .header {
-    padding-top: 15px;
-  }
 }
