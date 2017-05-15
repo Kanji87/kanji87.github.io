@@ -19,22 +19,22 @@ return b.innerHTML='<a href="'+this._escapeHtml(a)+'">x</a>',b.firstChild.href},
 // };
 
 
-
-$(function(){
+$(function () {
     setViewport();
     animateMainContent();
     animateCoverGradient();
     animateHeader();
+    openMobileMenu();
 });
 
 function animateMainContent() {
     var bottomPos = $('.main-content').css('bottom').substr(0, 2) * 1,
         bottomPosAfterScroll = bottomPos,
         lastScrollTop = 0;
-    $(window).scroll(function(event){
+    $(window).scroll(function (event) {
         var st = $(this).scrollTop();
-        if (st > lastScrollTop){
-            if ( $(window).scrollTop() >= $('.main-cover').height() / 3 ) {
+        if (st > lastScrollTop) {
+            if ($(window).scrollTop() >= $('.main-cover').height() / 3) {
                 bottomPosAfterScroll = 40;
                 $('.main-content').css('bottom', bottomPosAfterScroll + 'px');
             }
@@ -43,11 +43,11 @@ function animateMainContent() {
                 $('.main-content').css('bottom', bottomPosAfterScroll + 'px');
             }
         } else {
-            if ( $(window).scrollTop() <= 0 ) {
+            if ($(window).scrollTop() <= 0) {
                 bottomPosAfterScroll = 70;
                 $('.main-content').css('bottom', bottomPos + 'px');
             } else {
-                if ( $(window).scrollTop() <= $('.main-cover').height() / 3 ) {
+                if ($(window).scrollTop() <= $('.main-cover').height() / 3) {
                     bottomPosAfterScroll += 1;
                     $('.main-content').css('bottom', bottomPosAfterScroll + 'px');
                 }
@@ -60,10 +60,10 @@ function animateMainContent() {
 function animateCoverGradient() {
     var gradientOpacity = 1,
         lastScrollTop = 0;
-    $(window).scroll(function(event){
+    $(window).scroll(function (event) {
         var st = $(this).scrollTop();
-        if (st > lastScrollTop){
-            if ( $(window).scrollTop() >= $('.main-cover').height() / 2 ) {
+        if (st > lastScrollTop) {
+            if ($(window).scrollTop() >= $('.main-cover').height() / 2) {
                 gradientOpacity = 0;
                 $('.main-cover__gradient').css('opacity', gradientOpacity);
             }
@@ -72,11 +72,11 @@ function animateCoverGradient() {
                 $('.main-cover__gradient').css('opacity', gradientOpacity);
             }
         } else {
-            if ( $(window).scrollTop() <= 0 ) {
+            if ($(window).scrollTop() <= 0) {
                 gradientOpacity = 1;
                 $('.main-cover__gradient').css('opacity', gradientOpacity);
             } else {
-                if ( $(window).scrollTop() <= $('.main-cover').height() / 2 ) {
+                if ($(window).scrollTop() <= $('.main-cover').height() / 2) {
                     gradientOpacity += 0.05;
                     $('.main-cover__gradient').css('opacity', gradientOpacity);
                 }
@@ -88,14 +88,14 @@ function animateCoverGradient() {
 
 function animateHeader() {
     var lastScrollTop = 0;
-    $(window).scroll(function(event){
+    $(window).scroll(function (event) {
         var st = $(this).scrollTop();
-        if (st > lastScrollTop){
-            if ( $(window).scrollTop() >= $('.main-cover').height() ) {
+        if (st > lastScrollTop) {
+            if ($(window).scrollTop() >= $('.main-cover').height()) {
                 $('.header').addClass('is-visible');
             }
         } else {
-            if ( $(window).scrollTop() <= $('.main-cover').height() ) {
+            if ($(window).scrollTop() <= $('.main-cover').height()) {
                 $('.header').removeClass('is-visible');
             }
         }
@@ -104,6 +104,13 @@ function animateHeader() {
 }
 
 function setViewport() {
-    var viewport = (screen.width <= 640) ? '640' : 'device-width';
+    var viewport = (screen.width <= 680) ? '640' : 'device-width';
     $('head').prepend('<meta name="viewport" content="width=' + viewport + '" initial-scale="1" />');
+}
+
+function openMobileMenu() {
+    $('.header__bars').click(function () {
+        $(this).toggleClass('header__bars--active');
+        $('.header-menu').toggle();
+    });
 }
