@@ -41,7 +41,6 @@ $(function () {
         if (usedArray[number] != true) {
             var text = wordArray[number];
             $('#cell').attr('id', '#cell' + number).html(text);
-            // $('#cell' + number).text(number);
             usedArray[number] = true;
         } else {
             fillCard(i);
@@ -55,17 +54,18 @@ $(function () {
     }
 
 
-    $('.js-get-new-ticket').click(function () {
+    $('.js-get-new-ticket').click(function (e) {
+        e.preventDefault();
         $('.bingo__col span').attr('id', 'cell');
         $('.bingo__col').removeClass('bingo__col--active');
         resetUsedNumbersArray();
         init();
     });
 
-    $('.bingo__col').click(function () {
+    $('.bingo__col').click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
         $(this).toggleClass('bingo__col--active');
-        // var toggle = this.style;
-        // toggle.backgroundColor = toggle.backgroundColor ? "" : "#BDAE88";
     });
 
 });

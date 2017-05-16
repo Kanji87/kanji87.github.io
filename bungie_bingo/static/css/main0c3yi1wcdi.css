@@ -408,13 +408,7 @@ body {
   color: #fff;
   position: relative;
   height: 100%;
-}
-
-@media only screen and (max-width: 767px) {
-  body {
-    min-height: 100%;
-    height: auto;
-  }
+  min-height: 100vh;
 }
 
 body,
@@ -474,63 +468,31 @@ ul, ol {
   width: 1074px;
   margin: 0 auto;
   box-sizing: border-box;
+  padding-top: 55px;
 }
 
 @media only screen and (max-width: 1074px) {
   .l-page {
     width: 100%;
-    padding: 0 40px;
+    padding: 55px 40px 0;
   }
 }
 
-@media only screen and (max-width: 589px) {
+@media only screen and (max-height: 829px) {
   .l-page {
-    padding: 0 20px;
+    padding: 30px 40px 0;
+  }
+}
+
+@media only screen and (max-width: 679px) {
+  .l-page {
+    padding: 15px 20px 0;
   }
 }
 
 .l-page__content {
   width: 600px;
   margin: 0 auto;
-}
-
-.footer {
-  margin-top: 100px;
-  padding-bottom: 40px;
-  width: 100%;
-  text-align: center;
-}
-
-@media only screen and (max-width: 767px) {
-  .footer {
-    margin-top: 60px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .footer {
-    margin-top: 40px;
-  }
-}
-
-.header {
-  padding-top: 55px;
-  height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media only screen and (max-height: 829px) {
-  .header {
-    padding-top: 15px;
-  }
 }
 
 .bingo {
@@ -550,10 +512,10 @@ ul, ol {
   }
 }
 
-@media only screen and (max-width: 589px) {
+@media only screen and (max-width: 679px) {
   .bingo {
     width: 100%;
-    margin: 40px auto 0;
+    margin: 80px auto 0;
   }
 }
 
@@ -631,4 +593,85 @@ ul, ol {
   text-align: center;
   font-size: 1.3rem;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 339px) {
+  .bingo__col span {
+    font-size: 1.2rem;
+  }
+}
+
+.footer {
+  margin-top: 100px;
+  padding-bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer {
+    margin-top: 40px;
+  }
+}
+
+.header {
+  height: 70px;
+  position: relative;
+}
+
+.header__social {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__social .link:last-child {
+  margin-left: 20px;
+}
+
+.header__share {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header__logo {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+@media only screen and (max-width: 679px) {
+  .header__logo {
+    top: 40px;
+  }
+}
+
+.header__logo-img {
+  display: inline-block;
+}
+
+.header__logo-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.header .social-likes__widget {
+  cursor: pointer;
+}
+
+.header .social-likes svg {
+  display: none;
 }
