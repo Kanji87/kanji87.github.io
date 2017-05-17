@@ -25,12 +25,13 @@ $(function () {
         openMobileMenu();
         closeSubscribePopup();
         runScrollAnimation();
-        // runParalax();
+        shareButtons();
     } else {
         setViewport();
         openMobileMenu();
         closeSubscribePopup();
         runScrollAnimationMobile();
+        shareButtons();
     }
 
 });
@@ -132,13 +133,13 @@ function runScrollAnimation() {
     var lastScrollTop = 0,
         gradientOpacity = 1,
         bottomLogoPos = $('.main-content').css('bottom').substr(0, 2) * 1,
-        bottomLogoPosAfterScroll = bottomLogoPos,
-        secondMargin = 0,
-        secondTop = $('.l-wrap--second .l-content').offset().top,
-        secondBottom = $('.l-wrap--first').height() + $('.l-wrap--second').height(),
-        thirdMargin = 0,
-        // thirdTop = $('.l-wrap--third .l-content').offset().top,
-        thirdBottom = $('.l-wrap--fourth').offset().top;
+        bottomLogoPosAfterScroll = bottomLogoPos;
+        // secondMargin = 0,
+        // secondTop = $('.l-wrap--second .l-content').offset().top,
+        // secondBottom = $('.l-wrap--first').height() + $('.l-wrap--second').height(),
+        // thirdMargin = 0,
+        // // thirdTop = $('.l-wrap--third .l-content').offset().top,
+        // thirdBottom = $('.l-wrap--fourth').offset().top;
 
     $(window).scroll(function (event) {
         var st = $(this).scrollTop();
@@ -282,6 +283,11 @@ function runScrollAnimationMobile() {
                 $('.header').addClass('is-visible');
             }
 
+            if ($(window).scrollTop() >= $('.img-jorj-scene').offset().top + 200) {
+                $('.img-jorj-scene').addClass('is-active');
+                $('.bubble-box--jorj').addClass('is-active');
+            }
+
             if ($(window).scrollTop() >= $('.main-cover').height() / 1.25) {
                 gradientOpacity = 0;
                 $('.main-cover__gradient').css('opacity', gradientOpacity);
@@ -300,6 +306,11 @@ function runScrollAnimationMobile() {
         } else {
             if ($(window).scrollTop() <= $('.main-cover').height()) {
                 $('.header').removeClass('is-visible');
+            }
+
+            if ($(window).scrollTop() <= $('.img-jorj-scene').offset().top - 150) {
+                $('.img-jorj-scene').removeClass('is-active');
+                $('.bubble-box--jorj').removeClass('is-active');
             }
 
             if ($(window).scrollTop() <= 0) {
@@ -323,5 +334,20 @@ function runScrollAnimationMobile() {
             }
         }
         lastScrollTop = st;
+    });
+}
+
+function shareButtons() {
+    var url = window.location.href,
+        pageTitle = 'Виртуальная премьера: самый скандальный балет Дягилева',
+        pageDesc = 'Выстрелы вместо музыки, танцующая лошадь на сцене и ярость в зрительном зале',
+        imgUrl = 'https://project1917.ru/parade_static/img/content/parade_share.jpg';
+
+    $('.share__item--vk').click(function () {
+        window.open('https://vk.com/share.php?url=' + url + '&title=' + pageTitle + '&description=' + pageDesc + '&image=' + imgUrl, '_blank');
+    });
+
+    $('.share__item--fb').click(function () {
+        window.open('https://www.facebook.com/sharer.php?src=sp&u=' + url + '&r=' + Math.random(), '_blank');
     });
 }

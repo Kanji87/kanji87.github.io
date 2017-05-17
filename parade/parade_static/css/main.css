@@ -777,7 +777,7 @@ ul, ol {
 @media only screen and (max-width: 640px) {
   .l-wrap--seven .img-ball-horse {
     top: 20px;
-    left: -130px;
+    left: -215px;
   }
 }
 
@@ -1098,7 +1098,8 @@ ul, ol {
 }
 
 .main-content__logo {
-  width: 100%;
+  width: 120%;
+  margin-left: -10%;
   height: auto;
 }
 
@@ -1154,7 +1155,7 @@ ul, ol {
 .main-content__pin {
   display: inline-block;
   background-image: url("../img/svg-sprite/sprite.svg");
-  background-position: -4px -23px;
+  background-position: -4px -127px;
   width: 13px;
   height: 18px;
   background-repeat: no-repeat;
@@ -1424,12 +1425,30 @@ ul, ol {
   margin-top: -240px;
 }
 
+@media only screen and (max-width: 640px) {
+  .jp-audio {
+    width: 120%;
+    height: 42px;
+    margin-left: -10%;
+  }
+}
+
 .jp-audio.jp-state-playing .jp-play {
   background-image: url("../img/svg-sprite/sprite.svg");
-  background-position: -4px -110px;
+  background-position: -4px -214px;
   width: 9px;
   height: 12px;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 640px) {
+  .jp-audio.jp-state-playing .jp-play {
+    background-image: url("../img/svg-sprite/sprite.svg");
+    background-position: -4px -84px;
+    width: 16px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
 }
 
 .jp-audio button,
@@ -1452,11 +1471,21 @@ ul, ol {
   border: 0;
   text-indent: -999999999px;
   background-image: url("../img/svg-sprite/sprite.svg");
-  background-position: -4px -4px;
+  background-position: -4px -108px;
   width: 18px;
   height: 15px;
   background-repeat: no-repeat;
   right: 18px;
+}
+
+@media only screen and (max-width: 640px) {
+  .jp-audio .jp-mute {
+    background-image: url("../img/svg-sprite/sprite.svg");
+    background-position: -4px -4px;
+    width: 31px;
+    height: 26px;
+    background-repeat: no-repeat;
+  }
 }
 
 .jp-audio .jp-play {
@@ -1465,11 +1494,21 @@ ul, ol {
   border: 0;
   text-indent: -999999999px;
   background-image: url("../img/svg-sprite/sprite.svg");
-  background-position: -4px -94px;
+  background-position: -4px -198px;
   width: 11px;
   height: 12px;
   background-repeat: no-repeat;
   left: 22px;
+}
+
+@media only screen and (max-width: 640px) {
+  .jp-audio .jp-play {
+    background-image: url("../img/svg-sprite/sprite.svg");
+    background-position: -4px -60px;
+    width: 18px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
 }
 
 .jp-audio .jp-repeat {
@@ -1478,11 +1517,22 @@ ul, ol {
   border: 0;
   text-indent: -999999999px;
   background-image: url("../img/svg-sprite/sprite.svg");
-  background-position: -4px -45px;
+  background-position: -4px -149px;
   width: 16px;
   height: 13px;
   background-repeat: no-repeat;
   right: 50px;
+}
+
+@media only screen and (max-width: 640px) {
+  .jp-audio .jp-repeat {
+    background-image: url("../img/svg-sprite/sprite.svg");
+    background-position: -4px -34px;
+    width: 27px;
+    height: 22px;
+    background-repeat: no-repeat;
+    right: 65px;
+  }
 }
 
 .jp-audio .jp-progress {
@@ -1492,9 +1542,22 @@ ul, ol {
   left: 95px;
 }
 
+@media only screen and (max-width: 640px) {
+  .jp-audio .jp-progress {
+    height: 4px;
+    left: 130px;
+  }
+}
+
 .jp-audio .jp-play-bar {
   height: 2px;
   background-color: #245dff;
+}
+
+@media only screen and (max-width: 640px) {
+  .jp-audio .jp-play-bar {
+    height: 4px;
+  }
 }
 
 .jp-audio .jp-current-time {
@@ -1507,6 +1570,13 @@ ul, ol {
           transform: translateY(-50%);
 }
 
+@media only screen and (max-width: 640px) {
+  .jp-audio .jp-current-time {
+    font-size: 1.8rem;
+    left: 65px;
+  }
+}
+
 .jp-audio .jp-duration {
   color: #fff;
   font-size: 1.1rem;
@@ -1515,6 +1585,13 @@ ul, ol {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 640px) {
+  .jp-audio .jp-duration {
+    font-size: 1.8rem;
+    right: 115px;
+  }
 }
 
 .bubble-box {
@@ -2044,17 +2121,13 @@ ul, ol {
   z-index: 5;
 }
 
-.share svg {
-  display: none;
-}
-
-.social-likes {
+.share__list {
   margin-top: 10px;
   position: relative;
   z-index: 5;
 }
 
-.social-likes__widget {
+.share__item {
   padding: 0 6px;
   display: inline-block;
   background-size: contain;
@@ -2065,11 +2138,11 @@ ul, ol {
   cursor: pointer;
 }
 
-.social-likes__widget_vkontakte {
+.share__item--vk {
   background-image: url("../img/general/vk.svg");
 }
 
-.social-likes__widget_facebook {
+.share__item--fb {
   background-image: url("../img/general/fb.svg");
 }
 
