@@ -19,18 +19,13 @@ return b.innerHTML='<a href="'+this._escapeHtml(a)+'">x</a>',b.firstChild.href},
 // };
 
 
-// $(function () {
-    // setViewport();
-    // openMobileMenu();
-    // closeSubscribePopup();
-    // runScrollAnimation();
-    // animateHeader();
-
+$(function () {
     if ( $(window).width() >= 1024 ) {
         setViewport();
         openMobileMenu();
         closeSubscribePopup();
         runScrollAnimation();
+        // runParalax();
     } else {
         setViewport();
         openMobileMenu();
@@ -38,11 +33,7 @@ return b.innerHTML='<a href="'+this._escapeHtml(a)+'">x</a>',b.firstChild.href},
         runScrollAnimationMobile();
     }
 
-    // animateMainContent();
-    // animateCoverGradient();
-    // paralaxGradient();
-
-// });
+});
 
 function closeSubscribePopup() {
     $('.success-subscribe__close').click(function (e) {
@@ -137,22 +128,41 @@ function openMobileMenu() {
     });
 }
 
-function paralaxGradient() {
-    var bg = $('.bg-gradient');
-    $(window).scroll(function() {
-        var x = $(this).scrollTop();
-        bg.css('background-position', '0% ' + parseInt(-x) + 'px');
-    });
-}
-
 function runScrollAnimation() {
     var lastScrollTop = 0,
         gradientOpacity = 1,
         bottomLogoPos = $('.main-content').css('bottom').substr(0, 2) * 1,
-        bottomLogoPosAfterScroll = bottomLogoPos;
+        bottomLogoPosAfterScroll = bottomLogoPos,
+        secondMargin = 0,
+        secondTop = $('.l-wrap--second .l-content').offset().top,
+        secondBottom = $('.l-wrap--first').height() + $('.l-wrap--second').height(),
+        thirdMargin = 0,
+        // thirdTop = $('.l-wrap--third .l-content').offset().top,
+        thirdBottom = $('.l-wrap--fourth').offset().top;
+
     $(window).scroll(function (event) {
         var st = $(this).scrollTop();
         if (st > lastScrollTop) {
+            // if( $(window).scrollTop() >= secondTop - 350 ) {
+            //     if ( $(window).scrollTop() >= secondTop ) {
+            //         secondMargin = -70;
+            //         $('.l-wrap--second .l-content').css('margin-top', secondMargin + 'px');
+            //     } else {
+            //         secondMargin = -($(window).scrollTop() - secondTop + 350) * .25;
+            //         $('.l-wrap--second .l-content').css('margin-top', secondMargin + 'px');
+            //     }
+            // }
+            //
+            // if( $(window).scrollTop() >= secondTop - 350 ) {
+            //     if ( $(window).scrollTop() >= secondTop ) {
+            //         thirdMargin = -70;
+            //         $('.l-wrap--third').css('margin-top', secondMargin + 'px');
+            //     } else {
+            //         thirdMargin = -($(window).scrollTop() - secondTop + 350) * .25;
+            //         $('.l-wrap--third').css('margin-top', thirdMargin + 'px');
+            //     }
+            // }
+
             if ($(window).scrollTop() >= $('.img-jorj-scene').offset().top + 200) {
                 $('.img-jorj-scene').addClass('is-active');
                 $('.bubble-box--jorj').addClass('is-active');
@@ -192,6 +202,27 @@ function runScrollAnimation() {
                 $('.main-content').css('bottom', bottomLogoPosAfterScroll + 'px');
             }
         } else {
+            // if( $(window).scrollTop() <= secondBottom ) {
+            //     if ( $(window).scrollTop() <= secondTop ) {
+            //         secondMargin = 0;
+            //         $('.l-wrap--second .l-content').css('margin-top', secondMargin + 'px');
+            //     } else {
+            //         secondMargin = (-$(window).scrollTop() + secondTop) * .25;
+            //         $('.l-wrap--second .l-content').css('margin-top', secondMargin + 'px');
+            //     }
+            // }
+            //
+            // if( $(window).scrollTop() <= thirdBottom) {
+            //     if ( $(window).scrollTop() <= secondTop ) {
+            //         thirdMargin = 0;
+            //         $('.l-wrap--third').css('margin-top', thirdMargin + 'px');
+            //     }
+            //     else {
+            //         thirdMargin = (-$(window).scrollTop() + secondTop + 350) * .25;
+            //         $('.l-wrap--third').css('margin-top', thirdMargin + 'px');
+            //     }
+            // }
+
             if ($(window).scrollTop() <= $('.img-jorj-scene').offset().top - 150) {
                 $('.img-jorj-scene').removeClass('is-active');
                 $('.bubble-box--jorj').removeClass('is-active');
