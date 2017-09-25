@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html lang="ru" class="no-js">
 
     <head>
         <meta charset="utf-8">
@@ -12,9 +12,9 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main2cgywndjw5nsvwj98uxr.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
-        <meta property="og:title" content="#{data.title}">
+        <meta property="og:title" content="GuardianFM">
         <meta property="og:title" content="">
         <meta property="og:url" content="">
         <meta property="og:description" content="">
@@ -25,23 +25,6 @@
         <meta property="twitter:description" content="">
         <link rel="image_src" href="">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
         <script>
@@ -122,100 +105,150 @@
         <div class="l-page">
             <header class="header">
                 <div class="l-grid">
-                    <a class="header__logo" href="/gfm-articles/">
+                    <a href="/" class="header__logo">
                         <h1>GuardianFM</h1>
-                        <!--img.header__logo-img(src="static/img/general/gfm_logo.svg" alt="")-->
-                        <!--img.header__logo-img--scroll(src="static/img/general/gfm_logo_scroll.svg" alt="")-->
+                        <img src="static/img/general/gfm_logo.svg" alt="" class="header__logo-img">
+                        <img src="static/img/general/gfm_logo_scroll.svg" alt="" class="header__logo-img--scroll">
                     </a>
-                    <a class="header__toggle-menu js-toggle-menu" href="#"></a>
+                    <a href="#" class="header__toggle-menu js-toggle-menu"></a>
                     <nav class="header__nav">
                         <!--если в каком-либо меню появилось обновление, то к классу пунтак меню (header__nav-item) добавляется класс с модификатором (header__nav-item--update)-->
                         <ul class="header__nav-list">
-                            <!--li.header__nav-item.header__nav-logoimg.header__nav-logo-img(src="static/img/general/gfm_logo.svg" alt="")
-                -->
-                            <li class="header__nav-item"><a class="header__nav-link" href="/gfm-articles/">Гайды</a>
+                            <li class="header__nav-item header__nav-logo">
+                                <img src="static/img/general/gfm_logo.svg" alt="" class="header__nav-logo-img">
                             </li>
-                            <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="/gfm-articles/article-list.html">Статьи</a>
+                            <li class="header__nav-item"><a href="index.html" class="header__nav-link">Новости</a>
                             </li>
-                            <!--+nav_item(
-                'Статьи',
-                'guide-list.html',
-                'articles',
-                active)
-                -->
-                            <!--li.header__nav-item--refresh
-                a.header__nav-link.header__nav-link--refresh.js-refresh(href="#")
-                    != pugHelpers.Icon.call(locals, {iconName: 'icon_refresh', className: 'header__refresh-icon'})
-                
-                -->
+                            <li class="header__nav-item header__nav-item--update"><a href="advisors.html" class="header__nav-link">Advisors</a>
+                            </li>
+                            <li class="header__nav-item"><a href="guide-list.html" class="header__nav-link header__nav-link--active">Статьи</a>
+                            </li>
+                            <li class="header__nav-item"><a href="#" class="header__nav-link">Подкаст</a>
+                            </li>
+                            <li class="header__nav-item--refresh">
+                                <a href="#" class="header__nav-link header__nav-link--refresh js-refresh">
+                                    <svg class="header__refresh-icon" width="16px" height="17px">
+                                        <use xlink:href="#icon_refresh"></use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
-                        <a class="header__close-menu js-close-menu" href="#"></a>
-                    </nav>
-                    <!--if logina.header__login.header__login--logged.js-open-login-popup(href="#") FeelFreeToHateOnMe
-            -->
-                    <!--else
-            a.header__login.js-open-login-popup(href="#") Войти
-            
-            -->
-                    <!--.header__popup
-            .header__popup-shadow.js-close-login-popup
-            .l-grid
-                .header__popup-content
-                    p.header__popup-text.
-                        Войдите через наше <a href="#">расширение на Chrome</a>,
-                        чтобы воспользоваться разделом <a href="/advisors.html">advisors</a>.
-                    p.header__popup-text.
-                        Мы не храним ваши авторизационные данные.
-                        Мы не публикуем информацию от вашего имени.
-            
-                    form.header__form(action="#")
-                        input(type="hidden" name="csrfmiddlewaretoken" value="G85txCas8oDYRaxaWEFByMnFrHgSmsFY")
-            
-                        .header__form-button.header__form-button--ps
-                            label.header__form-label(for="platform_member_type_2") %username%
-                            input.header__form-input.js-login-input(type="button" id="platform_member_type_2" value="2")
-                        .header__form-button.header__form-button--xbox
-                            label.header__form-label(for="platform_member_type_1") %username%
-                            input.header__form-input.js-login-input(type="button" id="platform_member_type_1" value="2")
-            -->
+                        <a href="#" class="header__close-menu js-close-menu"></a>
+                    </nav><a href="#" class="header__login js-open-login-popup">Войти</a>
+                    <div class="header__popup">
+                        <div class="header__popup-shadow js-close-login-popup"></div>
+                        <div class="l-grid">
+                            <div class="header__popup-content">
+                                <p class="header__popup-text">
+                                    Войдите через наше <a href="#">расширение на Chrome</a>, чтобы воспользоваться разделом <a href="/advisors.html">advisors</a>.
+                                </p>
+                                <p class="header__popup-text">
+                                    Мы не храним ваши авторизационные данные. Мы не публикуем информацию от вашего имени.
+
+                                </p>
+                                <form action="#" class="header__form">
+                                    <input type="hidden" name="csrfmiddlewaretoken" value="G85txCas8oDYRaxaWEFByMnFrHgSmsFY">
+                                    <div class="header__form-button header__form-button--ps">
+                                        <label for="platform_member_type_2" class="header__form-label">%username%</label>
+                                        <input type="button" id="platform_member_type_2" value="2" class="header__form-input js-login-input">
+                                    </div>
+                                    <div class="header__form-button header__form-button--xbox">
+                                        <label for="platform_member_type_1" class="header__form-label">%username%</label>
+                                        <input type="button" id="platform_member_type_1" value="2" class="header__form-input js-login-input">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </header>
             <section class="l-grid l-grid--content">
+                <div class="c-filter">
+                    <ul class="c-filter__list">
+                        <li class="c-filter__item"><a href="guide-list.html" class="c-filter__link">статьи</a>
+                        </li>
+                        <li class="c-filter__item"><a href="guide-list.html" class="c-filter__link">гайды</a>
+                        </li>
+                        <li class="c-filter__item"><a href="article-list.html" class="c-filter__link c-filter__link--active">книга скорби</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="c-article-list">
-                    <a class="c-article-list__item" href="guides/scout-buff.html">
-                        <div class="c-article-list__img" style="background-image: url(static/img/content/scout_buff.jpg);" alt="Командир-разведчик"></div>
+                    <a href="article.html" class="c-article-list__item">
                         <div class="c-article-list__content">
-                            <h3 class="c-article-list__title">Командир-разведчик</h3>
+                            <h3 class="c-article-list__title">Глава 1:0 — Фундамент</h3>
+                            <p class="c-article-list__date">14:00 12.09.16</p>
                         </div>
                     </a>
-                    <a class="c-article-list__item" href="guides/public-events.html">
-                        <div class="c-article-list__img" style="background-image: url(static/img/content/public_events.jpg);" alt="Руководство по Открытым мероприятиям"></div>
+                    <a href="article.html" class="c-article-list__item">
                         <div class="c-article-list__content">
-                            <h3 class="c-article-list__title">Руководство по Открытым мероприятиям</h3>
+                            <h3 class="c-article-list__title">Глава 1:1 — Слова, полные ненависти</h3>
+                            <p class="c-article-list__date">14:00 12.09.16</p>
+                        </div>
+                    </a>
+                    <a href="article.html" class="c-article-list__item">
+                        <div class="c-article-list__content">
+                            <h3 class="c-article-list__title">Глава 1:2 — Хищники</h3>
+                            <p class="c-article-list__date">14:00 12.09.16</p>
+                        </div>
+                    </a>
+                    <a href="article.html" class="c-article-list__item">
+                        <div class="c-article-list__content">
+                            <h3 class="c-article-list__title">Глава 1:3 — Клятва</h3>
+                            <p class="c-article-list__date">14:00 12.09.16</p>
+                        </div>
+                    </a>
+                    <a href="article.html" class="c-article-list__item">
+                        <div class="c-article-list__content">
+                            <h3 class="c-article-list__title">Глава 1:4 — Сопряжение</h3>
+                            <p class="c-article-list__date">14:00 12.09.16</p>
+                        </div>
+                    </a>
+                    <a href="article.html" class="c-article-list__item">
+                        <div class="c-article-list__content">
+                            <h3 class="c-article-list__title">Глава 1:5 — Игла и червь</h3>
+                            <p class="c-article-list__date">14:00 12.09.16</p>
+                        </div>
+                    </a>
+                    <a href="article.html" class="c-article-list__item">
+                        <div class="c-article-list__content">
+                            <h3 class="c-article-list__title">Глава 1:6 — Сёстры</h3>
+                            <p class="c-article-list__date">14:00 12.09.16</p>
+                        </div>
+                    </a>
+                    <a href="article.html" class="c-article-list__item">
+                        <div class="c-article-list__content">
+                            <h3 class="c-article-list__title">Глава 1:7 — Погружение</h3>
+                            <p class="c-article-list__date">14:00 12.09.16</p>
+                        </div>
+                    </a>
+                    <a href="article.html" class="c-article-list__item">
+                        <div class="c-article-list__content">
+                            <h3 class="c-article-list__title">Глава 1:8 — Левиафан</h3>
+                            <p class="c-article-list__date">14:00 12.09.16</p>
                         </div>
                     </a>
                 </div>
             </section>
-            <a class="c-scroll-top js-scroll-top" href="#"></a>
+            <a href="#" class="c-scroll-top js-scroll-top"></a>
             <footer class="footer">
-                <div class="l-grid">
-                    <!--a.footer__logo(href="/gfm-articles/") Guardian.FM-->
-                    <!--.footer__maila(href="mailto:speaker@guardian.fm") speaker@guardian.fm
-            -->
+                <div class="l-grid"><a href="/" class="footer__logo">Guradian.FM</a>
+                    <div class="footer__mail"><a href="mailto:speaker@guardian.fm">speaker@guardian.fm</a>
+                    </div>
                     <ul class="footer__social-list">
                         <li class="footer__social-item">
-                            <p class="footer__social-title">Follow Guardian.FM:</p>
+                            <p class="footer__social-title">Follow us:</p>
                         </li>
-                        <li class="footer__social-item"><a class="footer__social-link" href="https://vk.com/guardianfm" target="_blank">vk.com</a>
+                        <li class="footer__social-item"><a href="https://vk.com/guardianfm" target="_blank" class="footer__social-link">vk.com</a>
                         </li>
-                        <li class="footer__social-item"><a class="footer__social-link" href="https://twitter.com/Destiny_Russia" target="_blank">twitter</a>
+                        <li class="footer__social-item"><a href="https://twitter.com/Destiny_Russia" target="_blank" class="footer__social-link">twitter</a>
                         </li>
-                        <li class="footer__social-item"><a class="footer__social-link" href="https://www.youtube.com/c/GuardianFM" target="_blank">youtube</a>
+                        <li class="footer__social-item"><a href="https://www.youtube.com/c/GuardianFM" target="_blank" class="footer__social-link">youtube</a>
                         </li>
                     </ul>
                 </div>
             </footer>
-            <script src="static/js/main2cgywndjw5nsvwj98uxr.min.js"></script>
+            <script src="static/js/main.min.js"></script>
         </div>
 
 
