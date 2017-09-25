@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main2cgywndjw5nsvwj98uxr.min.css" rel="stylesheet" type="text/css">
+        <link href="../static/css/main2cgywndjw5nsvwj98uxr.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -124,14 +124,14 @@
                 <div class="l-grid">
                     <a class="header__logo" href="/gfm-articles/">
                         <h1>GuardianFM</h1>
-                        <!--img.header__logo-img(src="static/img/general/gfm_logo.svg" alt="")-->
-                        <!--img.header__logo-img--scroll(src="static/img/general/gfm_logo_scroll.svg" alt="")-->
+                        <!--img.header__logo-img(src="../static/img/general/gfm_logo.svg" alt="")-->
+                        <!--img.header__logo-img--scroll(src="../static/img/general/gfm_logo_scroll.svg" alt="")-->
                     </a>
                     <a class="header__toggle-menu js-toggle-menu" href="#"></a>
                     <nav class="header__nav">
                         <!--если в каком-либо меню появилось обновление, то к классу пунтак меню (header__nav-item) добавляется класс с модификатором (header__nav-item--update)-->
                         <ul class="header__nav-list">
-                            <!--li.header__nav-item.header__nav-logoimg.header__nav-logo-img(src="static/img/general/gfm_logo.svg" alt="")
+                            <!--li.header__nav-item.header__nav-logoimg.header__nav-logo-img(src="../static/img/general/gfm_logo.svg" alt="")
                 -->
                             <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="/gfm-articles/">Гайды</a>
                             </li>
@@ -180,21 +180,29 @@
             -->
                 </div>
             </header>
-            <section class="l-grid l-grid--content">
-                <div class="c-article-list">
-                    <a class="c-article-list__item" href="guides/scout-buff.html">
-                        <div class="c-article-list__img" style="background-image: url(static/img/content/scout_buff.jpg);" alt="Командир-разведчик"></div>
-                        <div class="c-article-list__content">
-                            <h3 class="c-article-list__title">Командир-разведчик</h3>
-                        </div>
-                    </a>
-                    <a class="c-article-list__item" href="guides/public-events.html">
-                        <div class="c-article-list__img" style="background-image: url(static/img/content/public_event.jpg);" alt="Руководство по Открытым мероприятиям"></div>
-                        <div class="c-article-list__content">
-                            <h3 class="c-article-list__title">Руководство по Открытым мероприятиям</h3>
-                        </div>
-                    </a>
-                </div>
+            <section class="l-grid--content">
+                <article class="c-article">
+                    <h2 class="c-article__title">Командир-разведчик</h2>
+                    <div class="c-article__content">
+                        <p class="c-article__text">На Ферме ты наверняка видел стражей с голубым свечением, которые перемещаются со скоростью света и прыгают, словно Майкл Джордан в свои лучшие годы? Хочешь познать эту деревенскую магию? Для этого необходимо выполнить следующее:</p>
+                        <img
+                        class="c-article__img" src="https://pp.userapi.com/c837426/v837426319/4af15/2EALgddvvD0.jpg" alt="">
+                            <p class="c-article__text">1) Запрыгнуть на мельничное колесо и пройтись против движения. Появятся 2 баффа «Караульный наряд х2» и «Мельничное колесо выполнено». Фиолетовое свечение позволяет тебе прыгать слегка выше.</p>
+                            <img class="c-article__img" src="https://pp.userapi.com/c837426/v837426319/4af1f/FAT1xq98pq8.jpg"
+                            alt="">
+                            <p class="c-article__text">2) Дальше переберись по кабелям на соседнее здание, а оттуда на крышу ангара. Постой там пару секунд, насладись видом и бафф «Головокружение» станет активным, а «Караульный наряд» увеличится до х4.</p>
+                            <img class="c-article__img"
+                            src="https://pp.userapi.com/c837426/v837426319/4af29/ilSlE1pLmJQ.jpg" alt="">
+                            <p class="c-article__text">3)Недалеко от причала есть небольшая зона отдыха с костром посередине. Присаживайся на диван, вспомни, как разносил в прах адептов Красного Легиона, взгляни на костёр и приступи к разведывательному дозору. Твоё фиолетовое свечение
+                                сменится на красное, и слева появится новый бафф «В разведывательном патруле»</p>
+                            <img class="c-article__img" src="https://pp.userapi.com/c837426/v837426319/4af33/zNGb7uiA5Nw.jpg" alt="">
+                            <p class="c-article__text">4) Перед тобой, Страж, появится голубой столб света – прыгай в него. Твой квест активирован. Найди ещё 9 таких же столбов света (мы не будем писать, где они расположены, так как верим в твои силы), и на последнем пункте тебя
+                                ждёт небольшой праздничный салют.</p>
+                            <img class="c-article__img" src="https://pp.userapi.com/c837426/v837426319/4af3d/h4hs7iH8qcE.jpg" alt="">
+                            <p class="c-article__text">Поздравляем, твой патруль окончен. Покажи всем на Ферме, как высоко ты можешь запрыгнуть, а местную дворовую футбольную команду – удиви скоростью своих ног.</p>
+                            <p class="c-article__text">Свечение станет голубым, а слева активным станет бафф «Командир-разведчик». Скорость передвижения и высота прыжка увеличены. Данный бафф действует до выхода из локации или же смерти на ней.</p>
+                    </div>
+                </article>
             </section>
             <a class="c-scroll-top js-scroll-top" href="#"></a>
             <footer class="footer">
@@ -215,7 +223,7 @@
                     </ul>
                 </div>
             </footer>
-            <script src="static/js/main2cgywndjw5nsvwj98uxr.min.js"></script>
+            <script src="../static/js/main2cgywndjw5nsvwj98uxr.min.js"></script>
         </div>
 
 

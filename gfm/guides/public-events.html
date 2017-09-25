@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main2cgywndjw5nsvwj98uxr.min.css" rel="stylesheet" type="text/css">
+        <link href="../static/css/main2cgywndjw5nsvwj98uxr.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -124,14 +124,14 @@
                 <div class="l-grid">
                     <a class="header__logo" href="/gfm-articles/">
                         <h1>GuardianFM</h1>
-                        <!--img.header__logo-img(src="static/img/general/gfm_logo.svg" alt="")-->
-                        <!--img.header__logo-img--scroll(src="static/img/general/gfm_logo_scroll.svg" alt="")-->
+                        <!--img.header__logo-img(src="../static/img/general/gfm_logo.svg" alt="")-->
+                        <!--img.header__logo-img--scroll(src="../static/img/general/gfm_logo_scroll.svg" alt="")-->
                     </a>
                     <a class="header__toggle-menu js-toggle-menu" href="#"></a>
                     <nav class="header__nav">
                         <!--если в каком-либо меню появилось обновление, то к классу пунтак меню (header__nav-item) добавляется класс с модификатором (header__nav-item--update)-->
                         <ul class="header__nav-list">
-                            <!--li.header__nav-item.header__nav-logoimg.header__nav-logo-img(src="static/img/general/gfm_logo.svg" alt="")
+                            <!--li.header__nav-item.header__nav-logoimg.header__nav-logo-img(src="../static/img/general/gfm_logo.svg" alt="")
                 -->
                             <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="/gfm-articles/">Гайды</a>
                             </li>
@@ -180,21 +180,44 @@
             -->
                 </div>
             </header>
-            <section class="l-grid l-grid--content">
-                <div class="c-article-list">
-                    <a class="c-article-list__item" href="guides/scout-buff.html">
-                        <div class="c-article-list__img" style="background-image: url(static/img/content/scout_buff.jpg);" alt="Командир-разведчик"></div>
-                        <div class="c-article-list__content">
-                            <h3 class="c-article-list__title">Командир-разведчик</h3>
-                        </div>
-                    </a>
-                    <a class="c-article-list__item" href="guides/public-events.html">
-                        <div class="c-article-list__img" style="background-image: url(static/img/content/public_event.jpg);" alt="Руководство по Открытым мероприятиям"></div>
-                        <div class="c-article-list__content">
-                            <h3 class="c-article-list__title">Руководство по Открытым мероприятиям</h3>
-                        </div>
-                    </a>
-                </div>
+            <section class="l-grid--content">
+                <article class="c-article">
+                    <h2 class="c-article__title">Руководство по Открытым мероприятиям</h2>
+                    <div class="c-article__content">
+                        <img class="c-article__img" src="../static/img/content/public_event.jpg" alt="">
+                        <p class="c-article__text">Один из возможных типов заданий, который вы найдете на карте – Открытые мероприятия (или Public Events в английской версии). Через короткий промежуток времени после появления значка на карте запуск этого задания можно активировать
+                            вручную с помощью флага. В большинстве Открытых мероприятий есть модификатор, который позволяет увеличить сложность, но для его активации нужно выполнить задание. За участие в Открытых мероприятиях с повышенной сложностью вы
+                            получите большее количество опыта и более крутые шмотки.</p>
+                        <h3 class="c-article__subtitle">Добыча блеска (Glimmer Drill)</h3>
+                        <p class="c-article__text">Для выполнения достаточно убить всех отмеченных специальным значком Павших до того, как закончится время.</p>
+                        <p class="c-article__text">Активация модификатора повышенной сложности: перед убийством Павших разрушьте установки по добыче блеска.</p>
+                        <h3 class="c-article__subtitle">Пополнение запасов эфира (Ether Resupply)</h3>
+                        <p class="c-article__text">Для выполнения достаточно убить огромного Сервитора.</p>
+                        <p class="c-article__text">Активация модификатора повышенной сложности: убейте трех маленьких Сервиторов до того, как они исчезнут.</p>
+                        <h3 class="c-article__subtitle">Раскопки кабал (Cabal Excavation).</h3>
+                        <p class="c-article__text">Для выполнения нужно захватить буровую установку Кабал. Стойте в зоне и отстреливайтесь от врагов.</p>
+                        <p class="c-article__text">Активация модификатора повышенной сложности: необходимо убить маленький корабль Кабал. Не волнуйтесь, если не успеете убить его сразу, он вернется на второй заход. После его уничтожения появится огромный кабал, которого надо убить
+                            до того, как закончится время.</p>
+                        <h3 class="c-article__subtitle">Обмен оружием (Destroy The Devil Walker)</h3>
+                        <p class="c-article__text">Для выполнения нужно уничтожить Ходока. Отстрелите одну из шести лап, после ее уничтожения откроется реактор, по которому так же нужно стрелять из любого доступного оружия.</p>
+                        <p class="c-article__text">Активация модификатора повышенной сложности: перед убийством Ходока необходимо снять три щита вокруг него. При уничтожении одной из лап выпадает три энергетических шара: нужно поднести такой шар к одной из двух установок рядом
+                            с щитом. Когда будут сняты все три щита, прилетит еще один Ходок, которого нужно уничтожить до завершения отсчета времени. С помощью Скорч-пушек сделать это будет довольно легко и быстро. Не забывайте, что максимальный урон
+                            Скорч-пушка наносит если зажать кнопку выстрела (вы услышите писк) и отпустить ее через какое-то время.</p>
+                        <h3 class="c-article__subtitle">Ведьминский ритуал (Witches Ritual Event)</h3>
+                        <p class="c-article__text">Нужно убить двух Колдунов - их щиты можно снять, если зайти в зоны напротив. После убийства появится усиленный Колдун, которого нужно уничтожить.</p>
+                        <p class="c-article__text">Активация модификатора повышенной сложности: после убийства первых двух колдунов нужно разрушить два кристалла. Они находятся прямо над зеленым порталом. Уничтожить их можно, находясь в тех же зонах напротив. После разрушения кристаллов
+                            появится Рыцарь с огромным топором.</p>
+                        <h3 class="c-article__subtitle">Интеграция шпиля (Vex Tower Construction)</h3>
+                        <p class="c-article__text">Нужно предотвратить постройку сооружения Векс, просто уничтожив всех вокруг.</p>
+                        <p class="c-article__text">Активация модификатора повышенной сложности: центральное сооружение излучает три луча света, нужно проследить за каждым из них. Там вы найдете платформу, которую нужно захватить, просто встав посередине (как в режиме Контроль).
+                            Активируйте все три платформы до того, как закончится строительство. Активация каждой из платформ вызовет появление более мощных Векс, а в конце появится Гидра.</p>
+                        <h3 class="c-article__subtitle">Впускной механизм (Injection Rig)</h3>
+                        <p class="c-article__text">Для выполнения просто убейте всех Псиоников Кабал.</p>
+                        <p class="c-article__text">Активация модификатора повышенной сложности: один из самых сложных ивентов в Destiny 2. После того, как вы убьете одного из Псионов, откроются вентиляционные отверстия в верхней части механизма. Вы должны уничтожить их. После убийства
+                            следующего псиона вентиляционные отверстия откроются снизу. Их так же нужно уничтожить. После появится босс, которого надо убить до того, как закончится время. Помните - пока открыты вентиляционные отверстия, вы будете получать
+                            урон внутри купола. Будьте осторожны.</p>
+                    </div>
+                </article>
             </section>
             <a class="c-scroll-top js-scroll-top" href="#"></a>
             <footer class="footer">
@@ -215,7 +238,7 @@
                     </ul>
                 </div>
             </footer>
-            <script src="static/js/main2cgywndjw5nsvwj98uxr.min.js"></script>
+            <script src="../static/js/main2cgywndjw5nsvwj98uxr.min.js"></script>
         </div>
 
 
