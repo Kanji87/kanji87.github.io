@@ -4,18 +4,46 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>GuardianFM</title>
-        <meta content="" name="description">
-        <meta content="" name="keywords">
+        <title>Guardian.FM</title>
+        <!--meta(content="", name="description")-->
+        <!--meta(content="", name="keywords")-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="telephone=no" name="format-detection">
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main2cgywndjw5nsvwj98uxr.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main3m4deha1yvi.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+        <!--if data.useSocialMetaTagsmeta(property="og:title", content="GuardianFM")
+      meta(property="og:title", content="")
+      meta(property="og:url", content="")
+      meta(property="og:description", content="")
+      meta(property="og:image", content="")
+      meta(property="og:image:type", content="image/jpeg")
+      meta(property="og:image:width", content="500")
+      meta(property="og:image:height", content="300")
+      meta(property="twitter:description", content="")
+      link(rel="image_src", href="")
+      
+      -->
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <!--link(rel="manifest" href="/manifest.json")-->
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
         <script>
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
@@ -96,25 +124,20 @@
                 <div class="l-grid">
                     <a class="header__logo" href="/gfm-articles/">
                         <h1>GuardianFM</h1>
-                        <!--img.header__logo-img(src="static/img/general/gfm_logo.svg" alt="")-->
-                        <!--img.header__logo-img--scroll(src="static/img/general/gfm_logo_scroll.svg" alt="")-->
+                        <img class="header__logo-img" src="static/img/general/gfm_logo.svg" alt="">
+                        <img class="header__logo-img--scroll" src="static/img/general/gfm_logo_scroll.svg" alt="">
                     </a>
                     <a class="header__toggle-menu js-toggle-menu" href="#"></a>
                     <nav class="header__nav">
                         <!--если в каком-либо меню появилось обновление, то к классу пунтак меню (header__nav-item) добавляется класс с модификатором (header__nav-item--update)-->
                         <ul class="header__nav-list">
-                            <!--li.header__nav-item.header__nav-logoimg.header__nav-logo-img(src="static/img/general/gfm_logo.svg" alt="")
-                -->
-                            <li class="header__nav-item"><a class="header__nav-link" href="/gfm-articles/">Гайды</a>
+                            <li class="header__nav-item header__nav-logo">
+                                <img class="header__nav-logo-img" src="static/img/general/gfm_logo.svg" alt="">
                             </li>
-                            <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="/gfm-articles/article-list.html">Статьи</a>
+                            <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="/article-list.html">Статьи</a>
                             </li>
-                            <!--+nav_item(
-                'Статьи',
-                'guide-list.html',
-                'articles',
-                active)
-                -->
+                            <li class="header__nav-item"><a class="header__nav-link" href="guide-list.html">Гайды</a>
+                            </li>
                             <!--li.header__nav-item--refresh
                 a.header__nav-link.header__nav-link--refresh.js-refresh(href="#")
                     != pugHelpers.Icon.call(locals, {iconName: 'icon_refresh', className: 'header__refresh-icon'})
@@ -154,10 +177,10 @@
             </header>
             <section class="l-grid l-grid--content">
                 <div class="c-article-list">
-                    <a class="c-article-list__item" href="guides/scout-buff.html">
-                        <div class="c-article-list__img" style="background-image: url(static/img/content/scout_buff.jpg);" alt="Командир-разведчик"></div>
+                    <a class="c-article-list__item" href="articles/leviathan-story-1.html">
+                        <div class="c-article-list__img" style="background-image: url(static/img/content/scout_buff.jpg);" alt="Истории Левиафана. Часть 1 &quot;Взлет и падение&quot;"></div>
                         <div class="c-article-list__content">
-                            <h3 class="c-article-list__title">Командир-разведчик</h3>
+                            <h3 class="c-article-list__title">Истории Левиафана. Часть 1 &quot;Взлет и падение&quot;</h3>
                         </div>
                     </a>
                     <a class="c-article-list__item" href="guides/public-events.html">
@@ -170,13 +193,12 @@
             </section>
             <a class="c-scroll-top js-scroll-top" href="#"></a>
             <footer class="footer">
-                <div class="l-grid">
-                    <!--a.footer__logo(href="/gfm-articles/") Guardian.FM-->
-                    <!--.footer__maila(href="mailto:speaker@guardian.fm") speaker@guardian.fm
-            -->
+                <div class="l-grid"><a class="footer__logo" href="/">Guardian.FM</a>
+                    <div class="footer__mail"><a href="mailto:speaker@guardian.fm">speaker@guardian.fm</a>
+                    </div>
                     <ul class="footer__social-list">
                         <li class="footer__social-item">
-                            <p class="footer__social-title">Follow Guardian.FM:</p>
+                            <p class="footer__social-title">Follow us:</p>
                         </li>
                         <li class="footer__social-item"><a class="footer__social-link" href="https://vk.com/guardianfm" target="_blank">vk.com</a>
                         </li>
@@ -187,7 +209,9 @@
                     </ul>
                 </div>
             </footer>
-            <script src="static/js/main2cgywndjw5nsvwj98uxr.min.js"></script>
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+            <script src="static/js/main3m4deha1yvi.min.js"></script>
         </div>
 
 
