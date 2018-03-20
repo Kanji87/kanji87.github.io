@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Про стиль кода</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Причесываем CSS</h1>
+        <p>
+            Используем плагин для редактора CSSComb. Он расставляет отступы между свойствами, закрывает скобки, ставит забытые вами точки с запятой и т. д. А самое интересно, что он может группировать свойства по тем правилам, которые указать ему в конфиге. Работает со стилями в HEAD между тегами style, с обычным CSS, SCSS, SASS, LESS (может даже с чем-то еще, но точно не с PCSS).
+        </p>
+        <p>
+            Ссылки:
+        </p>
+        <p>
+            <a href="https://packagecontrol.io/packages/CSScomb">SublimeText</a>
+        </p>
+        <p>
+            <a href="http://chimir.ru/post/69">WebStrom</a>
+        </p>
+        <p>
+            <a href="https://github.com/mrmlnc/vscode-csscomb">VSCode</a>
+        </p>
+        <p>
+            Конфиг, который мы будем использовать. Его надо скопировать и вставить в настройках плагина своего редактора:
+        </p>
+        <pre>
+"csscomb.preset": {
+    "always-semicolon": true,
+    "color-case": "lower",
+    "block-indent": "    ",
+    "color-shorthand": true,
+    "element-case": "lower",
+    "eof-newline": true,
+    "leading-zero": false,
+    "quotes": "double",
+    "sort-order":
+        [
+            ["display", "float", "width", "height", "margin", "padding"],
+            ["position", "top", "right", "bottom", "left", "z-index"],
+            ["font-family", "font-size", "font-weight", "line-height", "color", "text-align"],
+            ["background-color", "background-image", "background-repeat", "background-size", "background-position", "background", "border", "border-radius"]
+        ],
+    "sort-order-fallback": "abc",
+    "space-before-colon": "",
+    "space-after-colon": " ",
+    "space-before-combinator": " ",
+    "space-after-combinator": " ",
+    "space-between-declarations": "\n",
+    "space-before-opening-brace": " ",
+    "space-after-opening-brace": "\n",
+    "space-after-selector-delimiter": "\n",
+    "space-before-selector-delimiter": "",
+    "space-before-closing-brace": "\n",
+    "strip-spaces": true,
+    "tab-size": true,
+    "unitless-zero": true
+}
+        </pre>
+    </div>
+</body>
+</html>
