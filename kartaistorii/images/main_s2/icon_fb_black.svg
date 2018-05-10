@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="17px" viewBox="0 0 9 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Clip 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="4.5 16.7142857 9 16.7142857 9 0 4.5 0 0 0 0 16.7142857"></polygon>
+    </defs>
+    <g id="Home-S2-Desktop-1366" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-317.000000, -6887.000000)">
+        <g id="Page-1-Copy-4" transform="translate(317.000000, 6887.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path d="M3.07052394,16.7142857 L3.07052394,7.81678414 L0,7.81678414 L0,5.53662055 L3.07052394,5.53662055 L3.07052394,3.26003313 C3.07052394,1.46265199 4.66707148,0 6.62899028,0 L9,0 L9,2.28016359 L6.62899028,2.28016359 C6.03955586,2.28016359 5.55942054,2.72003203 5.55942054,3.26003313 L5.55942054,5.53662055 L8.87664816,5.53662055 L8.87664816,7.81678414 L5.55942054,7.81678414 L5.55942054,16.7142857 L3.07052394,16.7142857 Z" id="Fill-1" fill="#4A4A4A" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,457 @@
+<svg width="136" height="173" viewBox="0 0 136 173" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 8</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-27806 4183)">
+<g id="Group 8">
+<g id="Fill 4">
+<use xlink:href="#path0_fill" transform="matrix(1 0 0 -1 27926.3 -4069)" fill="#FF4A68"/>
+</g>
+<g id="Fill 6">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27927.9 -4067.41)" fill="#FF4A68"/>
+</g>
+<g id="Fill 12">
+<use xlink:href="#path2_fill" transform="matrix(1 0 0 -1 27927.5 -4043.09)" fill="#FF4A68"/>
+</g>
+<g id="Fill 14">
+<use xlink:href="#path3_fill" transform="matrix(1 0 0 -1 27928.7 -4041.89)" fill="#FF4A68"/>
+</g>
+<g id="Fill 16">
+<use xlink:href="#path4_fill" transform="matrix(1 0 0 -1 27934.7 -4060.23)" fill="#FF4A68"/>
+</g>
+<g id="Fill 19">
+<use xlink:href="#path5_fill" transform="matrix(1 0 0 -1 27921.5 -4027.14)" fill="#FF4A68"/>
+</g>
+<g id="Fill 24">
+<use xlink:href="#path6_fill" transform="matrix(1 0 0 -1 27941 -4027.14)" fill="#FF4A68"/>
+</g>
+<g id="Fill 27">
+<use xlink:href="#path7_fill" transform="matrix(1 0 0 -1 27926.3 -4011.59)" fill="#FF4A68"/>
+</g>
+<g id="Fill 28">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27927.9 -4010)" fill="#FF4A68"/>
+</g>
+<g id="Fill 31">
+<use xlink:href="#path8_fill" transform="matrix(1 0 0 -1 27926.3 -4126.81)" fill="#FF4A68"/>
+</g>
+<g id="Fill 32">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27927.9 -4124.81)" fill="#FF4A68"/>
+</g>
+<g id="Fill 35">
+<use xlink:href="#path9_fill" transform="matrix(1 0 0 -1 27927.5 -4100.5)" fill="#FF4A68"/>
+</g>
+<g id="Fill 36">
+<use xlink:href="#path10_fill" transform="matrix(1 0 0 -1 27928.7 -4099.7)" fill="#FF4A68"/>
+</g>
+<g id="Fill 37">
+<use xlink:href="#path4_fill" transform="matrix(1 0 0 -1 27934.7 -4117.64)" fill="#FF4A68"/>
+</g>
+<g id="Fill 39">
+<use xlink:href="#path11_fill" transform="matrix(1 0 0 -1 27921.5 -4084.55)" fill="#FF4A68"/>
+</g>
+<g id="Fill 44">
+<use xlink:href="#path12_fill" transform="matrix(1 0 0 -1 27941 -4084.55)" fill="#FF4A68"/>
+</g>
+<g id="Fill 47">
+<use xlink:href="#path0_fill" transform="matrix(1 0 0 -1 27926.3 -4069)" fill="#FF4A68"/>
+</g>
+<g id="Fill 48">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27927.9 -4067.41)" fill="#FF4A68"/>
+</g>
+<g id="Fill 52">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27927.9 -4182.62)" fill="#FF4A68"/>
+</g>
+<g id="Fill 55">
+<use xlink:href="#path13_fill" transform="matrix(1 0 0 -1 27927.5 -4157.9)" fill="#FF4A68"/>
+</g>
+<g id="Fill 56">
+<use xlink:href="#path3_fill" transform="matrix(1 0 0 -1 27928.7 -4157.11)" fill="#FF4A68"/>
+</g>
+<g id="Fill 57">
+<use xlink:href="#path4_fill" transform="matrix(1 0 0 -1 27934.7 -4175.05)" fill="#FF4A68"/>
+</g>
+<g id="Fill 59">
+<use xlink:href="#path14_fill" transform="matrix(1 0 0 -1 27921.5 -4141.96)" fill="#FF4A68"/>
+</g>
+<g id="Fill 64">
+<use xlink:href="#path15_fill" transform="matrix(1 0 0 -1 27941 -4141.96)" fill="#FF4A68"/>
+</g>
+<g id="Fill 67">
+<use xlink:href="#path8_fill" transform="matrix(1 0 0 -1 27926.3 -4126.81)" fill="#FF4A68"/>
+</g>
+<g id="Fill 68">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27927.9 -4124.81)" fill="#FF4A68"/>
+</g>
+<g id="Fill 70">
+<use xlink:href="#path5_fill" transform="matrix(1 0 0 -1 27921.5 -4027.14)" fill="#FF4A68"/>
+</g>
+<g id="Fill 71">
+<use xlink:href="#path0_fill" transform="matrix(1 0 0 -1 27868.3 -4069)" fill="#FF4A68"/>
+</g>
+<g id="Fill 72">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27870.3 -4067.41)" fill="#FF4A68"/>
+</g>
+<g id="Fill 73">
+<use xlink:href="#path9_fill" transform="matrix(1 0 0 -1 27903.9 -4059.04)" fill="#FF4A68"/>
+</g>
+<g id="Fill 74">
+<use xlink:href="#path3_fill" transform="matrix(1 0 0 -1 27904.7 -4057.84)" fill="#FF4A68"/>
+</g>
+<g id="Fill 75">
+<use xlink:href="#path16_fill" transform="matrix(1 0 0 -1 27869.9 -4043.09)" fill="#FF4A68"/>
+</g>
+<g id="Fill 76">
+<use xlink:href="#path17_fill" transform="matrix(1 0 0 -1 27870.7 -4041.89)" fill="#FF4A68"/>
+</g>
+<g id="Fill 77">
+<use xlink:href="#path4_fill" transform="matrix(1 0 0 -1 27877.1 -4060.23)" fill="#FF4A68"/>
+</g>
+<g id="Fill 78">
+<use xlink:href="#path14_fill" transform="matrix(1 0 0 -1 27916.3 -4058.64)" fill="#FF4A68"/>
+</g>
+<g id="Fill 79">
+<use xlink:href="#path18_fill" transform="matrix(1 0 0 -1 27863.5 -4027.14)" fill="#FF4A68"/>
+</g>
+<g id="Fill 80">
+<use xlink:href="#path19_fill" transform="matrix(1 0 0 -1 27897.5 -4021.16)" fill="#FF4A68"/>
+</g>
+<g id="Fill 81">
+<use xlink:href="#path20_fill" transform="matrix(1 0 0 -1 27899.1 -4019.57)" fill="#FF4A68"/>
+</g>
+<g id="Fill 82">
+<use xlink:href="#path19_fill" transform="matrix(1 0 0 -1 27910.3 -4038.7)" fill="#FF4A68"/>
+</g>
+<g id="Fill 83">
+<use xlink:href="#path20_fill" transform="matrix(1 0 0 -1 27911.9 -4037.11)" fill="#FF4A68"/>
+</g>
+<g id="Fill 84">
+<use xlink:href="#path6_fill" transform="matrix(1 0 0 -1 27883.5 -4027.14)" fill="#FF4A68"/>
+</g>
+<g id="Fill 85">
+<use xlink:href="#path21_fill" transform="matrix(1 0 0 -1 27895.1 -4069)" fill="#FF4A68"/>
+</g>
+<g id="Fill 86">
+<use xlink:href="#path22_fill" transform="matrix(1 0 0 -1 27893.9 -4045.08)" fill="#FF4A68"/>
+</g>
+<g id="Fill 87">
+<use xlink:href="#path7_fill" transform="matrix(1 0 0 -1 27868.3 -4011.59)" fill="#FF4A68"/>
+</g>
+<g id="Fill 88">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27870.3 -4010)" fill="#FF4A68"/>
+</g>
+<g id="Fill 89">
+<use xlink:href="#path23_fill" transform="matrix(1 0 0 -1 27895.1 -4011.2)" fill="#FF4A68"/>
+</g>
+<g id="Fill 90">
+<use xlink:href="#path11_fill" transform="matrix(1 0 0 -1 27921.5 -4084.55)" fill="#FF4A68"/>
+</g>
+<g id="Fill 91">
+<use xlink:href="#path8_fill" transform="matrix(1 0 0 -1 27868.3 -4126.81)" fill="#FF4A68"/>
+</g>
+<g id="Fill 92">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27870.3 -4124.81)" fill="#FF4A68"/>
+</g>
+<g id="Fill 93">
+<use xlink:href="#path9_fill" transform="matrix(1 0 0 -1 27903.9 -4116.44)" fill="#FF4A68"/>
+</g>
+<g id="Fill 94">
+<use xlink:href="#path3_fill" transform="matrix(1 0 0 -1 27904.7 -4115.25)" fill="#FF4A68"/>
+</g>
+<g id="Fill 95">
+<use xlink:href="#path24_fill" transform="matrix(1 0 0 -1 27869.9 -4100.5)" fill="#FF4A68"/>
+</g>
+<g id="Fill 96">
+<use xlink:href="#path25_fill" transform="matrix(1 0 0 -1 27870.7 -4099.7)" fill="#FF4A68"/>
+</g>
+<g id="Fill 97">
+<use xlink:href="#path4_fill" transform="matrix(1 0 0 -1 27877.1 -4117.64)" fill="#FF4A68"/>
+</g>
+<g id="Fill 98">
+<use xlink:href="#path5_fill" transform="matrix(1 0 0 -1 27916.3 -4116.04)" fill="#FF4A68"/>
+</g>
+<g id="Fill 99">
+<use xlink:href="#path26_fill" transform="matrix(1 0 0 -1 27863.5 -4084.55)" fill="#FF4A68"/>
+</g>
+<g id="Fill 100">
+<use xlink:href="#path27_fill" transform="matrix(1 0 0 -1 27897.5 -4078.57)" fill="#FF4A68"/>
+</g>
+<g id="Fill 101">
+<use xlink:href="#path28_fill" transform="matrix(1 0 0 -1 27899.1 -4076.98)" fill="#FF4A68"/>
+</g>
+<g id="Fill 102">
+<use xlink:href="#path29_fill" transform="matrix(1 0 0 -1 27910.3 -4096.11)" fill="#FF4A68"/>
+</g>
+<g id="Fill 103">
+<use xlink:href="#path28_fill" transform="matrix(1 0 0 -1 27911.9 -4094.52)" fill="#FF4A68"/>
+</g>
+<g id="Fill 104">
+<use xlink:href="#path12_fill" transform="matrix(1 0 0 -1 27883.5 -4084.55)" fill="#FF4A68"/>
+</g>
+<g id="Fill 105">
+<use xlink:href="#path30_fill" transform="matrix(1 0 0 -1 27895.1 -4126.41)" fill="#FF4A68"/>
+</g>
+<g id="Fill 106">
+<use xlink:href="#path31_fill" transform="matrix(1 0 0 -1 27893.9 -4102.49)" fill="#FF4A68"/>
+</g>
+<g id="Fill 107">
+<use xlink:href="#path0_fill" transform="matrix(1 0 0 -1 27868.3 -4069)" fill="#FF4A68"/>
+</g>
+<g id="Fill 108">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27870.3 -4067.41)" fill="#FF4A68"/>
+</g>
+<g id="Fill 109">
+<use xlink:href="#path21_fill" transform="matrix(1 0 0 -1 27895.1 -4069)" fill="#FF4A68"/>
+</g>
+<g id="Fill 110">
+<use xlink:href="#path14_fill" transform="matrix(1 0 0 -1 27921.5 -4141.96)" fill="#FF4A68"/>
+</g>
+<g id="Fill 112">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27870.3 -4182.62)" fill="#FF4A68"/>
+</g>
+<g id="Fill 113">
+<use xlink:href="#path32_fill" transform="matrix(1 0 0 -1 27903.9 -4173.85)" fill="#FF4A68"/>
+</g>
+<g id="Fill 114">
+<use xlink:href="#path3_fill" transform="matrix(1 0 0 -1 27904.7 -4172.65)" fill="#FF4A68"/>
+</g>
+<g id="Fill 115">
+<use xlink:href="#path33_fill" transform="matrix(1 0 0 -1 27869.9 -4157.9)" fill="#FF4A68"/>
+</g>
+<g id="Fill 116">
+<use xlink:href="#path17_fill" transform="matrix(1 0 0 -1 27870.7 -4157.11)" fill="#FF4A68"/>
+</g>
+<g id="Fill 117">
+<use xlink:href="#path4_fill" transform="matrix(1 0 0 -1 27877.1 -4175.05)" fill="#FF4A68"/>
+</g>
+<g id="Fill 118">
+<use xlink:href="#path5_fill" transform="matrix(1 0 0 -1 27916.3 -4173.45)" fill="#FF4A68"/>
+</g>
+<g id="Fill 119">
+<use xlink:href="#path34_fill" transform="matrix(1 0 0 -1 27863.5 -4141.96)" fill="#FF4A68"/>
+</g>
+<g id="Fill 120">
+<use xlink:href="#path35_fill" transform="matrix(1 0 0 -1 27897.5 -4136.38)" fill="#FF4A68"/>
+</g>
+<g id="Fill 121">
+<use xlink:href="#path36_fill" transform="matrix(1 0 0 -1 27899.1 -4134.38)" fill="#FF4A68"/>
+</g>
+<g id="Fill 122">
+<use xlink:href="#path27_fill" transform="matrix(1 0 0 -1 27910.3 -4153.92)" fill="#FF4A68"/>
+</g>
+<g id="Fill 123">
+<use xlink:href="#path28_fill" transform="matrix(1 0 0 -1 27911.9 -4151.92)" fill="#FF4A68"/>
+</g>
+<g id="Fill 124">
+<use xlink:href="#path15_fill" transform="matrix(1 0 0 -1 27883.5 -4141.96)" fill="#FF4A68"/>
+</g>
+<g id="Fill 126">
+<use xlink:href="#path22_fill" transform="matrix(1 0 0 -1 27893.9 -4160.3)" fill="#FF4A68"/>
+</g>
+<g id="Fill 127">
+<use xlink:href="#path8_fill" transform="matrix(1 0 0 -1 27868.3 -4126.81)" fill="#FF4A68"/>
+</g>
+<g id="Fill 128">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27870.3 -4124.81)" fill="#FF4A68"/>
+</g>
+<g id="Fill 129">
+<use xlink:href="#path30_fill" transform="matrix(1 0 0 -1 27895.1 -4126.41)" fill="#FF4A68"/>
+</g>
+<g id="Fill 130">
+<use xlink:href="#path18_fill" transform="matrix(1 0 0 -1 27863.5 -4027.14)" fill="#FF4A68"/>
+</g>
+<g id="Fill 132">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27812.4 -4067.41)" fill="#FF4A68"/>
+</g>
+<g id="Fill 133">
+<use xlink:href="#path9_fill" transform="matrix(1 0 0 -1 27846.4 -4059.04)" fill="#FF4A68"/>
+</g>
+<g id="Fill 134">
+<use xlink:href="#path3_fill" transform="matrix(1 0 0 -1 27847.2 -4057.84)" fill="#FF4A68"/>
+</g>
+<g id="Fill 135">
+<use xlink:href="#path2_fill" transform="matrix(1 0 0 -1 27812.4 -4043.09)" fill="#FF4A68"/>
+</g>
+<g id="Fill 136">
+<use xlink:href="#path17_fill" transform="matrix(1 0 0 -1 27813.2 -4041.89)" fill="#FF4A68"/>
+</g>
+<g id="Fill 137">
+<use xlink:href="#path4_fill" transform="matrix(1 0 0 -1 27819.2 -4060.23)" fill="#FF4A68"/>
+</g>
+<g id="Fill 138">
+<use xlink:href="#path34_fill" transform="matrix(1 0 0 -1 27858.7 -4058.64)" fill="#FF4A68"/>
+</g>
+<g id="Fill 139">
+<use xlink:href="#path18_fill" transform="matrix(1 0 0 -1 27806 -4027.14)" fill="#FF4A68"/>
+</g>
+<g id="Fill 140">
+<use xlink:href="#path19_fill" transform="matrix(1 0 0 -1 27839.6 -4021.16)" fill="#FF4A68"/>
+</g>
+<g id="Fill 141">
+<use xlink:href="#path20_fill" transform="matrix(1 0 0 -1 27841.6 -4019.57)" fill="#FF4A68"/>
+</g>
+<g id="Fill 142">
+<use xlink:href="#path19_fill" transform="matrix(1 0 0 -1 27852.3 -4038.7)" fill="#FF4A68"/>
+</g>
+<g id="Fill 143">
+<use xlink:href="#path37_fill" transform="matrix(1 0 0 -1 27854.3 -4037.11)" fill="#FF4A68"/>
+</g>
+<g id="Fill 144">
+<use xlink:href="#path38_fill" transform="matrix(1 0 0 -1 27825.6 -4027.14)" fill="#FF4A68"/>
+</g>
+<g id="Fill 145">
+<use xlink:href="#path6_fill" transform="matrix(1 0 0 -1 27837.6 -4069)" fill="#FF4A68"/>
+</g>
+<g id="Fill 146">
+<use xlink:href="#path39_fill" transform="matrix(1 0 0 -1 27836.4 -4045.08)" fill="#FF4A68"/>
+</g>
+<g id="Fill 147">
+<use xlink:href="#path7_fill" transform="matrix(1 0 0 -1 27810.8 -4011.59)" fill="#FF4A68"/>
+</g>
+<g id="Fill 148">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27812.4 -4010)" fill="#FF4A68"/>
+</g>
+<g id="Fill 149">
+<use xlink:href="#path12_fill" transform="matrix(1 0 0 -1 27837.6 -4011.2)" fill="#FF4A68"/>
+</g>
+<g id="Fill 150">
+<use xlink:href="#path26_fill" transform="matrix(1 0 0 -1 27863.5 -4084.55)" fill="#FF4A68"/>
+</g>
+<g id="Fill 153">
+<use xlink:href="#path9_fill" transform="matrix(1 0 0 -1 27846.4 -4116.44)" fill="#FF4A68"/>
+</g>
+<g id="Fill 154">
+<use xlink:href="#path3_fill" transform="matrix(1 0 0 -1 27847.2 -4115.25)" fill="#FF4A68"/>
+</g>
+<g id="Fill 155">
+<use xlink:href="#path9_fill" transform="matrix(1 0 0 -1 27812.4 -4100.5)" fill="#FF4A68"/>
+</g>
+<g id="Fill 156">
+<use xlink:href="#path25_fill" transform="matrix(1 0 0 -1 27813.2 -4099.7)" fill="#FF4A68"/>
+</g>
+<g id="Fill 157">
+<use xlink:href="#path4_fill" transform="matrix(1 0 0 -1 27819.2 -4117.64)" fill="#FF4A68"/>
+</g>
+<g id="Fill 158">
+<use xlink:href="#path18_fill" transform="matrix(1 0 0 -1 27858.7 -4116.04)" fill="#FF4A68"/>
+</g>
+<g id="Fill 159">
+<use xlink:href="#path26_fill" transform="matrix(1 0 0 -1 27806 -4084.55)" fill="#FF4A68"/>
+</g>
+<g id="Fill 160">
+<use xlink:href="#path27_fill" transform="matrix(1 0 0 -1 27839.6 -4078.57)" fill="#FF4A68"/>
+</g>
+<g id="Fill 161">
+<use xlink:href="#path28_fill" transform="matrix(1 0 0 -1 27841.6 -4076.98)" fill="#FF4A68"/>
+</g>
+<g id="Fill 162">
+<use xlink:href="#path29_fill" transform="matrix(1 0 0 -1 27852.3 -4096.11)" fill="#FF4A68"/>
+</g>
+<g id="Fill 163">
+<use xlink:href="#path40_fill" transform="matrix(1 0 0 -1 27854.3 -4094.52)" fill="#FF4A68"/>
+</g>
+<g id="Fill 164">
+<use xlink:href="#path41_fill" transform="matrix(1 0 0 -1 27825.6 -4084.55)" fill="#FF4A68"/>
+</g>
+<g id="Fill 165">
+<use xlink:href="#path42_fill" transform="matrix(1 0 0 -1 27837.6 -4126.41)" fill="#FF4A68"/>
+</g>
+<g id="Fill 166">
+<use xlink:href="#path43_fill" transform="matrix(1 0 0 -1 27836.4 -4102.49)" fill="#FF4A68"/>
+</g>
+<g id="Fill 169">
+<use xlink:href="#path6_fill" transform="matrix(1 0 0 -1 27837.6 -4069)" fill="#FF4A68"/>
+</g>
+<g id="Fill 170">
+<use xlink:href="#path34_fill" transform="matrix(1 0 0 -1 27863.5 -4141.96)" fill="#FF4A68"/>
+</g>
+<g id="Fill 172">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 27812.4 -4182.62)" fill="#FF4A68"/>
+</g>
+<g id="Fill 173">
+<use xlink:href="#path32_fill" transform="matrix(1 0 0 -1 27846.4 -4173.85)" fill="#FF4A68"/>
+</g>
+<g id="Fill 174">
+<use xlink:href="#path3_fill" transform="matrix(1 0 0 -1 27847.2 -4172.65)" fill="#FF4A68"/>
+</g>
+<g id="Fill 175">
+<use xlink:href="#path13_fill" transform="matrix(1 0 0 -1 27812.4 -4157.9)" fill="#FF4A68"/>
+</g>
+<g id="Fill 176">
+<use xlink:href="#path17_fill" transform="matrix(1 0 0 -1 27813.2 -4157.11)" fill="#FF4A68"/>
+</g>
+<g id="Fill 177">
+<use xlink:href="#path4_fill" transform="matrix(1 0 0 -1 27819.2 -4175.05)" fill="#FF4A68"/>
+</g>
+<g id="Fill 179">
+<use xlink:href="#path34_fill" transform="matrix(1 0 0 -1 27806 -4141.96)" fill="#FF4A68"/>
+</g>
+<g id="Fill 180">
+<use xlink:href="#path35_fill" transform="matrix(1 0 0 -1 27839.6 -4136.38)" fill="#FF4A68"/>
+</g>
+<g id="Fill 181">
+<use xlink:href="#path36_fill" transform="matrix(1 0 0 -1 27841.6 -4134.38)" fill="#FF4A68"/>
+</g>
+<g id="Fill 182">
+<use xlink:href="#path27_fill" transform="matrix(1 0 0 -1 27852.3 -4153.92)" fill="#FF4A68"/>
+</g>
+<g id="Fill 183">
+<use xlink:href="#path40_fill" transform="matrix(1 0 0 -1 27854.3 -4151.92)" fill="#FF4A68"/>
+</g>
+<g id="Fill 184">
+<use xlink:href="#path44_fill" transform="matrix(1 0 0 -1 27825.6 -4141.96)" fill="#FF4A68"/>
+</g>
+<g id="Fill 186">
+<use xlink:href="#path39_fill" transform="matrix(1 0 0 -1 27836.4 -4160.3)" fill="#FF4A68"/>
+</g>
+<g id="Fill 189">
+<use xlink:href="#path42_fill" transform="matrix(1 0 0 -1 27837.6 -4126.41)" fill="#FF4A68"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 1.63041L 0.371182 0L 6.39269 1.5589L 6.02151 3.18931L 0 1.63041Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 0 6.00826L 1.63401 6.37862L 3.19635 0.370364L 1.56234 0L 0 6.00826Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 0.742036 4.3853L 0 2.94191L 5.65066 0L 6.39269 1.44378L 0.742036 4.3853Z"/>
+<path id="path3_fill" fill-rule="evenodd" d="M 2.94814 6.37862L 4.39498 5.63826L 1.44722 0L 0 0.740738L 2.94814 6.37862Z"/>
+<path id="path4_fill" fill-rule="evenodd" d="M 0 1.59465L 4.79452 1.59465L 4.79452 0L 0 0L 0 1.59465Z"/>
+<path id="path5_fill" fill-rule="evenodd" d="M 1.99772 4.56002L 1.32009 0L 0 0.224317L 0.677969 4.78396L 1.99772 4.56002Z"/>
+<path id="path6_fill" fill-rule="evenodd" d="M 0 1.07118L 3.39152 4.3853L 4.39498 3.31412L 1.00383 0L 0 1.07118Z"/>
+<path id="path7_fill" fill-rule="evenodd" d="M 0 1.63061L 0.371182 0L 6.39269 1.5587L 6.02151 3.18931L 0 1.63061Z"/>
+<path id="path8_fill" fill-rule="evenodd" d="M 0 1.6308L 0.371182 0L 6.39269 1.5589L 6.02151 3.18931L 0 1.6308Z"/>
+<path id="path9_fill" fill-rule="evenodd" d="M 0.742036 4.3853L 0 2.94165L 5.65066 0L 6.39269 1.44365L 0.742036 4.3853Z"/>
+<path id="path10_fill" fill-rule="evenodd" d="M 2.94814 6.37862L 4.39498 5.63826L 1.44722 0L 0 0.741117L 2.94814 6.37862Z"/>
+<path id="path11_fill" fill-rule="evenodd" d="M 1.99772 4.56038L 1.32009 0L 0 0.224317L 0.677969 4.78396L 1.99772 4.56038Z"/>
+<path id="path12_fill" fill-rule="evenodd" d="M 0 1.07147L 3.39152 4.3853L 4.39498 3.31383L 1.00383 0L 0 1.07147Z"/>
+<path id="path13_fill" fill-rule="evenodd" d="M 0.742036 4.3853L 0 2.94152L 5.65066 0L 6.39269 1.44339L 0.742036 4.3853Z"/>
+<path id="path14_fill" fill-rule="evenodd" d="M 1.99772 4.56003L 1.32009 0L 0 0.2243L 0.677969 4.78396L 1.99772 4.56003Z"/>
+<path id="path15_fill" fill-rule="evenodd" d="M 0 1.07147L 3.39152 4.3853L 4.39498 3.31421L 1.00383 0L 0 1.07147Z"/>
+<path id="path16_fill" fill-rule="evenodd" d="M 0.742372 4.3853L 0 2.94191L 5.6507 0L 6.39269 1.44378L 0.742372 4.3853Z"/>
+<path id="path17_fill" fill-rule="evenodd" d="M 2.94801 6.37862L 4.39498 5.63826L 1.44696 0L 0 0.740738L 2.94801 6.37862Z"/>
+<path id="path18_fill" fill-rule="evenodd" d="M 1.99772 4.56002L 1.31998 0L 0 0.224317L 0.677741 4.78396L 1.99772 4.56002Z"/>
+<path id="path19_fill" fill-rule="evenodd" d="M 6.06572 0L 6.39269 1.51951L 0.326975 2.79065L 0 1.27114L 6.06572 0Z"/>
+<path id="path20_fill" fill-rule="evenodd" d="M 1.52303 0L 0 0.326255L 1.27414 6.37862L 2.7968 6.05236L 1.52303 0Z"/>
+<path id="path21_fill" fill-rule="evenodd" d="M 0 1.07118L 3.39115 4.3853L 4.39498 3.31412L 1.00383 0L 0 1.07118Z"/>
+<path id="path22_fill" fill-rule="evenodd" d="M 0 1.553L 4.78231 1.59465L 4.79452 0.0420595L 0.0125901 0L 0 1.553Z"/>
+<path id="path23_fill" fill-rule="evenodd" d="M 0 1.07147L 3.39115 4.3853L 4.39498 3.31383L 1.00383 0L 0 1.07147Z"/>
+<path id="path24_fill" fill-rule="evenodd" d="M 0.742372 4.3853L 0 2.94165L 5.6507 0L 6.39269 1.44365L 0.742372 4.3853Z"/>
+<path id="path25_fill" fill-rule="evenodd" d="M 2.94801 6.37862L 4.39498 5.63826L 1.44696 0L 0 0.741117L 2.94801 6.37862Z"/>
+<path id="path26_fill" fill-rule="evenodd" d="M 1.99772 4.56038L 1.31998 0L 0 0.224317L 0.677741 4.78396L 1.99772 4.56038Z"/>
+<path id="path27_fill" fill-rule="evenodd" d="M 6.06572 0L 6.39269 1.51931L 0.326975 2.79065L 0 1.27133L 6.06572 0Z"/>
+<path id="path28_fill" fill-rule="evenodd" d="M 1.52303 0L 0 0.326606L 1.27414 6.37862L 2.7968 6.05201L 1.52303 0Z"/>
+<path id="path29_fill" fill-rule="evenodd" d="M 6.06572 0L 6.39269 1.51931L 0.326975 2.79065L 0 1.27097L 6.06572 0Z"/>
+<path id="path30_fill" fill-rule="evenodd" d="M 0 1.07109L 3.39115 4.3853L 4.39498 3.31383L 1.00383 0L 0 1.07109Z"/>
+<path id="path31_fill" fill-rule="evenodd" d="M 0 1.553L 4.78231 1.59465L 4.79452 0.04246L 0.0125901 0L 0 1.553Z"/>
+<path id="path32_fill" fill-rule="evenodd" d="M 0.742036 4.3853L 0 2.94152L 5.65066 0L 6.39269 1.44378L 0.742036 4.3853Z"/>
+<path id="path33_fill" fill-rule="evenodd" d="M 0.742372 4.3853L 0 2.94152L 5.6507 0L 6.39269 1.44339L 0.742372 4.3853Z"/>
+<path id="path34_fill" fill-rule="evenodd" d="M 1.99772 4.56003L 1.31998 0L 0 0.2243L 0.677741 4.78396L 1.99772 4.56003Z"/>
+<path id="path35_fill" fill-rule="evenodd" d="M 6.06572 0L 6.39269 1.51968L 0.326975 2.79065L 0 1.27133L 6.06572 0Z"/>
+<path id="path36_fill" fill-rule="evenodd" d="M 1.52303 0L 0 0.326606L 1.27414 6.37862L 2.7968 6.05238L 1.52303 0Z"/>
+<path id="path37_fill" fill-rule="evenodd" d="M 1.52286 0L 0 0.326255L 1.27394 6.37862L 2.7968 6.05236L 1.52286 0Z"/>
+<path id="path38_fill" fill-rule="evenodd" d="M 0 1.07118L 3.39115 4.3853L 4.39498 3.31412L 1.00345 0L 0 1.07118Z"/>
+<path id="path39_fill" fill-rule="evenodd" d="M 0 1.553L 4.78193 1.59465L 4.79452 0.0420595L 0.012589 0L 0 1.553Z"/>
+<path id="path40_fill" fill-rule="evenodd" d="M 1.52286 0L 0 0.326606L 1.27394 6.37862L 2.7968 6.05201L 1.52286 0Z"/>
+<path id="path41_fill" fill-rule="evenodd" d="M 0 1.07147L 3.39115 4.3853L 4.39498 3.31383L 1.00345 0L 0 1.07147Z"/>
+<path id="path42_fill" fill-rule="evenodd" d="M 0 1.07109L 3.39152 4.3853L 4.39498 3.31383L 1.00383 0L 0 1.07109Z"/>
+<path id="path43_fill" fill-rule="evenodd" d="M 0 1.553L 4.78193 1.59465L 4.79452 0.04246L 0.012589 0L 0 1.553Z"/>
+<path id="path44_fill" fill-rule="evenodd" d="M 0 1.07147L 3.39115 4.3853L 4.39498 3.31421L 1.00345 0L 0 1.07147Z"/>
+</defs>
+</svg>

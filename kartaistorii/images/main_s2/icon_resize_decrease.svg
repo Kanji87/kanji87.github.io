@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home-S2-Desktop-Просмотр-увеличенного-видео" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1147.000000, -643.000000)">
+        <g id="Group-6" transform="translate(1147.000000, 643.000000)">
+            <g id="Group-9">
+                <g id="Oval-9-Copy.1" fill="#FFFFFF" fill-rule="nonzero">
+                    <g id="path0_stroke-link">
+                        <path d="M29,57.5 C44.7401,57.5 57.5,44.7401 57.5,29 L56.5,29 C56.5,44.1878 44.1878,56.5 29,56.5 L29,57.5 Z M57.5,29 C57.5,13.2599 44.7401,0.5 29,0.5 L29,1.5 C44.1878,1.5 56.5,13.8122 56.5,29 L57.5,29 Z M29,0.5 C13.2599,0.5 0.5,13.2599 0.5,29 L1.5,29 C1.5,13.8122 13.8122,1.5 29,1.5 L29,0.5 Z M0.5,29 C0.5,44.7401 13.2599,57.5 29,57.5 L29,56.5 C13.8122,56.5 1.5,44.1878 1.5,29 L0.5,29 Z" id="path0_stroke"></path>
+                    </g>
+                </g>
+                <g id="Group-4" transform="translate(15.000000, 34.000000)" stroke="#FFFFFF" stroke-width="2">
+                    <polyline id="Path-3-Copy-2" transform="translate(5.500000, 5.500000) rotate(-90.000000) translate(-5.500000, -5.500000) " points="0 11 11 11 11 0"></polyline>
+                    <path d="M1.48492892,9.51507108 L9.78649747,1.21350253" id="Line" stroke-linecap="square"></path>
+                </g>
+                <g id="Group-4-Copy" transform="translate(38.500000, 21.500000) scale(-1, -1) translate(-38.500000, -21.500000) translate(33.000000, 16.000000)" stroke="#FFFFFF" stroke-width="2">
+                    <polyline id="Path-3-Copy-2" transform="translate(5.500000, 5.500000) rotate(-90.000000) translate(-5.500000, -5.500000) " points="0 11 11 11 11 0"></polyline>
+                    <path d="M1.48492892,9.51507108 L9.78649747,1.21350253" id="Line" stroke-linecap="square"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

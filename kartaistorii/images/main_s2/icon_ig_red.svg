@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 19</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home-S2-Desktop-1366" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-639.000000, -6889.000000)">
+        <g id="Group-2" transform="translate(639.000000, 6889.000000)" fill="#FF4A68">
+            <g id="Group-19">
+                <path d="M8.23610651,4 C7.68678595,3.38625064 6.88849981,3 6,3 C5.11150019,3 4.31321405,3.38625064 3.76389349,4 L0,4 L0,0 L12,0 L12,4 L8.23610651,4 Z M9,1 L9,2 L11,2 L11,1 L9,1 Z" id="Combined-Shape"></path>
+                <path d="M3.17070571,5 C3.06015422,5.31277893 3,5.64936458 3,6 C3,7.65685425 4.34314575,9 6,9 C7.65685425,9 9,7.65685425 9,6 C9,5.64936458 8.93984578,5.31277893 8.82929429,5 L12,5 L12,12 L0,12 L0,5 L3.17070571,5 Z" id="Combined-Shape"></path>
+                <circle id="Oval-3" cx="6" cy="6" r="2"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
