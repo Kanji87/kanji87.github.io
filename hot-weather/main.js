@@ -301,6 +301,7 @@ var InfoComponent = /** @class */ (function () {
         }
         else {
             this.sendType.emit('');
+            this.selectedItem.emit(_mock_data__WEBPACK_IMPORTED_MODULE_2__["data"][0]);
         }
     };
     InfoComponent.prototype.selectItem = function (item) {
@@ -582,7 +583,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\susli\Documents\LearnJS_Angular\hot-weather\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\susli\Documents\LearnJS_Angular\angular-hot-weather\src\main.ts */"./src/main.ts");
 
 
 /***/ })
