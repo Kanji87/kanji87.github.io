@@ -1,0 +1,101 @@
+@import "settings";
+
+html {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+	box-sizing: border-box;
+
+	min-height: 100%;
+
+	font-size: $root-font-size;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	font-family: $body-font-family;
+	font-weight: $body-font-weight;
+	font-size: 1rem;
+	line-height: $body-line-height;
+	color: $body-text-color;
+	background-color: $body-bg-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: $heading-font-weight;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	margin: 0;
+
+	-webkit-appearance: none;
+}
+
+input[type=search] {
+	-webkit-appearance: none;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration, input[type=search]::-webkit-search-results-button, input[type=search]::-webkit-search-results-decoration {
+	-webkit-appearance: none;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+input[readonly] {
+	cursor: pointer;
+}
+
+table {
+	border: none;
+}
+
+a {
+	color: inherit;
+}
+
+textarea {
+	box-sizing: content-box;
+}
+
+[class|='i'] {
+	display: inline-block;
+}
+
+//хак для цвета автозаполнения в хроме
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+.clear {
+	&::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}
+
+.i-material {
+	margin: 0;
+}
+
+.hidden {
+	display: none;
+}

@@ -1,0 +1,54 @@
+@import '~@angular/material/theming';
+@import "settings";
+
+@include mat-core();
+
+$app-theme-background: (
+	status-bar: map_get($mat-grey, 300),
+	app-bar:    #ffffff,
+	background: map_get($mat-grey, 50),
+	hover:      rgba(black, 0.04),
+	card:       white,
+	dialog:     white,
+	disabled-button: rgba(black, 0.12),
+	raised-button: white,
+	focused-button: $dark-focused,
+	selected-button: map_get($mat-grey, 300),
+	selected-disabled-button: map_get($mat-grey, 400),
+	disabled-button-toggle: map_get($mat-grey, 200),
+	unselected-chip: map_get($mat-blue-gray, 50),
+	disabled-list-option: map_get($mat-grey, 200),
+);
+
+$app-theme-foreground: (
+	base:              white,
+	divider:           $dark-dividers,
+	dividers:          $dark-dividers,
+	disabled:          $dark-disabled-text,
+	disabled-button:   rgba(white, 0.26),
+	disabled-text:     $dark-disabled-text,
+	elevation:         black,
+	hint-text:         $dark-disabled-text,
+	secondary-text:    $dark-secondary-text,
+	icon:              rgba(white, 0.54),
+	icons:             rgba(white, 0.54),
+	text:              rgba(white, 0.87),
+	slider-min:        rgba(white, 0.87),
+	slider-off:        rgba(white, 0.26),
+	slider-off-active: rgba(white, 0.38),
+);
+
+@function app-light-theme($primary, $accent, $warn: mat-palette($mat-red)) {
+	@return (
+		primary: $primary,
+		accent: $accent,
+		warn: $warn,
+		is-dark: false,
+		foreground: $app-theme-foreground,
+		background: $app-theme-background,
+	);
+}
+
+$app-theme: app-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($app-theme);

@@ -1,2 +1,28 @@
-// COLORS
-$white: rgba(255, 255, 255, 0.87);
+@import "~@angular/material/theming";
+
+/* Настройки темы для Angular Material */
+
+$primary: mat-palette($mat-cyan, 500);
+$accent: mat-palette($mat-pink, 300);
+$warn: mat-palette($mat-amber, 800);
+
+$default-icon-color: #757575 !default;
+
+/* типографика */
+$root-font-size: 16px;
+$heading-font-weight: 700 !default;
+$heading-line-height: 1.5 !default;
+
+$body-font-family: 'Roboto', sans-serif !default;
+$body-font-weight: 400 !default;
+$body-line-height: 1.5 !default;
+
+/*Body*/
+$body-bg-color: rgba(0, 0, 0, 0.87);
+$body-text-color: rgba(#fff, 0.87);
+
+
+/* Colors */
+$text-color: rgba(#fff, 0.87);
+$text-color-darker: rgba(#fff, 0.54);
+$text-color-darkest: rgba(#fff, 0.38);
